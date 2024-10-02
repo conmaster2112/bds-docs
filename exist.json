@@ -1,5 +1,7 @@
 {
    "version": "test:1.21.30",
    "build-version": "1.21.31.04",
-   "flags": []
+   "flags": [
+      "metadata"
+   ]
 }
