@@ -6,6 +6,17 @@
       "SCRIPT_MODULES_MAPPING"
    ],
    "SCRIPT_MODULES_MAPPING": {
+      "script_modules": [
+         "@minecraft/common",
+         "@minecraft/debug-utilities",
+         "@minecraft/server",
+         "@minecraft/server-admin",
+         "@minecraft/server-gametest",
+         "@minecraft/server-net",
+         "@minecraft/server-ui",
+         "mojang-minecraft",
+         "mojang-minecraft-ui"
+      ],
       "script_modules_mapping": {
          "@minecraft/common": {
             "name": "@minecraft/common",
@@ -99,17 +110,6 @@
             ]
          }
       },
-      "script_modules": [
-         "@minecraft/common",
-         "@minecraft/debug-utilities",
-         "@minecraft/server",
-         "@minecraft/server-admin",
-         "@minecraft/server-gametest",
-         "@minecraft/server-net",
-         "@minecraft/server-ui",
-         "mojang-minecraft",
-         "mojang-minecraft-ui"
-      ],
       "script_module_files": [
          "@minecraft/common_1.0.0.json",
          "@minecraft/common_1.1.0.json",
