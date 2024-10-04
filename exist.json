@@ -4,7 +4,8 @@
    "flags": [
       "METADATA",
       "SCRIPT_MODULES_MAPPING",
-      "SCRIPT_DECLARATIONS"
+      "SCRIPT_DECLARATIONS",
+      "BLOCKS_DATA"
    ],
    "SCRIPT_MODULES_MAPPING": {
       "script_modules": [
