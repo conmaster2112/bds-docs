@@ -11722,7 +11722,7 @@
       "name": "minecraft:black_shulker_box",
       "properties": [],
       "raw_id": 882,
-      "serialization_id": "tile.shulkerBox",
+      "serialization_id": "tile.shulkerBoxBlack",
       "permutations": []
    },
    {
@@ -13131,7 +13131,7 @@
       "name": "minecraft:blue_shulker_box",
       "properties": [],
       "raw_id": 878,
-      "serialization_id": "tile.shulkerBox",
+      "serialization_id": "tile.shulkerBoxBlue",
       "permutations": []
    },
    {
@@ -15831,7 +15831,7 @@
          "huge_mushroom_bits"
       ],
       "raw_id": 99,
-      "serialization_id": "tile.brown_mushroom_block",
+      "serialization_id": "tile.brown_mushroom_block.cap",
       "permutations": [
          [
             0
@@ -15887,7 +15887,7 @@
       "name": "minecraft:brown_shulker_box",
       "properties": [],
       "raw_id": 879,
-      "serialization_id": "tile.shulkerBox",
+      "serialization_id": "tile.shulkerBoxBrown",
       "permutations": []
    },
    {
@@ -19827,35 +19827,19 @@
    {
       "name": "minecraft:cherry_wood",
       "properties": [
-         "pillar_axis",
-         "stripped_bit"
+         "pillar_axis"
       ],
       "raw_id": 801,
       "serialization_id": "tile.cherry_wood",
       "permutations": [
          [
-            0,
             0
          ],
          [
-            1,
-            0
-         ],
-         [
-            2,
-            0
-         ],
-         [
-            0,
             1
          ],
          [
-            1,
-            1
-         ],
-         [
-            2,
-            1
+            2
          ]
       ]
    },
@@ -24688,6 +24672,34 @@
       "permutations": []
    },
    {
+      "name": "minecraft:creeper_head",
+      "properties": [
+         "facing_direction"
+      ],
+      "raw_id": 1223,
+      "serialization_id": "tile.skull.creeper",
+      "permutations": [
+         [
+            0
+         ],
+         [
+            1
+         ],
+         [
+            2
+         ],
+         [
+            3
+         ],
+         [
+            4
+         ],
+         [
+            5
+         ]
+      ]
+   },
+   {
       "name": "minecraft:crimson_button",
       "properties": [
          "button_pressed_bit",
@@ -28007,7 +28019,7 @@
       "name": "minecraft:cyan_shulker_box",
       "properties": [],
       "raw_id": 876,
-      "serialization_id": "tile.shulkerBox",
+      "serialization_id": "tile.shulkerBoxCyan",
       "permutations": []
    },
    {
@@ -35667,6 +35679,34 @@
       "permutations": []
    },
    {
+      "name": "minecraft:dragon_head",
+      "properties": [
+         "facing_direction"
+      ],
+      "raw_id": 1224,
+      "serialization_id": "tile.skull.dragon",
+      "permutations": [
+         [
+            0
+         ],
+         [
+            1
+         ],
+         [
+            2
+         ],
+         [
+            3
+         ],
+         [
+            4
+         ],
+         [
+            5
+         ]
+      ]
+   },
+   {
       "name": "minecraft:dried_kelp_block",
       "properties": [],
       "raw_id": 394,
@@ -40831,7 +40871,7 @@
       "name": "minecraft:gray_shulker_box",
       "properties": [],
       "raw_id": 874,
-      "serialization_id": "tile.shulkerBox",
+      "serialization_id": "tile.shulkerBoxGray",
       "permutations": []
    },
    {
@@ -40974,7 +41014,7 @@
       "name": "minecraft:green_shulker_box",
       "properties": [],
       "raw_id": 880,
-      "serialization_id": "tile.shulkerBox",
+      "serialization_id": "tile.shulkerBoxGreen",
       "permutations": []
    },
    {
@@ -45793,7 +45833,7 @@
       "name": "minecraft:light_blue_shulker_box",
       "properties": [],
       "raw_id": 870,
-      "serialization_id": "tile.shulkerBox",
+      "serialization_id": "tile.shulkerBoxLightBlue",
       "permutations": []
    },
    {
@@ -45908,7 +45948,7 @@
       "name": "minecraft:light_gray_shulker_box",
       "properties": [],
       "raw_id": 875,
-      "serialization_id": "tile.shulkerBox",
+      "serialization_id": "tile.shulkerBoxSilver",
       "permutations": []
    },
    {
@@ -46160,7 +46200,7 @@
       "name": "minecraft:lime_shulker_box",
       "properties": [],
       "raw_id": 872,
-      "serialization_id": "tile.shulkerBox",
+      "serialization_id": "tile.shulkerBoxLime",
       "permutations": []
    },
    {
@@ -46441,7 +46481,7 @@
       "name": "minecraft:magenta_shulker_box",
       "properties": [],
       "raw_id": 869,
-      "serialization_id": "tile.shulkerBox",
+      "serialization_id": "tile.shulkerBoxMagenta",
       "permutations": []
    },
    {
@@ -49584,35 +49624,19 @@
    {
       "name": "minecraft:mangrove_wood",
       "properties": [
-         "pillar_axis",
-         "stripped_bit"
+         "pillar_axis"
       ],
       "raw_id": 752,
       "serialization_id": "tile.mangrove_wood",
       "permutations": [
          [
-            0,
             0
          ],
          [
-            1,
-            0
-         ],
-         [
-            2,
-            0
-         ],
-         [
-            0,
             1
          ],
          [
-            1,
-            1
-         ],
-         [
-            2,
-            1
+            2
          ]
       ]
    },
@@ -53617,6 +53641,64 @@
          ],
          [
             2
+         ]
+      ]
+   },
+   {
+      "name": "minecraft:mushroom_stem",
+      "properties": [
+         "huge_mushroom_bits"
+      ],
+      "raw_id": 1263,
+      "serialization_id": "tile.brown_mushroom_block.stem",
+      "permutations": [
+         [
+            0
+         ],
+         [
+            1
+         ],
+         [
+            2
+         ],
+         [
+            3
+         ],
+         [
+            4
+         ],
+         [
+            5
+         ],
+         [
+            6
+         ],
+         [
+            7
+         ],
+         [
+            8
+         ],
+         [
+            9
+         ],
+         [
+            10
+         ],
+         [
+            11
+         ],
+         [
+            12
+         ],
+         [
+            13
+         ],
+         [
+            14
+         ],
+         [
+            15
          ]
       ]
    },
@@ -57730,7 +57812,7 @@
       "name": "minecraft:orange_shulker_box",
       "properties": [],
       "raw_id": 868,
-      "serialization_id": "tile.shulkerBox",
+      "serialization_id": "tile.shulkerBoxOrange",
       "permutations": []
    },
    {
@@ -58284,6 +58366,34 @@
       ]
    },
    {
+      "name": "minecraft:piglin_head",
+      "properties": [
+         "facing_direction"
+      ],
+      "raw_id": 1225,
+      "serialization_id": "tile.skull.piglin",
+      "permutations": [
+         [
+            0
+         ],
+         [
+            1
+         ],
+         [
+            2
+         ],
+         [
+            3
+         ],
+         [
+            4
+         ],
+         [
+            5
+         ]
+      ]
+   },
+   {
       "name": "minecraft:pink_candle",
       "properties": [
          "candles",
@@ -58534,7 +58644,7 @@
       "name": "minecraft:pink_shulker_box",
       "properties": [],
       "raw_id": 873,
-      "serialization_id": "tile.shulkerBox",
+      "serialization_id": "tile.shulkerBoxPink",
       "permutations": []
    },
    {
@@ -58716,6 +58826,34 @@
          ],
          [
             1
+         ]
+      ]
+   },
+   {
+      "name": "minecraft:player_head",
+      "properties": [
+         "facing_direction"
+      ],
+      "raw_id": 1222,
+      "serialization_id": "tile.skull.char",
+      "permutations": [
+         [
+            0
+         ],
+         [
+            1
+         ],
+         [
+            2
+         ],
+         [
+            3
+         ],
+         [
+            4
+         ],
+         [
+            5
          ]
       ]
    },
@@ -65962,7 +66100,7 @@
       "name": "minecraft:purple_shulker_box",
       "properties": [],
       "raw_id": 877,
-      "serialization_id": "tile.shulkerBox",
+      "serialization_id": "tile.shulkerBoxPurple",
       "permutations": []
    },
    {
@@ -68938,7 +69076,7 @@
       "name": "minecraft:red_shulker_box",
       "properties": [],
       "raw_id": 881,
-      "serialization_id": "tile.shulkerBox",
+      "serialization_id": "tile.shulkerBoxRed",
       "permutations": []
    },
    {
@@ -70950,12 +71088,12 @@
       ]
    },
    {
-      "name": "minecraft:skull",
+      "name": "minecraft:skeleton_skull",
       "properties": [
          "facing_direction"
       ],
       "raw_id": 144,
-      "serialization_id": "tile.skull",
+      "serialization_id": "tile.skull.skeleton",
       "permutations": [
          [
             0
@@ -86127,7 +86265,7 @@
       "name": "minecraft:white_shulker_box",
       "properties": [],
       "raw_id": 218,
-      "serialization_id": "tile.shulkerBox",
+      "serialization_id": "tile.shulkerBoxWhite",
       "permutations": []
    },
    {
@@ -86171,6 +86309,34 @@
       "raw_id": 471,
       "serialization_id": "tile.wither_rose",
       "permutations": []
+   },
+   {
+      "name": "minecraft:wither_skeleton_skull",
+      "properties": [
+         "facing_direction"
+      ],
+      "raw_id": 1220,
+      "serialization_id": "tile.skull.wither",
+      "permutations": [
+         [
+            0
+         ],
+         [
+            1
+         ],
+         [
+            2
+         ],
+         [
+            3
+         ],
+         [
+            4
+         ],
+         [
+            5
+         ]
+      ]
    },
    {
       "name": "minecraft:wooden_button",
@@ -86606,7 +86772,7 @@
       "name": "minecraft:yellow_shulker_box",
       "properties": [],
       "raw_id": 871,
-      "serialization_id": "tile.shulkerBox",
+      "serialization_id": "tile.shulkerBoxYellow",
       "permutations": []
    },
    {
@@ -86636,5 +86802,33 @@
       "raw_id": 813,
       "serialization_id": "tile.wool.yellow",
       "permutations": []
+   },
+   {
+      "name": "minecraft:zombie_head",
+      "properties": [
+         "facing_direction"
+      ],
+      "raw_id": 1221,
+      "serialization_id": "tile.skull.zombie",
+      "permutations": [
+         [
+            0
+         ],
+         [
+            1
+         ],
+         [
+            2
+         ],
+         [
+            3
+         ],
+         [
+            4
+         ],
+         [
+            5
+         ]
+      ]
    }
 ]
