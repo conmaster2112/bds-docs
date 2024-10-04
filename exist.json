@@ -3,7 +3,8 @@
    "build-version": "1.21.31.04",
    "flags": [
       "METADATA",
-      "SCRIPT_MODULES_MAPPING"
+      "SCRIPT_MODULES_MAPPING",
+      "SCRIPT_DECLARATIONS"
    ],
    "SCRIPT_MODULES_MAPPING": {
       "script_modules": [
