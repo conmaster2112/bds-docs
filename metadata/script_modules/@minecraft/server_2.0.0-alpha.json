@@ -16932,6 +16932,51 @@
             "base_types": [],
             "constants": [],
             "functions": [],
+            "name": "InputInfo",
+            "properties": [
+                {
+                    "is_read_only": true,
+                    "name": "lastInputModeUsed",
+                    "type": {
+                        "error_types": [
+                            {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "InvalidEntityError"
+                            }
+                        ],
+                        "is_bind_type": true,
+                        "is_errorable": true,
+                        "name": "InputMode"
+                    }
+                },
+                {
+                    "is_read_only": true,
+                    "name": "touchOnlyAffectsHotbar",
+                    "type": {
+                        "error_types": [
+                            {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "InvalidEntityError"
+                            }
+                        ],
+                        "is_bind_type": false,
+                        "is_errorable": true,
+                        "name": "boolean"
+                    }
+                }
+            ],
+            "type": {
+                "is_bind_type": true,
+                "is_errorable": false,
+                "name": "InputInfo"
+            }
+        },
+        {
+            "base_types": [],
+            "constants": [],
+            "functions": [],
             "name": "ItemCompleteUseAfterEvent",
             "properties": [
                 {
@@ -22045,6 +22090,15 @@
                 },
                 {
                     "is_read_only": true,
+                    "name": "inputInfo",
+                    "type": {
+                        "is_bind_type": true,
+                        "is_errorable": false,
+                        "name": "InputInfo"
+                    }
+                },
+                {
+                    "is_read_only": true,
                     "name": "inputPermissions",
                     "type": {
                         "is_bind_type": true,
@@ -23224,6 +23278,153 @@
             "base_types": [],
             "constants": [],
             "functions": [],
+            "name": "PlayerInputModeChangeAfterEvent",
+            "properties": [
+                {
+                    "is_read_only": true,
+                    "name": "newInputModeUsed",
+                    "type": {
+                        "is_bind_type": true,
+                        "is_errorable": false,
+                        "name": "InputMode"
+                    }
+                },
+                {
+                    "is_read_only": true,
+                    "name": "player",
+                    "type": {
+                        "is_bind_type": true,
+                        "is_errorable": false,
+                        "name": "Player"
+                    }
+                },
+                {
+                    "is_read_only": true,
+                    "name": "previousInputModeUsed",
+                    "type": {
+                        "is_bind_type": true,
+                        "is_errorable": false,
+                        "name": "InputMode"
+                    }
+                }
+            ],
+            "type": {
+                "is_bind_type": true,
+                "is_errorable": false,
+                "name": "PlayerInputModeChangeAfterEvent"
+            }
+        },
+        {
+            "base_types": [],
+            "constants": [],
+            "functions": [
+                {
+                    "arguments": [
+                        {
+                            "details": null,
+                            "name": "callback",
+                            "type": {
+                                "closure_type": {
+                                    "argument_types": [
+                                        {
+                                            "is_bind_type": true,
+                                            "is_errorable": false,
+                                            "name": "PlayerInputModeChangeAfterEvent"
+                                        }
+                                    ],
+                                    "return_type": {
+                                        "is_bind_type": false,
+                                        "is_errorable": true,
+                                        "name": "undefined"
+                                    }
+                                },
+                                "is_bind_type": false,
+                                "is_errorable": false,
+                                "name": "closure"
+                            }
+                        }
+                    ],
+                    "is_constructor": false,
+                    "is_static": false,
+                    "name": "subscribe",
+                    "privilege": [
+                        {
+                            "name": "early_execution"
+                        }
+                    ],
+                    "return_type": {
+                        "closure_type": {
+                            "argument_types": [
+                                {
+                                    "is_bind_type": true,
+                                    "is_errorable": false,
+                                    "name": "PlayerInputModeChangeAfterEvent"
+                                }
+                            ],
+                            "return_type": {
+                                "is_bind_type": false,
+                                "is_errorable": true,
+                                "name": "undefined"
+                            }
+                        },
+                        "is_bind_type": false,
+                        "is_errorable": false,
+                        "name": "closure"
+                    }
+                },
+                {
+                    "arguments": [
+                        {
+                            "details": null,
+                            "name": "callback",
+                            "type": {
+                                "closure_type": {
+                                    "argument_types": [
+                                        {
+                                            "is_bind_type": true,
+                                            "is_errorable": false,
+                                            "name": "PlayerInputModeChangeAfterEvent"
+                                        }
+                                    ],
+                                    "return_type": {
+                                        "is_bind_type": false,
+                                        "is_errorable": true,
+                                        "name": "undefined"
+                                    }
+                                },
+                                "is_bind_type": false,
+                                "is_errorable": false,
+                                "name": "closure"
+                            }
+                        }
+                    ],
+                    "is_constructor": false,
+                    "is_static": false,
+                    "name": "unsubscribe",
+                    "privilege": [
+                        {
+                            "name": "early_execution"
+                        }
+                    ],
+                    "return_type": {
+                        "is_bind_type": false,
+                        "is_errorable": false,
+                        "name": "undefined"
+                    }
+                }
+            ],
+            "name": "PlayerInputModeChangeAfterEventSignal",
+            "properties": [],
+            "type": {
+                "is_bind_type": true,
+                "is_errorable": false,
+                "name": "PlayerInputModeChangeAfterEventSignal"
+            }
+        },
+        {
+            "base_types": [],
+            "constants": [],
+            "functions": [],
             "name": "PlayerInputPermissionCategoryChangeAfterEvent",
             "properties": [
                 {
@@ -23370,38 +23571,78 @@
         {
             "base_types": [],
             "constants": [],
-            "functions": [],
-            "name": "PlayerInputPermissions",
-            "properties": [
+            "functions": [
                 {
-                    "is_read_only": false,
-                    "name": "cameraEnabled",
-                    "privilege": [
+                    "arguments": [
                         {
-                            "name": "read_only"
+                            "details": null,
+                            "name": "permissionCategory",
+                            "type": {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "InputPermissionCategory"
+                            }
                         }
                     ],
-                    "type": {
+                    "is_constructor": false,
+                    "is_static": false,
+                    "name": "isPermissionCategoryEnabled",
+                    "privilege": [
+                        {
+                            "name": "none"
+                        }
+                    ],
+                    "return_type": {
+                        "error_types": [
+                            {
+                                "is_bind_type": false,
+                                "is_errorable": false,
+                                "name": "Error"
+                            }
+                        ],
                         "is_bind_type": false,
-                        "is_errorable": false,
+                        "is_errorable": true,
                         "name": "boolean"
                     }
                 },
                 {
-                    "is_read_only": false,
-                    "name": "movementEnabled",
-                    "privilege": [
+                    "arguments": [
                         {
-                            "name": "read_only"
+                            "details": null,
+                            "name": "permissionCategory",
+                            "type": {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "InputPermissionCategory"
+                            }
+                        },
+                        {
+                            "details": null,
+                            "name": "isEnabled",
+                            "type": {
+                                "is_bind_type": false,
+                                "is_errorable": false,
+                                "name": "boolean"
+                            }
                         }
                     ],
-                    "type": {
+                    "is_constructor": false,
+                    "is_static": false,
+                    "name": "setPermissionCategory",
+                    "privilege": [
+                        {
+                            "name": "none"
+                        }
+                    ],
+                    "return_type": {
                         "is_bind_type": false,
-                        "is_errorable": false,
-                        "name": "boolean"
+                        "is_errorable": true,
+                        "name": "undefined"
                     }
                 }
             ],
+            "name": "PlayerInputPermissions",
+            "properties": [],
             "type": {
                 "is_bind_type": true,
                 "is_errorable": false,
@@ -28042,6 +28283,165 @@
                         "is_errorable": true,
                         "name": "undefined"
                     }
+                },
+                {
+                    "arguments": [
+                        {
+                            "details": null,
+                            "name": "pool",
+                            "type": {
+                                "is_bind_type": false,
+                                "is_errorable": false,
+                                "name": "string"
+                            }
+                        },
+                        {
+                            "details": null,
+                            "name": "targetJigsaw",
+                            "type": {
+                                "is_bind_type": false,
+                                "is_errorable": false,
+                                "name": "string"
+                            }
+                        },
+                        {
+                            "details": {
+                                "max_value": 20,
+                                "min_value": 1
+                            },
+                            "name": "maxDepth",
+                            "type": {
+                                "is_bind_type": false,
+                                "is_errorable": false,
+                                "name": "int32",
+                                "valid_range": {
+                                    "max": 2147483647,
+                                    "min": -2147483648
+                                }
+                            }
+                        },
+                        {
+                            "details": null,
+                            "name": "dimension",
+                            "type": {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "Dimension"
+                            }
+                        },
+                        {
+                            "details": null,
+                            "name": "location",
+                            "type": {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "Vector3"
+                            }
+                        },
+                        {
+                            "details": {
+                                "default_value": "null"
+                            },
+                            "name": "options",
+                            "type": {
+                                "is_bind_type": false,
+                                "is_errorable": false,
+                                "name": "optional",
+                                "optional_type": {
+                                    "is_bind_type": true,
+                                    "is_errorable": false,
+                                    "name": "JigsawPlaceOptions"
+                                }
+                            }
+                        }
+                    ],
+                    "is_constructor": false,
+                    "is_static": false,
+                    "name": "placeJigsaw",
+                    "privilege": [
+                        {
+                            "name": "none"
+                        }
+                    ],
+                    "return_type": {
+                        "error_types": [
+                            {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "PlaceJigsawError"
+                            }
+                        ],
+                        "is_bind_type": false,
+                        "is_errorable": true,
+                        "name": "undefined"
+                    }
+                },
+                {
+                    "arguments": [
+                        {
+                            "details": null,
+                            "name": "identifier",
+                            "type": {
+                                "is_bind_type": false,
+                                "is_errorable": false,
+                                "name": "string"
+                            }
+                        },
+                        {
+                            "details": null,
+                            "name": "dimension",
+                            "type": {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "Dimension"
+                            }
+                        },
+                        {
+                            "details": null,
+                            "name": "location",
+                            "type": {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "Vector3"
+                            }
+                        },
+                        {
+                            "details": {
+                                "default_value": "null"
+                            },
+                            "name": "options",
+                            "type": {
+                                "is_bind_type": false,
+                                "is_errorable": false,
+                                "name": "optional",
+                                "optional_type": {
+                                    "is_bind_type": true,
+                                    "is_errorable": false,
+                                    "name": "JigsawStructurePlaceOptions"
+                                }
+                            }
+                        }
+                    ],
+                    "is_constructor": false,
+                    "is_static": false,
+                    "name": "placeJigsawStructure",
+                    "privilege": [
+                        {
+                            "name": "none"
+                        }
+                    ],
+                    "return_type": {
+                        "error_types": [
+                            {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "PlaceJigsawError"
+                            }
+                        ],
+                        "is_bind_type": false,
+                        "is_errorable": true,
+                        "name": "undefined"
+                    }
                 }
             ],
             "name": "StructureManager",
@@ -28481,6 +28881,15 @@
             "properties": [
                 {
                     "is_read_only": true,
+                    "name": "systemInitialize",
+                    "type": {
+                        "is_bind_type": true,
+                        "is_errorable": false,
+                        "name": "SystemInitializeBeforeEventSignal"
+                    }
+                },
+                {
+                    "is_read_only": true,
                     "name": "watchdogTerminate",
                     "type": {
                         "is_bind_type": true,
@@ -28515,6 +28924,125 @@
                 "is_bind_type": true,
                 "is_errorable": false,
                 "name": "SystemInfo"
+            }
+        },
+        {
+            "base_types": [],
+            "constants": [],
+            "functions": [],
+            "name": "SystemInitializeBeforeEvent",
+            "properties": [],
+            "type": {
+                "is_bind_type": true,
+                "is_errorable": false,
+                "name": "SystemInitializeBeforeEvent"
+            }
+        },
+        {
+            "base_types": [],
+            "constants": [],
+            "functions": [
+                {
+                    "arguments": [
+                        {
+                            "details": null,
+                            "name": "callback",
+                            "type": {
+                                "closure_type": {
+                                    "argument_types": [
+                                        {
+                                            "is_bind_type": true,
+                                            "is_errorable": false,
+                                            "name": "SystemInitializeBeforeEvent"
+                                        }
+                                    ],
+                                    "return_type": {
+                                        "is_bind_type": false,
+                                        "is_errorable": true,
+                                        "name": "undefined"
+                                    }
+                                },
+                                "is_bind_type": false,
+                                "is_errorable": false,
+                                "name": "closure"
+                            }
+                        }
+                    ],
+                    "is_constructor": false,
+                    "is_static": false,
+                    "name": "subscribe",
+                    "privilege": [
+                        {
+                            "name": "early_execution"
+                        }
+                    ],
+                    "return_type": {
+                        "closure_type": {
+                            "argument_types": [
+                                {
+                                    "is_bind_type": true,
+                                    "is_errorable": false,
+                                    "name": "SystemInitializeBeforeEvent"
+                                }
+                            ],
+                            "return_type": {
+                                "is_bind_type": false,
+                                "is_errorable": true,
+                                "name": "undefined"
+                            }
+                        },
+                        "is_bind_type": false,
+                        "is_errorable": false,
+                        "name": "closure"
+                    }
+                },
+                {
+                    "arguments": [
+                        {
+                            "details": null,
+                            "name": "callback",
+                            "type": {
+                                "closure_type": {
+                                    "argument_types": [
+                                        {
+                                            "is_bind_type": true,
+                                            "is_errorable": false,
+                                            "name": "SystemInitializeBeforeEvent"
+                                        }
+                                    ],
+                                    "return_type": {
+                                        "is_bind_type": false,
+                                        "is_errorable": true,
+                                        "name": "undefined"
+                                    }
+                                },
+                                "is_bind_type": false,
+                                "is_errorable": false,
+                                "name": "closure"
+                            }
+                        }
+                    ],
+                    "is_constructor": false,
+                    "is_static": false,
+                    "name": "unsubscribe",
+                    "privilege": [
+                        {
+                            "name": "early_execution"
+                        }
+                    ],
+                    "return_type": {
+                        "is_bind_type": false,
+                        "is_errorable": false,
+                        "name": "undefined"
+                    }
+                }
+            ],
+            "name": "SystemInitializeBeforeEventSignal",
+            "properties": [],
+            "type": {
+                "is_bind_type": true,
+                "is_errorable": false,
+                "name": "SystemInitializeBeforeEventSignal"
             }
         },
         {
@@ -30412,6 +30940,15 @@
                         "is_bind_type": true,
                         "is_errorable": false,
                         "name": "PlayerGameModeChangeAfterEventSignal"
+                    }
+                },
+                {
+                    "is_read_only": true,
+                    "name": "playerInputModeChange",
+                    "type": {
+                        "is_bind_type": true,
+                        "is_errorable": false,
+                        "name": "PlayerInputModeChangeAfterEventSignal"
                     }
                 },
                 {
@@ -34162,6 +34699,66 @@
                 {
                     "is_read_only": true,
                     "is_static": true,
+                    "name": "Gamepad",
+                    "type": {
+                        "is_bind_type": false,
+                        "is_errorable": false,
+                        "name": "string"
+                    },
+                    "value": "Gamepad"
+                },
+                {
+                    "is_read_only": true,
+                    "is_static": true,
+                    "name": "KeyboardAndMouse",
+                    "type": {
+                        "is_bind_type": false,
+                        "is_errorable": false,
+                        "name": "string"
+                    },
+                    "value": "KeyboardAndMouse"
+                },
+                {
+                    "is_read_only": true,
+                    "is_static": true,
+                    "name": "MotionController",
+                    "type": {
+                        "is_bind_type": false,
+                        "is_errorable": false,
+                        "name": "string"
+                    },
+                    "value": "MotionController"
+                },
+                {
+                    "is_read_only": true,
+                    "is_static": true,
+                    "name": "Touch",
+                    "type": {
+                        "is_bind_type": false,
+                        "is_errorable": false,
+                        "name": "string"
+                    },
+                    "value": "Touch"
+                },
+                {
+                    "is_read_only": true,
+                    "is_static": true,
+                    "name": "Undetermined",
+                    "type": {
+                        "is_bind_type": false,
+                        "is_errorable": false,
+                        "name": "string"
+                    },
+                    "value": "Undetermined"
+                }
+            ],
+            "name": "InputMode"
+        },
+        {
+            "constants": [
+                {
+                    "is_read_only": true,
+                    "is_static": true,
                     "name": "Camera",
                     "type": {
                         "is_bind_type": true,
@@ -34173,6 +34770,83 @@
                 {
                     "is_read_only": true,
                     "is_static": true,
+                    "name": "Dismount",
+                    "type": {
+                        "is_bind_type": true,
+                        "is_errorable": false,
+                        "name": "InputPermissionCategory"
+                    },
+                    "value": 8
+                },
+                {
+                    "is_read_only": true,
+                    "is_static": true,
+                    "name": "Jump",
+                    "type": {
+                        "is_bind_type": true,
+                        "is_errorable": false,
+                        "name": "InputPermissionCategory"
+                    },
+                    "value": 6
+                },
+                {
+                    "is_read_only": true,
+                    "is_static": true,
+                    "name": "LateralMovement",
+                    "type": {
+                        "is_bind_type": true,
+                        "is_errorable": false,
+                        "name": "InputPermissionCategory"
+                    },
+                    "value": 4
+                },
+                {
+                    "is_read_only": true,
+                    "is_static": true,
+                    "name": "Mount",
+                    "type": {
+                        "is_bind_type": true,
+                        "is_errorable": false,
+                        "name": "InputPermissionCategory"
+                    },
+                    "value": 7
+                },
+                {
+                    "is_read_only": true,
+                    "is_static": true,
+                    "name": "MoveBackward",
+                    "type": {
+                        "is_bind_type": true,
+                        "is_errorable": false,
+                        "name": "InputPermissionCategory"
+                    },
+                    "value": 10
+                },
+                {
+                    "is_read_only": true,
+                    "is_static": true,
+                    "name": "MoveForward",
+                    "type": {
+                        "is_bind_type": true,
+                        "is_errorable": false,
+                        "name": "InputPermissionCategory"
+                    },
+                    "value": 9
+                },
+                {
+                    "is_read_only": true,
+                    "is_static": true,
+                    "name": "MoveLeft",
+                    "type": {
+                        "is_bind_type": true,
+                        "is_errorable": false,
+                        "name": "InputPermissionCategory"
+                    },
+                    "value": 11
+                },
+                {
+                    "is_read_only": true,
+                    "is_static": true,
                     "name": "Movement",
                     "type": {
                         "is_bind_type": true,
@@ -34180,6 +34854,28 @@
                         "name": "InputPermissionCategory"
                     },
                     "value": 2
+                },
+                {
+                    "is_read_only": true,
+                    "is_static": true,
+                    "name": "MoveRight",
+                    "type": {
+                        "is_bind_type": true,
+                        "is_errorable": false,
+                        "name": "InputPermissionCategory"
+                    },
+                    "value": 12
+                },
+                {
+                    "is_read_only": true,
+                    "is_static": true,
+                    "name": "Sneak",
+                    "type": {
+                        "is_bind_type": true,
+                        "is_errorable": false,
+                        "name": "InputPermissionCategory"
+                    },
+                    "value": 5
                 }
             ],
             "name": "InputPermissionCategory"
@@ -35228,6 +35924,34 @@
             }
         },
         {
+            "name": "InvalidEntityError",
+            "properties": [
+                {
+                    "is_read_only": true,
+                    "name": "id",
+                    "type": {
+                        "is_bind_type": false,
+                        "is_errorable": false,
+                        "name": "string"
+                    }
+                },
+                {
+                    "is_read_only": true,
+                    "name": "type",
+                    "type": {
+                        "is_bind_type": false,
+                        "is_errorable": false,
+                        "name": "string"
+                    }
+                }
+            ],
+            "type": {
+                "is_bind_type": true,
+                "is_errorable": false,
+                "name": "InvalidEntityError"
+            }
+        },
+        {
             "name": "InvalidIteratorError",
             "properties": [],
             "type": {
@@ -35297,6 +36021,15 @@
                 "is_bind_type": true,
                 "is_errorable": false,
                 "name": "LocationOutOfWorldBoundariesError"
+            }
+        },
+        {
+            "name": "PlaceJigsawError",
+            "properties": [],
+            "type": {
+                "is_bind_type": true,
+                "is_errorable": false,
+                "name": "PlaceJigsawError"
             }
         },
         {
@@ -37930,6 +38663,70 @@
         },
         {
             "base_types": [],
+            "name": "JigsawPlaceOptions",
+            "properties": [
+                {
+                    "is_read_only": false,
+                    "name": "keepJigsaws",
+                    "type": {
+                        "is_bind_type": false,
+                        "is_errorable": false,
+                        "name": "optional",
+                        "optional_type": {
+                            "is_bind_type": false,
+                            "is_errorable": false,
+                            "name": "boolean"
+                        }
+                    }
+                }
+            ],
+            "type": {
+                "is_bind_type": true,
+                "is_errorable": false,
+                "name": "JigsawPlaceOptions"
+            }
+        },
+        {
+            "base_types": [],
+            "name": "JigsawStructurePlaceOptions",
+            "properties": [
+                {
+                    "is_read_only": false,
+                    "name": "ignoreStartHeight",
+                    "type": {
+                        "is_bind_type": false,
+                        "is_errorable": false,
+                        "name": "optional",
+                        "optional_type": {
+                            "is_bind_type": false,
+                            "is_errorable": false,
+                            "name": "boolean"
+                        }
+                    }
+                },
+                {
+                    "is_read_only": false,
+                    "name": "keepJigsaws",
+                    "type": {
+                        "is_bind_type": false,
+                        "is_errorable": false,
+                        "name": "optional",
+                        "optional_type": {
+                            "is_bind_type": false,
+                            "is_errorable": false,
+                            "name": "boolean"
+                        }
+                    }
+                }
+            ],
+            "type": {
+                "is_bind_type": true,
+                "is_errorable": false,
+                "name": "JigsawStructurePlaceOptions"
+            }
+        },
+        {
+            "base_types": [],
             "name": "LessThanComparison",
             "properties": [
                 {
@@ -38705,6 +39502,24 @@
                             "is_bind_type": false,
                             "is_errorable": false,
                             "name": "boolean"
+                        }
+                    }
+                },
+                {
+                    "is_read_only": false,
+                    "name": "initialRotation",
+                    "type": {
+                        "is_bind_type": false,
+                        "is_errorable": false,
+                        "name": "optional",
+                        "optional_type": {
+                            "is_bind_type": false,
+                            "is_errorable": false,
+                            "name": "float",
+                            "valid_range": {
+                                "max": 2147483647,
+                                "min": -2147483648
+                            }
                         }
                     }
                 }
