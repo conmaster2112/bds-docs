@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "1472144296",
+    "$id": "3027887553",
     "definitions": {
         "49501551": {
             "title": "compound_proxy",
@@ -17,29 +17,49 @@
             ],
             "$metaProperties": {}
         },
-        "239137998": {
-            "title": "minecraft:block_placer v1.20.50",
+        "120997796": {
+            "title": "minecraft:storage_item v1.21.30",
             "type": "object",
             "properties": {
-                "block": {
-                    "type": "string",
+                "allow_nested_storage_items": {
+                    "type": "boolean",
                     "$metaProperties": {}
                 },
-                "use_on": {
+                "allowed_items": {
                     "title": "sequence container",
                     "type": "array",
                     "items": {
-                        "$ref": "#/definitions/748032502"
+                        "$ref": "#/definitions/1531870811"
                     },
                     "$metaProperties": {}
+                },
+                "banned_items": {
+                    "title": "sequence container",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/1531870811"
+                    },
+                    "$metaProperties": {}
+                },
+                "max_slots": {
+                    "type": "integer",
+                    "$metaProperties": {},
+                    "maximum": 64
+                },
+                "max_weight_limit": {
+                    "type": "integer",
+                    "$metaProperties": {},
+                    "maximum": 64
+                },
+                "weight_in_storage_item": {
+                    "type": "integer",
+                    "$metaProperties": {},
+                    "minimum": 0
                 }
             },
-            "required": [
-                "block"
-            ],
             "$metaProperties": {
                 "CEREAL_DOCUMENTATION_TAG": false,
-                "CEREAL_JSON_SCHEMA": "Planter v1.20.50"
+                "CEREAL_JSON_SCHEMA": "Storage Item v1.21.30"
             }
         },
         "268086052": {
@@ -674,6 +694,35 @@
                 "CEREAL_JSON_SCHEMA": "EntityPlacer v1.20.50"
             }
         },
+        "857819254": {
+            "title": "minecraft:block_placer v1.21.40",
+            "type": "object",
+            "properties": {
+                "block": {
+                    "type": "string",
+                    "$metaProperties": {}
+                },
+                "replace_block_item": {
+                    "type": "boolean",
+                    "$metaProperties": {}
+                },
+                "use_on": {
+                    "title": "sequence container",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/748032502"
+                    },
+                    "$metaProperties": {}
+                }
+            },
+            "required": [
+                "block"
+            ],
+            "$metaProperties": {
+                "CEREAL_DOCUMENTATION_TAG": false,
+                "CEREAL_JSON_SCHEMA": "Planter v1.21.40"
+            }
+        },
         "886176099": {
             "title": "minecraft:cooldown v1.20.50",
             "type": "object",
@@ -990,6 +1039,22 @@
             "$metaProperties": {
                 "CEREAL_DOCUMENTATION_TAG": false,
                 "CEREAL_JSON_SCHEMA": "DamageAbsorption v1.21.10"
+            }
+        },
+        "2333685719": {
+            "title": "minecraft:bundle_interaction v1.21.30",
+            "type": "object",
+            "properties": {
+                "num_viewable_slots": {
+                    "type": "integer",
+                    "$metaProperties": {},
+                    "minimum": 1,
+                    "maximum": 64
+                }
+            },
+            "$metaProperties": {
+                "CEREAL_DOCUMENTATION_TAG": false,
+                "CEREAL_JSON_SCHEMA": "Bundle Interaction v1.21.30"
             }
         },
         "2359991381": {
@@ -1837,6 +1902,27 @@
                 "CEREAL_JSON_SCHEMA": "Fuel v1.20.50"
             }
         },
+        "3375297728": {
+            "title": "minecraft:rarity v1.21.30",
+            "oneOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "value": {
+                            "type": "string",
+                            "$metaProperties": {}
+                        }
+                    }
+                }
+            ],
+            "$metaProperties": {
+                "CEREAL_DOCUMENTATION_TAG": false,
+                "CEREAL_JSON_SCHEMA": "Rarity v1.21.30"
+            }
+        },
         "3389099981": {
             "title": "minecraft:allow_off_hand v1.20.50",
             "oneOf": [
@@ -1890,6 +1976,20 @@
             "$metaProperties": {
                 "CEREAL_DOCUMENTATION_TAG": false,
                 "CEREAL_JSON_SCHEMA": "Durability v1.20.50"
+            }
+        },
+        "3602397325": {
+            "title": "minecraft:dyeable v1.21.30",
+            "type": "object",
+            "properties": {
+                "default_color": {
+                    "$ref": "#/definitions/3915697282",
+                    "$metaProperties": {}
+                }
+            },
+            "$metaProperties": {
+                "CEREAL_DOCUMENTATION_TAG": false,
+                "CEREAL_JSON_SCHEMA": "Dyeable v1.21.30"
             }
         },
         "3715727616": {
@@ -1976,9 +2076,28 @@
                 "CEREAL_DOCUMENTATION_TAG": false,
                 "CEREAL_JSON_SCHEMA": "ShouldDespawn v1.20.50"
             }
+        },
+        "3915697282": {
+            "title": "Color255RGB",
+            "oneOf": [
+                {
+                    "type": "string",
+                    "pattern": "^#[a-fA-F0-9]{6}$"
+                },
+                {
+                    "title": "sequence container",
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    },
+                    "minItems": 3,
+                    "maxItems": 3
+                }
+            ],
+            "$metaProperties": {}
         }
     },
-    "title": "components v1.21.10",
+    "title": "components v1.21.40",
     "type": "object",
     "properties": {
         "minecraft:allow_off_hand": {
@@ -1986,7 +2105,11 @@
             "$metaProperties": {}
         },
         "minecraft:block_placer": {
-            "$ref": "#/definitions/239137998",
+            "$ref": "#/definitions/857819254",
+            "$metaProperties": {}
+        },
+        "minecraft:bundle_interaction": {
+            "$ref": "#/definitions/2333685719",
             "$metaProperties": {}
         },
         "minecraft:can_destroy_in_creative": {
@@ -2023,6 +2146,10 @@
         },
         "minecraft:durability_sensor": {
             "$ref": "#/definitions/1956551060",
+            "$metaProperties": {}
+        },
+        "minecraft:dyeable": {
+            "$ref": "#/definitions/3602397325",
             "$metaProperties": {}
         },
         "minecraft:enchantable": {
@@ -2073,6 +2200,10 @@
             "$ref": "#/definitions/608914689",
             "$metaProperties": {}
         },
+        "minecraft:rarity": {
+            "$ref": "#/definitions/3375297728",
+            "$metaProperties": {}
+        },
         "minecraft:record": {
             "$ref": "#/definitions/3053237679",
             "$metaProperties": {}
@@ -2091,6 +2222,10 @@
         },
         "minecraft:stacked_by_data": {
             "$ref": "#/definitions/3178615832",
+            "$metaProperties": {}
+        },
+        "minecraft:storage_item": {
+            "$ref": "#/definitions/120997796",
             "$metaProperties": {}
         },
         "minecraft:tags": {
@@ -2116,6 +2251,6 @@
     },
     "$metaProperties": {
         "CEREAL_DOCUMENTATION_TAG": false,
-        "CEREAL_JSON_SCHEMA": "Components v1.21.10"
+        "CEREAL_JSON_SCHEMA": "Components v1.21.40"
     }
 }

@@ -14,7 +14,8 @@
                 {
                     "type": "boolean"
                 }
-            ]
+            ],
+            "$metaProperties": {}
         },
         "748032502": {
             "title": "struct SharedTypes::v1_20_50::BlockDescriptor",
@@ -36,46 +37,49 @@
             "type": "object",
             "properties": {
                 "name": {
-                    "type": "string"
+                    "type": "string",
+                    "$metaProperties": {}
                 },
                 "states": {
                     "title": "associative container",
                     "type": "object",
                     "additionalProperties": {
                         "$ref": "#/definitions/49501551"
-                    }
+                    },
+                    "$metaProperties": {}
                 },
                 "tags": {
-                    "type": "string"
+                    "type": "string",
+                    "$metaProperties": {}
                 }
-            }
+            },
+            "$metaProperties": {}
         }
     },
     "title": "minecraft:entity_placer v1.20.50",
-    "description": "The entity_placer item component specifies the blocks that the item can be placed on.",
     "type": "object",
     "properties": {
         "dispense_on": {
             "title": "sequence container",
-            "description": "List of block descriptors of the blocks that this item can be dispensed on. If left empty, all blocks will be allowed.",
             "type": "array",
             "items": {
                 "$ref": "#/definitions/748032502"
-            }
+            },
+            "$metaProperties": {}
         },
         "entity": {
-            "description": "The entity to be placed in the world.",
             "type": "string",
+            "$metaProperties": {},
             "minLength": 0,
             "pattern": "^(?:\\w+(?:\\.\\w+)*:(?=\\w))?(?:\\w+(?:\\.\\w+)*)(?:<((?:\\w+(?:\\.\\w+)*:(?=\\w))?\\w+(?:\\.\\w+)*)*>)?$"
         },
         "use_on": {
             "title": "sequence container",
-            "description": "List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed.",
             "type": "array",
             "items": {
                 "$ref": "#/definitions/748032502"
-            }
+            },
+            "$metaProperties": {}
         }
     },
     "$metaProperties": {
