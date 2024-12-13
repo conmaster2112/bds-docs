@@ -1,6 +1,6 @@
 {
    "version": "1.21.50",
-   "build-version": "1.21.50.07",
+   "build-version": "1.21.51.02",
    "flags": [
       "METADATA",
       "SCRIPT_MODULES_MAPPING",
@@ -173,5 +173,6 @@
          "mojang-minecraft-ui_0.1.0.json",
          "mojang-minecraft_0.1.0.json"
       ]
-   }
+   },
+   "test": 0.03874897194368021
 }
