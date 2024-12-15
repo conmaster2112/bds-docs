@@ -1,72 +1,49 @@
-[
-    {
-        "message": "Incorrect number of arguments to function. Expected 1-2, received 3",
-        "type": "TypeError",
-        "code": "() => new ItemStack(\"Yes\", 5, {})"
-    },
-    {
-        "message": "Native variant type conversion failed.",
-        "type": "TypeError",
-        "code": "() => new ItemStack(54)"
-    },
-    {
-        "message": "Invalid item identifier ''",
-        "type": "Error",
-        "code": "() => new ItemStack(\"\")"
-    },
-    {
-        "message": "Native variant type conversion failed.",
-        "type": "TypeError",
-        "code": "() => new ItemStack(new String())"
-    },
-    {
-        "message": "Native function [ItemStack::getComponents] object bound to prototype does not exist.",
-        "type": "ReferenceError",
-        "code": "() => ItemStack.prototype.getComponents.call(null)"
-    },
-    {
-        "message": null,
-        "type": null,
-        "code": "() => ItemStack.prototype.getComponents.call(world)"
-    },
-    {
-        "message": "Failed to set member",
-        "type": "Error",
-        "code": "() => Object.getOwnPropertyDescriptor(ItemStack.prototype, \"amount\")?.set?.call(world, 5)"
-    },
-    {
-        "message": "Native property setter [ItemStack::amount] object bound to prototype does not exist.",
-        "type": "ReferenceError",
-        "code": "() => Object.getOwnPropertyDescriptor(ItemStack.prototype, \"amount\")?.set?.call()"
-    },
-    {
-        "message": "Object did not have a native handle.",
-        "type": "TypeError",
-        "code": "() => Object.getOwnPropertyDescriptor(ItemStack.prototype, \"nameTag\")?.set?.call(new ItemStack(\"stick\"), {})"
-    },
-    {
-        "message": "Trying to access location (654654.0, 55.0, 6.0) which is not in a chunk currently loaded and ticking.",
-        "type": "LocationInUnloadedChunkError",
-        "code": "() => world.getDimension(\"minecraft:overworld\").setBlockType(Object.setPrototypeOf({ x: 654654 }, {\n\t\ty: 55,\n\t\tz: 6\n\t}), \"bedrock\")"
-    },
-    {
-        "message": "Array contains unsupported type.",
-        "type": "TypeError",
-        "code": "() => world.beforeEvents.playerBreakBlock.subscribe(() => {}, { blockTypes: [new ItemStack(\"stick\")] })"
-    },
-    {
-        "message": "Object has an invalid native handle.",
-        "type": "TypeError",
-        "code": "() => world.beforeEvents.playerBreakBlock.subscribe(() => {}, { blockTypes: [new String(\"Yes\")] })"
-    },
-    {
-        "message": "Native type conversion failed.",
-        "type": "TypeError",
-        "code": "() => world.beforeEvents.playerBreakBlock.subscribe(() => {}, { blockTypes: [new Promise(() => {})] })"
-    },
-    {
-        "message": "Object did not have a native handle.",
-        "type": "TypeError",
-        "code": "() => world.beforeEvents.playerBreakBlock.subscribe(() => {}, { blockTypes: [{}] })"
-    }
-]
+{
+    "general": [
+        {
+            "code": "() => ItemStack.prototype.getComponents.call(null)",
+            "message": "Native function [ItemStack::getComponents] object bound to prototype does not exist.",
+            "type": "ReferenceError"
+        },
+        {
+            "code": "() => new ItemStack(\"Yes\", 5, 5)",
+            "message": "Incorrect number of arguments to function. Expected 1-2, received 3",
+            "type": "TypeError"
+        },
+        {
+            "code": "() => new ItemStack(5)",
+            "message": "Native variant type conversion failed.",
+            "type": "TypeError"
+        },
+        {
+            "code": "() => new Player()",
+            "message": "No constructor for native class 'Player'.",
+            "type": "ReferenceError"
+        },
+        {
+            "code": "() => Object.getOwnPropertyDescriptor(ItemStack.prototype, \"amount\")?.set?.call(world, 5)",
+            "message": "Failed to set member",
+            "type": "Error"
+        },
+        {
+            "code": "() => world.beforeEvents.playerBreakBlock.subscribe(() => {}, { blockTypes: [new ItemStack(\"stick\")] })",
+            "message": "Array contains unsupported type.",
+            "type": "TypeError"
+        },
+        {
+            "code": "() => world.beforeEvents.playerBreakBlock.subscribe(() => {}, { blockTypes: [new String(\"stick\")] })",
+            "message": "Object has an invalid native handle.",
+            "type": "TypeError"
+        },
+        {
+            "code": "() => world.beforeEvents.playerBreakBlock.subscribe(() => {}, { blockTypes: [{}] })",
+            "message": "Object did not have a native handle.",
+            "type": "TypeError"
+        },
+        {
+            "code": "() => world.getDimension(\"minecraft:overworld\").setBlockType({\n\t\tx: 654654,\n\t\ty: 55,\n\t\tz: 6\n\t}, \"bedrock\")",
+            "message": "Trying to access location (654654.0, 55.0, 6.0) which is not in a chunk currently loaded and ticking.",
+            "type": "LocationInUnloadedChunkError"
+        }
+    ]
+}
