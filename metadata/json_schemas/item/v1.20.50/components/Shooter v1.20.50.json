@@ -9,7 +9,6 @@
                     "type": "string"
                 },
                 {
-                    "title": "associative container",
                     "type": "object",
                     "additionalProperties": {
                         "type": "string"
@@ -43,19 +42,18 @@
     "type": "object",
     "properties": {
         "ammunition": {
-            "title": "sequence container",
             "type": "array",
             "items": {
                 "$ref": "#/definitions/2681068491"
             }
         },
-        "charge_on_draw": {
-            "type": "boolean"
-        },
         "max_draw_duration": {
             "type": "number"
         },
         "scale_power_by_draw_duration": {
+            "type": "boolean"
+        },
+        "charge_on_draw": {
             "type": "boolean"
         }
     }
