@@ -10,18 +10,18 @@
             "tests": [
                 {
                     "type": "simple",
-                    "result": "[]"
+                    "result": []
                 },
                 {
                     "type": "chain",
                     "result": [
-                        "true",
-                        "false",
-                        "\"\"",
-                        "\"string\"",
-                        "1",
-                        "0",
-                        "-1",
+                        true,
+                        false,
+                        "",
+                        "string",
+                        1,
+                        0,
+                        -1,
                         {
                             "type": "error",
                             "error": "TypeError: Native variant type conversion failed. Function argument [1] expected type: number | number | boolean | string | Vector3 | undefined"
@@ -40,21 +40,28 @@
             "tests": [
                 {
                     "type": "simple",
-                    "result": "\"minecraft:apple\""
+                    "result": "minecraft:apple"
                 },
                 {
                     "type": "simple",
-                    "result": "1"
+                    "result": 1
                 },
                 {
                     "type": "simple",
-                    "result": "[\n    {\n        \"typeId\": \"minecraft:food\"\n    },\n    {\n        \"typeId\": \"minecraft:compostable\"\n    }\n]"
+                    "result": [
+                        {
+                            "typeId": "minecraft:food"
+                        },
+                        {
+                            "typeId": "minecraft:compostable"
+                        }
+                    ]
                 },
                 {
                     "type": "chain",
                     "result": [
-                        "1",
-                        "2"
+                        1,
+                        2
                     ]
                 }
             ]
