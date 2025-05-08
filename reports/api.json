@@ -48,7 +48,7 @@
                 },
                 {
                     "type": "simple",
-                    "result": "[\n  {\n    \"typeId\": \"minecraft:food\"\n  },\n  {\n    \"typeId\": \"minecraft:compostable\"\n  }\n]"
+                    "result": "[\n    {\n        \"typeId\": \"minecraft:food\"\n    },\n    {\n        \"typeId\": \"minecraft:compostable\"\n    }\n]"
                 },
                 {
                     "type": "chain",
