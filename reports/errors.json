@@ -25,31 +25,31 @@
             "id": 3
         },
         {
-            "code": "() =>\n\t\tObject.getOwnPropertyDescriptor(ItemStack.prototype, \"amount\")?.set?.call(\n\t\t\tworld,\n\t\t\t5\n\t\t)",
+            "code": "() => Object.getOwnPropertyDescriptor(ItemStack.prototype, \"amount\")?.set?.call(world, 5)",
             "message": "Failed to set member",
             "type": "Error",
             "id": 5
         },
         {
-            "code": "() =>\n\t\t\tworld.beforeEvents.playerBreakBlock.subscribe(() => {}, {\n\t\t\t\tblockTypes: [new ItemStack(\"stick\")],\n\t\t\t})",
+            "code": "() => world.beforeEvents.playerBreakBlock.subscribe(() => {}, { blockTypes: [new ItemStack(\"stick\")] })",
             "message": "Array contains unsupported type. Array element [0] expected type: string (failed parsing array to Interface property ['blockTypes'], failed parsing interface to Function argument [1])",
             "type": "TypeError",
             "id": 6
         },
         {
-            "code": "() =>\n\t\tworld.beforeEvents.playerBreakBlock.subscribe(() => {}, {\n\t\t\tblockTypes: [new String(\"stick\")],\n\t\t})",
+            "code": "() => world.beforeEvents.playerBreakBlock.subscribe(() => {}, { blockTypes: [new String(\"stick\")] })",
             "message": "Object has an invalid native handle. Array element [0] expected type: string (failed parsing array to Interface property ['blockTypes'], failed parsing interface to Function argument [1])",
             "type": "TypeError",
             "id": 7
         },
         {
-            "code": "() =>\n\t\tworld.beforeEvents.playerBreakBlock.subscribe(() => {}, {\n\t\t\tblockTypes: [{}],\n\t\t})",
+            "code": "() => world.beforeEvents.playerBreakBlock.subscribe(() => {}, { blockTypes: [{}] })",
             "message": "Object did not have a native handle. Array element [0] expected type: string (failed parsing array to Interface property ['blockTypes'], failed parsing interface to Function argument [1])",
             "type": "TypeError",
             "id": 8
         },
         {
-            "code": "() =>\n\t\tworld.getDimension(\"minecraft:overworld\").setBlockType(\n\t\t\t{\n\t\t\t\tx: 654654,\n\t\t\t\ty: 55,\n\t\t\t\tz: 6,\n\t\t\t},\n\t\t\t\"bedrock\"\n\t\t)",
+            "code": "() => world.getDimension(\"minecraft:overworld\").setBlockType({\n\t\tx: 654654,\n\t\ty: 55,\n\t\tz: 6\n\t}, \"bedrock\")",
             "message": "Trying to access location (654654.0, 55.0, 6.0) which is not in a chunk currently loaded and ticking.",
             "type": "LocationInUnloadedChunkError",
             "id": 9
