@@ -37,7 +37,7 @@ export enum StructureSaveMode { Memory = "Memory", World = "World"};
 export enum TimeOfDay { Day = 1000, Midnight = 18000, Night = 13000, Noon = 6000, Sunrise = 23000, Sunset = 12000};
 export enum WeatherType { Clear = "Clear", Rain = "Rain", Thunder = "Thunder"};
 
-// Interfaces - 60
+// Interfaces - 61
 export interface BlockCustomComponent { beforeOnPlayerPlace?: (arg0: BlockComponentPlayerPlaceBeforeEvent)=>void; onEntityFallOn?: (arg0: BlockComponentEntityFallOnEvent)=>void; onPlace?: (arg0: BlockComponentOnPlaceEvent)=>void; onPlayerDestroy?: (arg0: BlockComponentPlayerDestroyEvent)=>void; onPlayerInteract?: (arg0: BlockComponentPlayerInteractEvent)=>void; onRandomTick?: (arg0: BlockComponentRandomTickEvent)=>void; onStepOff?: (arg0: BlockComponentStepOffEvent)=>void; onStepOn?: (arg0: BlockComponentStepOnEvent)=>void; onTick?: (arg0: BlockComponentTickEvent)=>void};
 export interface BlockEventOptions { blockTypes?: string[]; permutations?: BlockPermutation[]};
 export interface BlockFillOptions { blockFilter?: BlockFilter; ignoreChunkBoundErrors?: boolean};
@@ -49,6 +49,7 @@ export interface CameraDefaultOptions { easeOptions: CameraEaseOptions};
 export interface CameraEaseOptions { easeTime?: number; easeType?: EasingType};
 export interface CameraFadeOptions { fadeColor?: RGB; fadeTime?: CameraFadeTimeOptions};
 export interface CameraFadeTimeOptions { fadeInTime: number; fadeOutTime: number; holdTime: number};
+export interface CameraFixedBoomOptions { entityOffset?: Vector3; viewOffset?: Vector2};
 export interface CameraSetFacingOptions { easeOptions?: CameraEaseOptions; facingEntity: Entity; location?: Vector3};
 export interface CameraSetLocationOptions { easeOptions?: CameraEaseOptions; location: Vector3};
 export interface CameraSetPosOptions { easeOptions?: CameraEaseOptions; facingLocation: Vector3; location?: Vector3};
@@ -149,7 +150,7 @@ export class BlockVolumeBase { public getBlockLocationIterator(): BlockLocationI
 export class ButtonPushAfterEvent extends BlockEvent{ public readonly source: Entity; private constructor();};
 //@ts-ignore extending for classes with private constructor is possible with native API
 export class ButtonPushAfterEventSignal extends IButtonPushAfterEventSignal{ private constructor();};
-export class Camera { public clear(): void; public fade(fadeCameraOptions?: CameraFadeOptions): void; public setCamera(cameraPreset: string, setOptions?: CameraDefaultOptions | CameraSetFacingOptions | CameraSetLocationOptions | CameraSetPosOptions | CameraSetRotOptions | CameraTargetOptions): void; private constructor();};
+export class Camera { public clear(): void; public fade(fadeCameraOptions?: CameraFadeOptions): void; public setCamera(cameraPreset: string, setOptions?: CameraDefaultOptions | CameraFixedBoomOptions | CameraSetFacingOptions | CameraSetLocationOptions | CameraSetPosOptions | CameraSetRotOptions | CameraTargetOptions): void; private constructor();};
 //@ts-ignore extending for classes with private constructor is possible with native API
 export class ClientSystemInfo extends SystemInfo{ public readonly maxRenderDistance: number; public readonly platformType: PlatformType; private constructor();};
 export class CommandResult { public readonly successCount: number; private constructor();};
@@ -498,7 +499,7 @@ export const world: World;
 
 // Functions - 0
 
-// Errors - 20
+// Errors - 22
 export class BlockCustomComponentAlreadyRegisteredError extends Error{ private constructor();};
 export class BlockCustomComponentReloadNewComponentError extends Error{ private constructor();};
 export class BlockCustomComponentReloadNewEventError extends Error{ private constructor();};
@@ -510,6 +511,7 @@ export class EnchantmentLevelOutOfBoundsError extends Error{ private constructor
 export class EnchantmentTypeNotCompatibleError extends Error{ private constructor();};
 export class EnchantmentTypeUnknownIdError extends Error{ private constructor();};
 export class InvalidContainerSlotError extends Error{ private constructor();};
+export class InvalidEntityError extends Error{ public readonly id: string; public readonly type: string; private constructor();};
 export class InvalidIteratorError extends Error{ private constructor();};
 export class InvalidStructureError extends Error{ private constructor();};
 export class ItemCustomComponentAlreadyRegisteredError extends Error{ private constructor();};
@@ -518,4 +520,5 @@ export class ItemCustomComponentReloadNewEventError extends Error{ private const
 export class ItemCustomComponentReloadVersionError extends Error{ private constructor();};
 export class LocationInUnloadedChunkError extends Error{ private constructor();};
 export class LocationOutOfWorldBoundariesError extends Error{ private constructor();};
+export class RawMessageError extends Error{ private constructor();};
 export class UnloadedChunksError extends Error{ private constructor();};

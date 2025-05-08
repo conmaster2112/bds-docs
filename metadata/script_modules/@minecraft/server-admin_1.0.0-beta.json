@@ -3,6 +3,256 @@
         {
             "base_types": [],
             "constants": [],
+            "functions": [],
+            "name": "AdminBeforeEvents",
+            "properties": [
+                {
+                    "get_privilege": [
+                        {
+                            "name": "read_only"
+                        }
+                    ],
+                    "is_baked": true,
+                    "is_read_only": true,
+                    "name": "asyncPlayerJoin",
+                    "type": {
+                        "is_bind_type": true,
+                        "is_errorable": false,
+                        "name": "AsyncPlayerJoinBeforeEventSignal"
+                    }
+                }
+            ],
+            "type": {
+                "is_bind_type": true,
+                "is_errorable": false,
+                "name": "AdminBeforeEvents"
+            }
+        },
+        {
+            "base_types": [],
+            "constants": [],
+            "functions": [
+                {
+                    "arguments": [
+                        {
+                            "details": {
+                                "default_value": "null"
+                            },
+                            "name": "reason",
+                            "type": {
+                                "is_bind_type": false,
+                                "is_errorable": false,
+                                "name": "optional",
+                                "optional_type": {
+                                    "is_bind_type": false,
+                                    "is_errorable": false,
+                                    "name": "string"
+                                }
+                            }
+                        }
+                    ],
+                    "call_privilege": [
+                        {
+                            "name": "read_only"
+                        }
+                    ],
+                    "is_constructor": false,
+                    "is_static": false,
+                    "name": "disconnect",
+                    "return_type": {
+                        "error_types": [
+                            {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "DisconnectedError"
+                            }
+                        ],
+                        "is_bind_type": false,
+                        "is_errorable": true,
+                        "name": "undefined"
+                    }
+                },
+                {
+                    "arguments": [],
+                    "call_privilege": [
+                        {
+                            "name": "read_only"
+                        }
+                    ],
+                    "is_constructor": false,
+                    "is_static": false,
+                    "name": "isValid",
+                    "return_type": {
+                        "is_bind_type": false,
+                        "is_errorable": false,
+                        "name": "boolean"
+                    }
+                }
+            ],
+            "name": "AsyncPlayerJoinBeforeEvent",
+            "properties": [
+                {
+                    "get_privilege": [
+                        {
+                            "name": "read_only"
+                        }
+                    ],
+                    "is_baked": true,
+                    "is_read_only": true,
+                    "name": "name",
+                    "type": {
+                        "is_bind_type": false,
+                        "is_errorable": false,
+                        "name": "string"
+                    }
+                },
+                {
+                    "get_privilege": [
+                        {
+                            "name": "read_only"
+                        }
+                    ],
+                    "is_baked": true,
+                    "is_read_only": true,
+                    "name": "persistentId",
+                    "type": {
+                        "is_bind_type": false,
+                        "is_errorable": false,
+                        "name": "string"
+                    }
+                }
+            ],
+            "type": {
+                "is_bind_type": true,
+                "is_errorable": false,
+                "name": "AsyncPlayerJoinBeforeEvent"
+            }
+        },
+        {
+            "base_types": [],
+            "constants": [],
+            "functions": [
+                {
+                    "arguments": [
+                        {
+                            "details": null,
+                            "name": "callback",
+                            "type": {
+                                "closure_type": {
+                                    "argument_types": [
+                                        {
+                                            "is_bind_type": true,
+                                            "is_errorable": false,
+                                            "name": "AsyncPlayerJoinBeforeEvent"
+                                        }
+                                    ],
+                                    "return_type": {
+                                        "is_bind_type": false,
+                                        "is_errorable": true,
+                                        "name": "promise",
+                                        "promise_type": {
+                                            "is_bind_type": false,
+                                            "is_errorable": false,
+                                            "name": "undefined"
+                                        }
+                                    }
+                                },
+                                "is_bind_type": false,
+                                "is_errorable": false,
+                                "name": "closure"
+                            }
+                        }
+                    ],
+                    "call_privilege": [
+                        {
+                            "name": "read_only"
+                        }
+                    ],
+                    "is_constructor": false,
+                    "is_static": false,
+                    "name": "subscribe",
+                    "return_type": {
+                        "closure_type": {
+                            "argument_types": [
+                                {
+                                    "is_bind_type": true,
+                                    "is_errorable": false,
+                                    "name": "AsyncPlayerJoinBeforeEvent"
+                                }
+                            ],
+                            "return_type": {
+                                "is_bind_type": false,
+                                "is_errorable": true,
+                                "name": "promise",
+                                "promise_type": {
+                                    "is_bind_type": false,
+                                    "is_errorable": false,
+                                    "name": "undefined"
+                                }
+                            }
+                        },
+                        "is_bind_type": false,
+                        "is_errorable": false,
+                        "name": "closure"
+                    }
+                },
+                {
+                    "arguments": [
+                        {
+                            "details": null,
+                            "name": "callback",
+                            "type": {
+                                "closure_type": {
+                                    "argument_types": [
+                                        {
+                                            "is_bind_type": true,
+                                            "is_errorable": false,
+                                            "name": "AsyncPlayerJoinBeforeEvent"
+                                        }
+                                    ],
+                                    "return_type": {
+                                        "is_bind_type": false,
+                                        "is_errorable": true,
+                                        "name": "promise",
+                                        "promise_type": {
+                                            "is_bind_type": false,
+                                            "is_errorable": false,
+                                            "name": "undefined"
+                                        }
+                                    }
+                                },
+                                "is_bind_type": false,
+                                "is_errorable": false,
+                                "name": "closure"
+                            }
+                        }
+                    ],
+                    "call_privilege": [
+                        {
+                            "name": "read_only"
+                        }
+                    ],
+                    "is_constructor": false,
+                    "is_static": false,
+                    "name": "unsubscribe",
+                    "return_type": {
+                        "is_bind_type": false,
+                        "is_errorable": false,
+                        "name": "boolean"
+                    }
+                }
+            ],
+            "name": "AsyncPlayerJoinBeforeEventSignal",
+            "properties": [],
+            "type": {
+                "is_bind_type": true,
+                "is_errorable": false,
+                "name": "AsyncPlayerJoinBeforeEventSignal"
+            }
+        },
+        {
+            "base_types": [],
+            "constants": [],
             "functions": [
                 {
                     "arguments": [
@@ -16,13 +266,13 @@
                             }
                         }
                     ],
-                    "is_constructor": true,
-                    "name": "constructor",
-                    "privilege": [
+                    "call_privilege": [
                         {
                             "name": "read_only"
                         }
                     ],
+                    "is_constructor": true,
+                    "name": "constructor",
                     "return_type": {
                         "is_bind_type": true,
                         "is_errorable": false,
@@ -54,14 +304,14 @@
                             }
                         }
                     ],
+                    "call_privilege": [
+                        {
+                            "name": "early_execution"
+                        }
+                    ],
                     "is_constructor": false,
                     "is_static": false,
                     "name": "get",
-                    "privilege": [
-                        {
-                            "name": "none"
-                        }
-                    ],
                     "return_type": {
                         "is_bind_type": false,
                         "is_errorable": false,
@@ -77,6 +327,12 @@
             "name": "ServerSecrets",
             "properties": [
                 {
+                    "get_privilege": [
+                        {
+                            "name": "read_only"
+                        }
+                    ],
+                    "is_baked": false,
                     "is_read_only": true,
                     "name": "names",
                     "type": {
@@ -113,14 +369,14 @@
                             }
                         }
                     ],
+                    "call_privilege": [
+                        {
+                            "name": "early_execution"
+                        }
+                    ],
                     "is_constructor": false,
                     "is_static": false,
                     "name": "get",
-                    "privilege": [
-                        {
-                            "name": "none"
-                        }
-                    ],
                     "return_type": {
                         "is_bind_type": false,
                         "is_errorable": false,
@@ -128,7 +384,7 @@
                         "optional_type": {
                             "is_bind_type": false,
                             "is_errorable": false,
-                            "name": "any"
+                            "name": "unknown"
                         }
                     }
                 }
@@ -136,6 +392,12 @@
             "name": "ServerVariables",
             "properties": [
                 {
+                    "get_privilege": [
+                        {
+                            "name": "read_only"
+                        }
+                    ],
+                    "is_baked": false,
                     "is_read_only": true,
                     "name": "names",
                     "type": {
@@ -162,16 +424,56 @@
         {
             "name": "@minecraft/common",
             "uuid": "77ec12b4-1b2b-4c98-8d34-d1cd63f849d5",
-            "version": "1.0.0"
+            "versions": [
+                {
+                    "version": "1.0.0"
+                }
+            ]
         },
         {
             "name": "@minecraft/server",
             "uuid": "b26a4d4c-afdf-4690-88f8-931846312678",
-            "version": "1.0.0"
+            "versions": [
+                {
+                    "version": "1.17.0"
+                },
+                {
+                    "version": "2.0.0-beta"
+                }
+            ]
         }
     ],
     "enums": null,
-    "errors": [],
+    "errors": [
+        {
+            "name": "DisconnectedError",
+            "properties": [
+                {
+                    "get_privilege": [
+                        {
+                            "name": "read_only"
+                        },
+                        {
+                            "name": "early_execution"
+                        }
+                    ],
+                    "is_baked": false,
+                    "is_read_only": true,
+                    "name": "id",
+                    "type": {
+                        "is_bind_type": false,
+                        "is_errorable": false,
+                        "name": "string"
+                    }
+                }
+            ],
+            "type": {
+                "is_bind_type": true,
+                "is_errorable": false,
+                "name": "DisconnectedError"
+            }
+        }
+    ],
     "functions": [
         {
             "arguments": [
@@ -182,7 +484,7 @@
                         "from_module": {
                             "name": "@minecraft/server",
                             "uuid": "b26a4d4c-afdf-4690-88f8-931846312678",
-                            "version": "1.0.0"
+                            "version": "2.0.0-beta"
                         },
                         "is_bind_type": true,
                         "is_errorable": false,
@@ -215,14 +517,14 @@
                     }
                 }
             ],
-            "is_constructor": false,
-            "is_static": true,
-            "name": "transferPlayer",
-            "privilege": [
+            "call_privilege": [
                 {
                     "name": "none"
                 }
             ],
+            "is_constructor": false,
+            "is_static": true,
+            "name": "transferPlayer",
             "return_type": {
                 "is_bind_type": false,
                 "is_errorable": true,
@@ -234,6 +536,16 @@
     "module_type": "script",
     "name": "@minecraft/server-admin",
     "objects": [
+        {
+            "is_read_only": true,
+            "is_static": true,
+            "name": "beforeEvents",
+            "type": {
+                "is_bind_type": true,
+                "is_errorable": false,
+                "name": "AdminBeforeEvents"
+            }
+        },
         {
             "is_read_only": true,
             "is_static": true,

@@ -2443,6 +2443,24 @@
             ]
         },
         {
+            "name": "rehydration_level",
+            "type": "int",
+            "values": [
+                {
+                    "value": 0
+                },
+                {
+                    "value": 1
+                },
+                {
+                    "value": 2
+                },
+                {
+                    "value": 3
+                }
+            ]
+        },
+        {
             "name": "repeater_delay",
             "type": "int",
             "values": [
@@ -4898,6 +4916,12 @@
             "serialization_id": "tile.budding_amethyst"
         },
         {
+            "name": "minecraft:bush",
+            "properties": [],
+            "raw_id": 1278,
+            "serialization_id": "tile.bush"
+        },
+        {
             "name": "minecraft:cactus",
             "properties": [
                 {
@@ -4906,6 +4930,12 @@
             ],
             "raw_id": 81,
             "serialization_id": "tile.cactus"
+        },
+        {
+            "name": "minecraft:cactus_flower",
+            "properties": [],
+            "raw_id": 1285,
+            "serialization_id": "tile.cactus_flower"
         },
         {
             "name": "minecraft:cake",
@@ -6917,6 +6947,19 @@
             "serialization_id": "tile.skull.dragon"
         },
         {
+            "name": "minecraft:dried_ghast",
+            "properties": [
+                {
+                    "name": "minecraft:cardinal_direction"
+                },
+                {
+                    "name": "rehydration_level"
+                }
+            ],
+            "raw_id": 1282,
+            "serialization_id": "tile.dried_ghast"
+        },
+        {
             "name": "minecraft:dried_kelp_block",
             "properties": [],
             "raw_id": 394,
@@ -7967,6 +8010,12 @@
             ],
             "raw_id": 1162,
             "serialization_id": "tile.fire_coral_wall_fan"
+        },
+        {
+            "name": "minecraft:firefly_bush",
+            "properties": [],
+            "raw_id": 1280,
+            "serialization_id": "tile.firefly_bush"
         },
         {
             "name": "minecraft:fletching_table",
@@ -9089,6 +9138,19 @@
             ],
             "raw_id": 11,
             "serialization_id": "tile.lava"
+        },
+        {
+            "name": "minecraft:leaf_litter",
+            "properties": [
+                {
+                    "name": "growth"
+                },
+                {
+                    "name": "minecraft:cardinal_direction"
+                }
+            ],
+            "raw_id": 1281,
+            "serialization_id": "tile.leaf_litter"
         },
         {
             "name": "minecraft:lectern",
@@ -12442,6 +12504,12 @@
             "serialization_id": "tile.seagrass"
         },
         {
+            "name": "minecraft:short_dry_grass",
+            "properties": [],
+            "raw_id": 1283,
+            "serialization_id": "tile.short_dry_grass"
+        },
+        {
             "name": "minecraft:short_grass",
             "properties": [],
             "raw_id": 31,
@@ -13412,6 +13480,12 @@
             ],
             "raw_id": 462,
             "serialization_id": "tile.sweet_berry_bush"
+        },
+        {
+            "name": "minecraft:tall_dry_grass",
+            "properties": [],
+            "raw_id": 1284,
+            "serialization_id": "tile.tall_dry_grass"
         },
         {
             "name": "minecraft:tall_grass",
@@ -14710,6 +14784,19 @@
             "properties": [],
             "raw_id": 35,
             "serialization_id": "tile.wool.white"
+        },
+        {
+            "name": "minecraft:wildflowers",
+            "properties": [
+                {
+                    "name": "growth"
+                },
+                {
+                    "name": "minecraft:cardinal_direction"
+                }
+            ],
+            "raw_id": 1279,
+            "serialization_id": "tile.wildflowers"
         },
         {
             "name": "minecraft:wither_rose",
