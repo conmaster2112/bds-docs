@@ -633,6 +633,18 @@
                     "is_static": false,
                     "name": "addItem",
                     "return_type": {
+                        "error_types": [
+                            {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "ContainerRulesError"
+                            },
+                            {
+                                "is_bind_type": false,
+                                "is_errorable": false,
+                                "name": "Error"
+                            }
+                        ],
                         "is_bind_type": false,
                         "is_errorable": true,
                         "name": "optional",
@@ -750,6 +762,18 @@
                     "is_static": false,
                     "name": "moveItem",
                     "return_type": {
+                        "error_types": [
+                            {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "ContainerRulesError"
+                            },
+                            {
+                                "is_bind_type": false,
+                                "is_errorable": false,
+                                "name": "Error"
+                            }
+                        ],
                         "is_bind_type": false,
                         "is_errorable": true,
                         "name": "undefined"
@@ -799,6 +823,18 @@
                     "is_static": false,
                     "name": "setItem",
                     "return_type": {
+                        "error_types": [
+                            {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "ContainerRulesError"
+                            },
+                            {
+                                "is_bind_type": false,
+                                "is_errorable": false,
+                                "name": "Error"
+                            }
+                        ],
                         "is_bind_type": false,
                         "is_errorable": true,
                         "name": "undefined"
@@ -857,6 +893,18 @@
                     "is_static": false,
                     "name": "swapItems",
                     "return_type": {
+                        "error_types": [
+                            {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "ContainerRulesError"
+                            },
+                            {
+                                "is_bind_type": false,
+                                "is_errorable": false,
+                                "name": "Error"
+                            }
+                        ],
                         "is_bind_type": false,
                         "is_errorable": true,
                         "name": "undefined"
@@ -899,6 +947,18 @@
                     "is_static": false,
                     "name": "transferItem",
                     "return_type": {
+                        "error_types": [
+                            {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "ContainerRulesError"
+                            },
+                            {
+                                "is_bind_type": false,
+                                "is_errorable": false,
+                                "name": "Error"
+                            }
+                        ],
                         "is_bind_type": false,
                         "is_errorable": true,
                         "name": "optional",
@@ -1206,6 +1266,11 @@
                     "name": "spawnEntity",
                     "return_type": {
                         "error_types": [
+                            {
+                                "is_bind_type": false,
+                                "is_errorable": false,
+                                "name": "Error"
+                            },
                             {
                                 "is_bind_type": true,
                                 "is_errorable": false,
@@ -2055,9 +2120,9 @@
                                 "name": "CommandError"
                             },
                             {
-                                "is_bind_type": false,
+                                "is_bind_type": true,
                                 "is_errorable": false,
-                                "name": "Error"
+                                "name": "InvalidEntityError"
                             }
                         ],
                         "is_bind_type": true,
@@ -4817,7 +4882,7 @@
                     ],
                     "call_privilege": [
                         {
-                            "name": "none"
+                            "name": "read_only"
                         }
                     ],
                     "is_constructor": true,
@@ -5323,6 +5388,18 @@
                     "is_static": false,
                     "name": "sendMessage",
                     "return_type": {
+                        "error_types": [
+                            {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "InvalidEntityError"
+                            },
+                            {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "RawMessageError"
+                            }
+                        ],
                         "is_bind_type": false,
                         "is_errorable": true,
                         "name": "undefined"
@@ -6648,6 +6725,61 @@
             }
         },
         {
+            "name": "ContainerRulesError",
+            "properties": [],
+            "type": {
+                "is_bind_type": true,
+                "is_errorable": false,
+                "name": "ContainerRulesError"
+            }
+        },
+        {
+            "name": "InvalidEntityError",
+            "properties": [
+                {
+                    "get_privilege": [
+                        {
+                            "name": "read_only"
+                        },
+                        {
+                            "name": "early_execution"
+                        }
+                    ],
+                    "is_baked": false,
+                    "is_read_only": true,
+                    "name": "id",
+                    "type": {
+                        "is_bind_type": false,
+                        "is_errorable": false,
+                        "name": "string"
+                    }
+                },
+                {
+                    "get_privilege": [
+                        {
+                            "name": "read_only"
+                        },
+                        {
+                            "name": "early_execution"
+                        }
+                    ],
+                    "is_baked": false,
+                    "is_read_only": true,
+                    "name": "type",
+                    "type": {
+                        "is_bind_type": false,
+                        "is_errorable": false,
+                        "name": "string"
+                    }
+                }
+            ],
+            "type": {
+                "is_bind_type": true,
+                "is_errorable": false,
+                "name": "InvalidEntityError"
+            }
+        },
+        {
             "name": "LocationInUnloadedChunkError",
             "properties": [],
             "type": {
@@ -6663,6 +6795,15 @@
                 "is_bind_type": true,
                 "is_errorable": false,
                 "name": "LocationOutOfWorldBoundariesError"
+            }
+        },
+        {
+            "name": "RawMessageError",
+            "properties": [],
+            "type": {
+                "is_bind_type": true,
+                "is_errorable": false,
+                "name": "RawMessageError"
             }
         }
     ],

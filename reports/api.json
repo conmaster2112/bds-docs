@@ -1,0 +1,40 @@
+[
+    {
+        "id": "block",
+        "setupError": "LocationInUnloadedChunkError: Trying to access location (0.0, 1.0, 0.0) which is not in a chunk currently loaded and ticking."
+    },
+    {
+        "id": "dynamic properties",
+        "results": [
+            "[]",
+            [
+                "true",
+                "false",
+                "\"\"",
+                "\"string\"",
+                "1",
+                "0",
+                "-1",
+                {
+                    "error": "TypeError: Native variant type conversion failed. Function argument [1] expected type: number | number | boolean | string | Vector3 | undefined"
+                }
+            ]
+        ]
+    },
+    {
+        "id": "entity",
+        "setupError": "LocationInUnloadedChunkError: Trying to access location (0.0, 0.0, 2.0) which is not in a chunk currently loaded and ticking."
+    },
+    {
+        "id": "item",
+        "results": [
+            "\"minecraft:apple\"",
+            "1",
+            "[\n    {\n        \"typeId\": \"minecraft:food\"\n    },\n    {\n        \"typeId\": \"minecraft:compostable\"\n    }\n]",
+            [
+                "1",
+                "2"
+            ]
+        ]
+    }
+]

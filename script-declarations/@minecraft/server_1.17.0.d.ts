@@ -505,12 +505,13 @@ export const world: World;
 
 // Functions - 0
 
-// Errors - 21
+// Errors - 23
 export class BlockCustomComponentAlreadyRegisteredError extends Error{ private constructor();};
 export class BlockCustomComponentReloadNewComponentError extends Error{ private constructor();};
 export class BlockCustomComponentReloadNewEventError extends Error{ private constructor();};
 export class BlockCustomComponentReloadVersionError extends Error{ private constructor();};
 export class CommandError extends Error{ private constructor();};
+export class ContainerRulesError extends Error{ private constructor();};
 export class CustomComponentInvalidRegistryError extends Error{ private constructor();};
 export class CustomComponentNameError extends Error{ public readonly reason: CustomComponentNameErrorReason; private constructor();};
 export class EnchantmentLevelOutOfBoundsError extends Error{ private constructor();};
@@ -526,4 +527,5 @@ export class ItemCustomComponentReloadNewEventError extends Error{ private const
 export class ItemCustomComponentReloadVersionError extends Error{ private constructor();};
 export class LocationInUnloadedChunkError extends Error{ private constructor();};
 export class LocationOutOfWorldBoundariesError extends Error{ private constructor();};
+export class RawMessageError extends Error{ private constructor();};
 export class UnloadedChunksError extends Error{ private constructor();};

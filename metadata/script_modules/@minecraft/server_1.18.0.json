@@ -2117,13 +2117,6 @@
                     "is_static": false,
                     "name": "addDye",
                     "return_type": {
-                        "error_types": [
-                            {
-                                "is_bind_type": false,
-                                "is_errorable": false,
-                                "name": "Error"
-                            }
-                        ],
                         "is_bind_type": false,
                         "is_errorable": true,
                         "name": "undefined"
@@ -2140,13 +2133,6 @@
                     "is_static": false,
                     "name": "getFluidType",
                     "return_type": {
-                        "error_types": [
-                            {
-                                "is_bind_type": false,
-                                "is_errorable": false,
-                                "name": "Error"
-                            }
-                        ],
                         "is_bind_type": true,
                         "is_errorable": true,
                         "name": "FluidType"
@@ -2173,13 +2159,6 @@
                     "is_static": false,
                     "name": "setFluidType",
                     "return_type": {
-                        "error_types": [
-                            {
-                                "is_bind_type": false,
-                                "is_errorable": false,
-                                "name": "Error"
-                            }
-                        ],
                         "is_bind_type": false,
                         "is_errorable": true,
                         "name": "undefined"
@@ -2206,13 +2185,6 @@
                     "is_static": false,
                     "name": "setPotion",
                     "return_type": {
-                        "error_types": [
-                            {
-                                "is_bind_type": false,
-                                "is_errorable": false,
-                                "name": "Error"
-                            }
-                        ],
                         "is_bind_type": false,
                         "is_errorable": true,
                         "name": "undefined"
@@ -2377,13 +2349,6 @@
                     "is_static": false,
                     "name": "canBeDestroyedByLiquidSpread",
                     "return_type": {
-                        "error_types": [
-                            {
-                                "is_bind_type": false,
-                                "is_errorable": false,
-                                "name": "Error"
-                            }
-                        ],
                         "is_bind_type": false,
                         "is_errorable": true,
                         "name": "boolean"
@@ -2410,13 +2375,6 @@
                     "is_static": false,
                     "name": "canContainLiquid",
                     "return_type": {
-                        "error_types": [
-                            {
-                                "is_bind_type": false,
-                                "is_errorable": false,
-                                "name": "Error"
-                            }
-                        ],
                         "is_bind_type": false,
                         "is_errorable": true,
                         "name": "boolean"
@@ -2628,13 +2586,6 @@
                     "is_static": false,
                     "name": "isLiquidBlocking",
                     "return_type": {
-                        "error_types": [
-                            {
-                                "is_bind_type": false,
-                                "is_errorable": false,
-                                "name": "Error"
-                            }
-                        ],
                         "is_bind_type": false,
                         "is_errorable": true,
                         "name": "boolean"
@@ -2661,13 +2612,6 @@
                     "is_static": false,
                     "name": "liquidSpreadCausesSpawn",
                     "return_type": {
-                        "error_types": [
-                            {
-                                "is_bind_type": false,
-                                "is_errorable": false,
-                                "name": "Error"
-                            }
-                        ],
                         "is_bind_type": false,
                         "is_errorable": true,
                         "name": "boolean"
@@ -3706,7 +3650,7 @@
                     ],
                     "call_privilege": [
                         {
-                            "name": "none"
+                            "name": "read_only"
                         }
                     ],
                     "is_constructor": true,
@@ -4342,6 +4286,18 @@
                     "is_static": false,
                     "name": "addItem",
                     "return_type": {
+                        "error_types": [
+                            {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "ContainerRulesError"
+                            },
+                            {
+                                "is_bind_type": false,
+                                "is_errorable": false,
+                                "name": "Error"
+                            }
+                        ],
                         "is_bind_type": false,
                         "is_errorable": true,
                         "name": "optional",
@@ -4508,6 +4464,18 @@
                     "is_static": false,
                     "name": "moveItem",
                     "return_type": {
+                        "error_types": [
+                            {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "ContainerRulesError"
+                            },
+                            {
+                                "is_bind_type": false,
+                                "is_errorable": false,
+                                "name": "Error"
+                            }
+                        ],
                         "is_bind_type": false,
                         "is_errorable": true,
                         "name": "undefined"
@@ -4557,6 +4525,18 @@
                     "is_static": false,
                     "name": "setItem",
                     "return_type": {
+                        "error_types": [
+                            {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "ContainerRulesError"
+                            },
+                            {
+                                "is_bind_type": false,
+                                "is_errorable": false,
+                                "name": "Error"
+                            }
+                        ],
                         "is_bind_type": false,
                         "is_errorable": true,
                         "name": "undefined"
@@ -4615,6 +4595,18 @@
                     "is_static": false,
                     "name": "swapItems",
                     "return_type": {
+                        "error_types": [
+                            {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "ContainerRulesError"
+                            },
+                            {
+                                "is_bind_type": false,
+                                "is_errorable": false,
+                                "name": "Error"
+                            }
+                        ],
                         "is_bind_type": false,
                         "is_errorable": true,
                         "name": "undefined"
@@ -4657,6 +4649,18 @@
                     "is_static": false,
                     "name": "transferItem",
                     "return_type": {
+                        "error_types": [
+                            {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "ContainerRulesError"
+                            },
+                            {
+                                "is_bind_type": false,
+                                "is_errorable": false,
+                                "name": "Error"
+                            }
+                        ],
                         "is_bind_type": false,
                         "is_errorable": true,
                         "name": "optional",
@@ -5333,6 +5337,11 @@
                     "name": "setItem",
                     "return_type": {
                         "error_types": [
+                            {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "ContainerRulesError"
+                            },
                             {
                                 "is_bind_type": true,
                                 "is_errorable": false,
@@ -6682,6 +6691,11 @@
                     "return_type": {
                         "error_types": [
                             {
+                                "is_bind_type": false,
+                                "is_errorable": false,
+                                "name": "Error"
+                            },
+                            {
                                 "is_bind_type": true,
                                 "is_errorable": false,
                                 "name": "LocationInUnloadedChunkError"
@@ -7521,7 +7535,7 @@
                     ],
                     "call_privilege": [
                         {
-                            "name": "none"
+                            "name": "read_only"
                         }
                     ],
                     "is_constructor": true,
@@ -8734,9 +8748,9 @@
                                 "name": "CommandError"
                             },
                             {
-                                "is_bind_type": false,
+                                "is_bind_type": true,
                                 "is_errorable": false,
-                                "name": "Error"
+                                "name": "InvalidEntityError"
                             }
                         ],
                         "is_bind_type": true,
@@ -18397,13 +18411,6 @@
                     "is_read_only": true,
                     "name": "compostingChance",
                     "type": {
-                        "error_types": [
-                            {
-                                "is_bind_type": false,
-                                "is_errorable": false,
-                                "name": "Error"
-                            }
-                        ],
                         "is_bind_type": false,
                         "is_errorable": true,
                         "name": "int8",
@@ -19427,7 +19434,7 @@
                     ],
                     "call_privilege": [
                         {
-                            "name": "none"
+                            "name": "read_only"
                         }
                     ],
                     "is_constructor": true,
@@ -21834,7 +21841,7 @@
                     ],
                     "call_privilege": [
                         {
-                            "name": "none"
+                            "name": "read_only"
                         }
                     ],
                     "is_constructor": true,
@@ -21939,7 +21946,7 @@
                     "arguments": [],
                     "call_privilege": [
                         {
-                            "name": "none"
+                            "name": "read_only"
                         }
                     ],
                     "is_constructor": true,
@@ -22681,6 +22688,18 @@
                     "is_static": false,
                     "name": "sendMessage",
                     "return_type": {
+                        "error_types": [
+                            {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "InvalidEntityError"
+                            },
+                            {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "RawMessageError"
+                            }
+                        ],
                         "is_bind_type": false,
                         "is_errorable": true,
                         "name": "undefined"
@@ -22918,13 +22937,6 @@
                     "is_read_only": true,
                     "name": "clientSystemInfo",
                     "type": {
-                        "error_types": [
-                            {
-                                "is_bind_type": false,
-                                "is_errorable": false,
-                                "name": "Error"
-                            }
-                        ],
                         "is_bind_type": true,
                         "is_errorable": true,
                         "name": "ClientSystemInfo"
@@ -24856,13 +24868,6 @@
                     "is_static": false,
                     "name": "isPermissionCategoryEnabled",
                     "return_type": {
-                        "error_types": [
-                            {
-                                "is_bind_type": false,
-                                "is_errorable": false,
-                                "name": "Error"
-                            }
-                        ],
                         "is_bind_type": false,
                         "is_errorable": true,
                         "name": "boolean"
@@ -27862,6 +27867,13 @@
                             "is_errorable": false,
                             "name": "HudElement"
                         },
+                        "error_types": [
+                            {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "InvalidEntityError"
+                            }
+                        ],
                         "is_bind_type": false,
                         "is_errorable": true,
                         "name": "array"
@@ -27900,6 +27912,13 @@
                     "is_static": false,
                     "name": "hideAllExcept",
                     "return_type": {
+                        "error_types": [
+                            {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "InvalidEntityError"
+                            }
+                        ],
                         "is_bind_type": false,
                         "is_errorable": true,
                         "name": "undefined"
@@ -27926,6 +27945,13 @@
                     "is_static": false,
                     "name": "isForcedHidden",
                     "return_type": {
+                        "error_types": [
+                            {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "InvalidEntityError"
+                            }
+                        ],
                         "is_bind_type": false,
                         "is_errorable": true,
                         "name": "boolean"
@@ -27958,6 +27984,13 @@
                     "is_static": false,
                     "name": "resetHudElements",
                     "return_type": {
+                        "error_types": [
+                            {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "InvalidEntityError"
+                            }
+                        ],
                         "is_bind_type": false,
                         "is_errorable": true,
                         "name": "undefined"
@@ -28018,6 +28051,18 @@
                     "is_static": false,
                     "name": "setActionBar",
                     "return_type": {
+                        "error_types": [
+                            {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "InvalidEntityError"
+                            },
+                            {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "RawMessageError"
+                            }
+                        ],
                         "is_bind_type": false,
                         "is_errorable": true,
                         "name": "undefined"
@@ -28065,6 +28110,13 @@
                     "is_static": false,
                     "name": "setHudVisibility",
                     "return_type": {
+                        "error_types": [
+                            {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "InvalidEntityError"
+                            }
+                        ],
                         "is_bind_type": false,
                         "is_errorable": true,
                         "name": "undefined"
@@ -28141,6 +28193,28 @@
                     "is_static": false,
                     "name": "setTitle",
                     "return_type": {
+                        "error_types": [
+                            {
+                                "from_module": {
+                                    "name": "@minecraft/common",
+                                    "uuid": "77ec12b4-1b2b-4c98-8d34-d1cd63f849d5",
+                                    "version": "1.1.0"
+                                },
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "ArgumentOutOfBoundsError"
+                            },
+                            {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "InvalidEntityError"
+                            },
+                            {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "RawMessageError"
+                            }
+                        ],
                         "is_bind_type": false,
                         "is_errorable": true,
                         "name": "undefined"
@@ -28201,6 +28275,18 @@
                     "is_static": false,
                     "name": "updateSubtitle",
                     "return_type": {
+                        "error_types": [
+                            {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "InvalidEntityError"
+                            },
+                            {
+                                "is_bind_type": true,
+                                "is_errorable": false,
+                                "name": "RawMessageError"
+                            }
+                        ],
                         "is_bind_type": false,
                         "is_errorable": true,
                         "name": "undefined"
@@ -29981,7 +30067,7 @@
                     ],
                     "call_privilege": [
                         {
-                            "name": "none"
+                            "name": "read_only"
                         }
                     ],
                     "is_constructor": true,
@@ -36956,6 +37042,15 @@
             }
         },
         {
+            "name": "ContainerRulesError",
+            "properties": [],
+            "type": {
+                "is_bind_type": true,
+                "is_errorable": false,
+                "name": "ContainerRulesError"
+            }
+        },
+        {
             "name": "CustomComponentInvalidRegistryError",
             "properties": [],
             "type": {
@@ -37172,6 +37267,15 @@
                 "is_bind_type": true,
                 "is_errorable": false,
                 "name": "NamespaceNameError"
+            }
+        },
+        {
+            "name": "RawMessageError",
+            "properties": [],
+            "type": {
+                "is_bind_type": true,
+                "is_errorable": false,
+                "name": "RawMessageError"
             }
         },
         {
@@ -41219,7 +41323,341 @@
             }
         }
     ],
-    "type_aliases": [],
+    "type_aliases": [
+        {
+            "alias_type": "type_map",
+            "mappings": [
+                {
+                    "name": "minecraft:fluidContainer",
+                    "value": "BlockFluidContainerComponent"
+                },
+                {
+                    "name": "minecraft:inventory",
+                    "value": "BlockInventoryComponent"
+                },
+                {
+                    "name": "minecraft:piston",
+                    "value": "BlockPistonComponent"
+                },
+                {
+                    "name": "minecraft:record_player",
+                    "value": "BlockRecordPlayerComponent"
+                },
+                {
+                    "name": "minecraft:sign",
+                    "value": "BlockSignComponent"
+                }
+            ],
+            "name": "BlockComponentTypeMap",
+            "type": {
+                "is_bind_type": false,
+                "is_errorable": false,
+                "name": "BlockComponentTypeMap"
+            }
+        },
+        {
+            "alias_type": "type_map",
+            "mappings": [
+                {
+                    "name": "minecraft:addrider",
+                    "value": "EntityAddRiderComponent"
+                },
+                {
+                    "name": "minecraft:ageable",
+                    "value": "EntityAgeableComponent"
+                },
+                {
+                    "name": "minecraft:breathable",
+                    "value": "EntityBreathableComponent"
+                },
+                {
+                    "name": "minecraft:can_climb",
+                    "value": "EntityCanClimbComponent"
+                },
+                {
+                    "name": "minecraft:can_fly",
+                    "value": "EntityCanFlyComponent"
+                },
+                {
+                    "name": "minecraft:can_power_jump",
+                    "value": "EntityCanPowerJumpComponent"
+                },
+                {
+                    "name": "minecraft:color",
+                    "value": "EntityColorComponent"
+                },
+                {
+                    "name": "minecraft:color2",
+                    "value": "EntityColor2Component"
+                },
+                {
+                    "name": "minecraft:cursor_inventory",
+                    "value": "PlayerCursorInventoryComponent"
+                },
+                {
+                    "name": "minecraft:equippable",
+                    "value": "EntityEquippableComponent"
+                },
+                {
+                    "name": "minecraft:fire_immune",
+                    "value": "EntityFireImmuneComponent"
+                },
+                {
+                    "name": "minecraft:floats_in_liquid",
+                    "value": "EntityFloatsInLiquidComponent"
+                },
+                {
+                    "name": "minecraft:flying_speed",
+                    "value": "EntityFlyingSpeedComponent"
+                },
+                {
+                    "name": "minecraft:friction_modifier",
+                    "value": "EntityFrictionModifierComponent"
+                },
+                {
+                    "name": "minecraft:ground_offset",
+                    "value": "EntityGroundOffsetComponent"
+                },
+                {
+                    "name": "minecraft:healable",
+                    "value": "EntityHealableComponent"
+                },
+                {
+                    "name": "minecraft:health",
+                    "value": "EntityHealthComponent"
+                },
+                {
+                    "name": "minecraft:inventory",
+                    "value": "EntityInventoryComponent"
+                },
+                {
+                    "name": "minecraft:is_baby",
+                    "value": "EntityIsBabyComponent"
+                },
+                {
+                    "name": "minecraft:is_charged",
+                    "value": "EntityIsChargedComponent"
+                },
+                {
+                    "name": "minecraft:is_chested",
+                    "value": "EntityIsChestedComponent"
+                },
+                {
+                    "name": "minecraft:is_dyeable",
+                    "value": "EntityIsDyeableComponent"
+                },
+                {
+                    "name": "minecraft:is_hidden_when_invisible",
+                    "value": "EntityIsHiddenWhenInvisibleComponent"
+                },
+                {
+                    "name": "minecraft:is_ignited",
+                    "value": "EntityIsIgnitedComponent"
+                },
+                {
+                    "name": "minecraft:is_illager_captain",
+                    "value": "EntityIsIllagerCaptainComponent"
+                },
+                {
+                    "name": "minecraft:is_saddled",
+                    "value": "EntityIsSaddledComponent"
+                },
+                {
+                    "name": "minecraft:is_shaking",
+                    "value": "EntityIsShakingComponent"
+                },
+                {
+                    "name": "minecraft:is_sheared",
+                    "value": "EntityIsShearedComponent"
+                },
+                {
+                    "name": "minecraft:is_stackable",
+                    "value": "EntityIsStackableComponent"
+                },
+                {
+                    "name": "minecraft:is_stunned",
+                    "value": "EntityIsStunnedComponent"
+                },
+                {
+                    "name": "minecraft:is_tamed",
+                    "value": "EntityIsTamedComponent"
+                },
+                {
+                    "name": "minecraft:item",
+                    "value": "EntityItemComponent"
+                },
+                {
+                    "name": "minecraft:lava_movement",
+                    "value": "EntityLavaMovementComponent"
+                },
+                {
+                    "name": "minecraft:leashable",
+                    "value": "EntityLeashableComponent"
+                },
+                {
+                    "name": "minecraft:mark_variant",
+                    "value": "EntityMarkVariantComponent"
+                },
+                {
+                    "name": "minecraft:movement",
+                    "value": "EntityMovementComponent"
+                },
+                {
+                    "name": "minecraft:movement.amphibious",
+                    "value": "EntityMovementAmphibiousComponent"
+                },
+                {
+                    "name": "minecraft:movement.basic",
+                    "value": "EntityMovementBasicComponent"
+                },
+                {
+                    "name": "minecraft:movement.fly",
+                    "value": "EntityMovementFlyComponent"
+                },
+                {
+                    "name": "minecraft:movement.generic",
+                    "value": "EntityMovementGenericComponent"
+                },
+                {
+                    "name": "minecraft:movement.glide",
+                    "value": "EntityMovementGlideComponent"
+                },
+                {
+                    "name": "minecraft:movement.hover",
+                    "value": "EntityMovementHoverComponent"
+                },
+                {
+                    "name": "minecraft:movement.jump",
+                    "value": "EntityMovementJumpComponent"
+                },
+                {
+                    "name": "minecraft:movement.skip",
+                    "value": "EntityMovementSkipComponent"
+                },
+                {
+                    "name": "minecraft:movement.sway",
+                    "value": "EntityMovementSwayComponent"
+                },
+                {
+                    "name": "minecraft:navigation.climb",
+                    "value": "EntityNavigationClimbComponent"
+                },
+                {
+                    "name": "minecraft:navigation.float",
+                    "value": "EntityNavigationFloatComponent"
+                },
+                {
+                    "name": "minecraft:navigation.fly",
+                    "value": "EntityNavigationFlyComponent"
+                },
+                {
+                    "name": "minecraft:navigation.generic",
+                    "value": "EntityNavigationGenericComponent"
+                },
+                {
+                    "name": "minecraft:navigation.hover",
+                    "value": "EntityNavigationHoverComponent"
+                },
+                {
+                    "name": "minecraft:navigation.walk",
+                    "value": "EntityNavigationWalkComponent"
+                },
+                {
+                    "name": "minecraft:onfire",
+                    "value": "EntityOnFireComponent"
+                },
+                {
+                    "name": "minecraft:projectile",
+                    "value": "EntityProjectileComponent"
+                },
+                {
+                    "name": "minecraft:push_through",
+                    "value": "EntityPushThroughComponent"
+                },
+                {
+                    "name": "minecraft:rideable",
+                    "value": "EntityRideableComponent"
+                },
+                {
+                    "name": "minecraft:riding",
+                    "value": "EntityRidingComponent"
+                },
+                {
+                    "name": "minecraft:scale",
+                    "value": "EntityScaleComponent"
+                },
+                {
+                    "name": "minecraft:skin_id",
+                    "value": "EntitySkinIdComponent"
+                },
+                {
+                    "name": "minecraft:strength",
+                    "value": "EntityStrengthComponent"
+                },
+                {
+                    "name": "minecraft:tameable",
+                    "value": "EntityTameableComponent"
+                },
+                {
+                    "name": "minecraft:tamemount",
+                    "value": "EntityTameMountComponent"
+                },
+                {
+                    "name": "minecraft:type_family",
+                    "value": "EntityTypeFamilyComponent"
+                },
+                {
+                    "name": "minecraft:underwater_movement",
+                    "value": "EntityUnderwaterMovementComponent"
+                },
+                {
+                    "name": "minecraft:variant",
+                    "value": "EntityVariantComponent"
+                },
+                {
+                    "name": "minecraft:wants_jockey",
+                    "value": "EntityWantsJockeyComponent"
+                }
+            ],
+            "name": "EntityComponentTypeMap",
+            "type": {
+                "is_bind_type": false,
+                "is_errorable": false,
+                "name": "EntityComponentTypeMap"
+            }
+        },
+        {
+            "alias_type": "type_map",
+            "mappings": [
+                {
+                    "name": "minecraft:compostable",
+                    "value": "ItemCompostableComponent"
+                },
+                {
+                    "name": "minecraft:cooldown",
+                    "value": "ItemCooldownComponent"
+                },
+                {
+                    "name": "minecraft:durability",
+                    "value": "ItemDurabilityComponent"
+                },
+                {
+                    "name": "minecraft:enchantable",
+                    "value": "ItemEnchantableComponent"
+                },
+                {
+                    "name": "minecraft:food",
+                    "value": "ItemFoodComponent"
+                }
+            ],
+            "name": "ItemComponentTypeMap",
+            "type": {
+                "is_bind_type": false,
+                "is_errorable": false,
+                "name": "ItemComponentTypeMap"
+            }
+        }
+    ],
     "uuid": "b26a4d4c-afdf-4690-88f8-931846312678",
     "version": "1.18.0"
 }

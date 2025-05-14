@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "1372809227",
+    "x-format-version": "1.21.80",
+    "x-minecraft-version": "1.21.90-beta.25",
+    "definitions": {
+        "1492643634": {
+            "title": "struct SharedTypes::Reference<5>",
+            "oneOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    },
+    "title": "minecraft:icon v1.21.80",
+    "oneOf": [
+        {
+            "type": "string"
+        },
+        {
+            "type": "object",
+            "properties": {
+                "textures": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "$ref": "#/definitions/1492643634"
+                    }
+                }
+            }
+        }
+    ]
+}
