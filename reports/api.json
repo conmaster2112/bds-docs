@@ -30,6 +30,10 @@
         "results": [
             "\"minecraft:apple\"",
             "1",
+            "\"item.apple.name\"",
+            "\"none\"",
+            "{}",
+            "[]",
             "[\n    {\n        \"typeId\": \"minecraft:food\"\n    },\n    {\n        \"typeId\": \"minecraft:compostable\"\n    }\n]",
             [
                 "1",
