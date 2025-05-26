@@ -36,7 +36,7 @@
         "id": "entity",
         "results": [
             "\"minecraft:cow\"",
-            "{\n    \"x\": 0.44999998807907104,\n    \"y\": 0,\n    \"z\": 2\n}",
+            "{\n    \"x\": 0.44999998807907104,\n    \"y\": 0,\n    \"z\": 2.450000047683716\n}",
             "\"entity.cow.name\"",
             "[\n    {\n        \"typeId\": \"minecraft:movement.jump\"\n    },\n    {\n        \"typeId\": \"minecraft:lava_movement\"\n    },\n    {\n        \"typeId\": \"minecraft:breathable\"\n    },\n    {\n        \"typeId\": \"minecraft:health\"\n    },\n    {\n        \"typeId\": \"minecraft:navigation.walk\"\n    },\n    {\n        \"typeId\": \"minecraft:leashable\"\n    },\n    {\n        \"typeId\": \"minecraft:movement\"\n    },\n    {\n        \"typeId\": \"minecraft:type_family\"\n    },\n    {\n        \"typeId\": \"minecraft:movement.basic\"\n    },\n    {\n        \"typeId\": \"minecraft:is_hidden_when_invisible\"\n    },\n    {\n        \"typeId\": \"minecraft:rideable\"\n    },\n    {\n        \"typeId\": \"minecraft:underwater_movement\"\n    },\n    {\n        \"typeId\": \"minecraft:can_climb\"\n    }\n]"
         ]
