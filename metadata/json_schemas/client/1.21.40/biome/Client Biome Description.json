@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "3072409085",
-    "x-minecraft-version": "1.21.82",
+    "x-minecraft-version": "1.21.83",
     "title": "Client Biome Description",
     "type": "object",
     "properties": {

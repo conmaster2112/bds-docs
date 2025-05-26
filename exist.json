@@ -1,6 +1,6 @@
 {
    "version": "1.21.80",
-   "build-version": "1.21.82.1",
+   "build-version": "1.21.83.1",
    "flags": [
       "METADATA",
       "SCRIPT_MODULES_MAPPING",
@@ -189,5 +189,5 @@
          "mojang-minecraft_0.1.0.json"
       ]
    },
-   "test": 0.6887827178580377
+   "test": 0.5088752705695889
 }

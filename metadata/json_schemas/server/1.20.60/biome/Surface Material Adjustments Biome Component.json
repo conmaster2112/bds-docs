@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "3704131722",
-    "x-minecraft-version": "1.21.82",
+    "x-minecraft-version": "1.21.83",
     "definitions": {
         "73298661": {
             "title": "Molang Expression",

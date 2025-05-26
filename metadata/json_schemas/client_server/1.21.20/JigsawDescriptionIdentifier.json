@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "1292959213",
-    "x-minecraft-version": "1.21.82",
+    "x-minecraft-version": "1.21.83",
     "title": "struct SharedTypes::v1_21_20::JigsawStructureDefinition::Description",
     "type": "object",
     "properties": {
