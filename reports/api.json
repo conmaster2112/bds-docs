@@ -3,14 +3,14 @@
         "id": "block",
         "results": [
             "\"minecraft:stone\"",
-            "{\n    \"id\": \"minecraft:stone\"\n}",
-            "{\n    \"x\": 0,\n    \"y\": 1,\n    \"z\": 0\n}",
+            "{\"id\":\"minecraft:stone\"}",
+            "{\"x\":0,\"y\":1,\"z\":0}",
             "{}",
-            "{\n    \"x\": 0.5,\n    \"y\": 1.5,\n    \"z\": 0.5\n}",
+            "{\"x\":0.5,\"y\":1.5,\"z\":0.5}",
             "\"tile.stone.stone.name\"",
             [
-                "{\n    \"type\": {\n        \"id\": \"minecraft:stone\"\n    },\n    \"states\": {\n        \"stone_type\": \"stone\"\n    }\n}",
-                "{\n    \"type\": {\n        \"id\": \"minecraft:stone\"\n    },\n    \"states\": {\n        \"stone_type\": \"stone\"\n    }\n}"
+                "{\"type\":{\"id\":\"minecraft:stone\"},\"states\":{\"stone_type\":\"stone\"}}",
+                "{\"type\":{\"id\":\"minecraft:stone\"},\"states\":{\"stone_type\":\"stone\"}}"
             ]
         ]
     },
@@ -36,9 +36,9 @@
         "id": "entity",
         "results": [
             "\"minecraft:cow\"",
-            "{\n    \"x\": 0.44999998807907104,\n    \"y\": 0,\n    \"z\": 2.450000047683716\n}",
+            "{\"x\":0.44999998807907104,\"y\":0,\"z\":2.450000047683716}",
             "\"entity.cow.name\"",
-            "[\n    {\n        \"typeId\": \"minecraft:movement.jump\"\n    },\n    {\n        \"typeId\": \"minecraft:lava_movement\"\n    },\n    {\n        \"typeId\": \"minecraft:breathable\"\n    },\n    {\n        \"typeId\": \"minecraft:health\"\n    },\n    {\n        \"typeId\": \"minecraft:navigation.walk\"\n    },\n    {\n        \"typeId\": \"minecraft:leashable\"\n    },\n    {\n        \"typeId\": \"minecraft:movement\"\n    },\n    {\n        \"typeId\": \"minecraft:type_family\"\n    },\n    {\n        \"typeId\": \"minecraft:movement.basic\"\n    },\n    {\n        \"typeId\": \"minecraft:is_hidden_when_invisible\"\n    },\n    {\n        \"typeId\": \"minecraft:rideable\"\n    },\n    {\n        \"typeId\": \"minecraft:underwater_movement\"\n    },\n    {\n        \"typeId\": \"minecraft:can_climb\"\n    }\n]"
+            "[{\"typeId\":\"minecraft:movement.jump\"},{\"typeId\":\"minecraft:lava_movement\"},{\"typeId\":\"minecraft:breathable\"},{\"typeId\":\"minecraft:health\"},{\"typeId\":\"minecraft:navigation.walk\"},{\"typeId\":\"minecraft:leashable\"},{\"typeId\":\"minecraft:movement\"},{\"typeId\":\"minecraft:type_family\"},{\"typeId\":\"minecraft:movement.basic\"},{\"typeId\":\"minecraft:is_hidden_when_invisible\"},{\"typeId\":\"minecraft:rideable\"},{\"typeId\":\"minecraft:underwater_movement\"},{\"typeId\":\"minecraft:can_climb\"}]"
         ]
     },
     {
@@ -50,7 +50,7 @@
             "\"none\"",
             "{}",
             "[]",
-            "[\n    {\n        \"typeId\": \"minecraft:food\"\n    },\n    {\n        \"typeId\": \"minecraft:compostable\"\n    }\n]",
+            "[{\"typeId\":\"minecraft:food\"},{\"typeId\":\"minecraft:compostable\"}]",
             [
                 "1",
                 "2"
