@@ -1,7 +1,18 @@
 [
     {
         "id": "block",
-        "setupError": "LocationInUnloadedChunkError: Trying to access location (0.0, 1.0, 0.0) which is not in a chunk currently loaded and ticking."
+        "results": [
+            "\"minecraft:stone\"",
+            "{\"id\":\"minecraft:stone\"}",
+            "{\"x\":0,\"y\":1,\"z\":0}",
+            "{}",
+            "{\"x\":0.5,\"y\":1.5,\"z\":0.5}",
+            "\"tile.stone.stone.name\"",
+            [
+                "{\"type\":{\"id\":\"minecraft:stone\"},\"states\":{\"stone_type\":\"stone\"}}",
+                "{\"type\":{\"id\":\"minecraft:stone\"},\"states\":{\"stone_type\":\"stone\"}}"
+            ]
+        ]
     },
     {
         "id": "dynamic properties",
@@ -23,7 +34,12 @@
     },
     {
         "id": "entity",
-        "setupError": "LocationInUnloadedChunkError: Trying to access location (0.0, 0.0, 2.0) which is not in a chunk currently loaded and ticking."
+        "results": [
+            "\"minecraft:cow\"",
+            "{\"x\":0.44999998807907104,\"y\":0,\"z\":2.450000047683716}",
+            "\"entity.cow.name\"",
+            "[{\"typeId\":\"minecraft:movement\"},{\"typeId\":\"minecraft:movement.jump\"},{\"typeId\":\"minecraft:lava_movement\"},{\"typeId\":\"minecraft:breathable\"},{\"typeId\":\"minecraft:health\"},{\"typeId\":\"minecraft:navigation.walk\"},{\"typeId\":\"minecraft:leashable\"},{\"typeId\":\"minecraft:type_family\"},{\"typeId\":\"minecraft:movement.basic\"},{\"typeId\":\"minecraft:is_hidden_when_invisible\"},{\"typeId\":\"minecraft:rideable\"},{\"typeId\":\"minecraft:underwater_movement\"},{\"typeId\":\"minecraft:can_climb\"}]"
+        ]
     },
     {
         "id": "item",
@@ -34,7 +50,7 @@
             "\"none\"",
             "{}",
             "[]",
-            "[\n    {\n        \"typeId\": \"minecraft:food\"\n    },\n    {\n        \"typeId\": \"minecraft:compostable\"\n    }\n]",
+            "[{\"typeId\":\"minecraft:food\"},{\"typeId\":\"minecraft:compostable\"}]",
             [
                 "1",
                 "2"
