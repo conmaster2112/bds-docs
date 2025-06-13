@@ -2,12 +2,12 @@
     {
         "id": "block",
         "results": [
-            "\"minecraft:stone\"",
+            "minecraft:stone",
             "{\"id\":\"minecraft:stone\"}",
             "{\"x\":0,\"y\":1,\"z\":0}",
             "{}",
             "{\"x\":0.5,\"y\":1.5,\"z\":0.5}",
-            "\"tile.stone.stone.name\"",
+            "tile.stone.stone.name",
             [
                 "{\"type\":{\"id\":\"minecraft:stone\"},\"states\":{\"stone_type\":\"stone\"}}",
                 "{\"type\":{\"id\":\"minecraft:stone\"},\"states\":{\"stone_type\":\"stone\"}}"
@@ -21,8 +21,8 @@
             [
                 "true",
                 "false",
-                "\"\"",
-                "\"string\"",
+                "",
+                "string",
                 "1",
                 "0",
                 "-1",
@@ -35,21 +35,21 @@
     {
         "id": "entity",
         "results": [
-            "\"minecraft:cow\"",
-            "{\"x\":0,\"y\":-0.2999999523162842,\"z\":2}",
-            "\"entity.cow.name\"",
+            "minecraft:cow",
+            "{\"x\":0.44999998807907104,\"y\":0,\"z\":2.450000047683716}",
+            "entity.cow.name",
             "[{\"typeId\":\"minecraft:movement.jump\"},{\"typeId\":\"minecraft:lava_movement\"},{\"typeId\":\"minecraft:breathable\"},{\"typeId\":\"minecraft:health\"},{\"typeId\":\"minecraft:navigation.walk\"},{\"typeId\":\"minecraft:leashable\"},{\"typeId\":\"minecraft:movement\"},{\"typeId\":\"minecraft:type_family\"},{\"typeId\":\"minecraft:movement.basic\"},{\"typeId\":\"minecraft:is_hidden_when_invisible\"},{\"typeId\":\"minecraft:rideable\"},{\"typeId\":\"minecraft:underwater_movement\"},{\"typeId\":\"minecraft:can_climb\"}]",
-            "\"{\\\"typeId\\\":\\\"minecraft:cow\\\",\\\"id\\\":\\\"-8589934481\\\"}\""
+            "{\"typeId\":\"minecraft:cow\",\"id\":\"-8589934481\"}"
         ]
     },
     {
         "id": "item",
         "results": [
-            "\"minecraft:apple\"",
+            "minecraft:apple",
             "1",
-            "\"item.apple.name\"",
+            "item.apple.name",
             "undefined",
-            "\"none\"",
+            "none",
             "undefined",
             "{}",
             "[]",
@@ -63,7 +63,7 @@
     {
         "id": "ItemComponent",
         "results": [
-            "\"minecraft:food\"",
+            "minecraft:food",
             "{\"value\":\"minecraft:food\",\"writable\":false,\"enumerable\":true,\"configurable\":true}",
             {
                 "error": "TypeError: 'componentId' is read-only"
@@ -74,7 +74,7 @@
         "id": "ItemTypes",
         "results": [
             "{\"writable\":true,\"enumerable\":true,\"configurable\":true}",
-            null
+            "() => {}"
         ]
     }
 ]
