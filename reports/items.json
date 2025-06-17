@@ -929,7 +929,9 @@
         "minecraft:blue_bundle": {
             "tags": [],
             "maxStack": 1,
-            "components": {}
+            "components": {
+                "minecraft:inventory": {}
+            }
         },
         "minecraft:light_block_9": {
             "tags": [],
@@ -1581,7 +1583,9 @@
         "minecraft:brown_bundle": {
             "tags": [],
             "maxStack": 1,
-            "components": {}
+            "components": {
+                "minecraft:inventory": {}
+            }
         },
         "minecraft:skeleton_horse_spawn_egg": {
             "tags": [
@@ -2532,7 +2536,9 @@
         "minecraft:purple_bundle": {
             "tags": [],
             "maxStack": 1,
-            "components": {}
+            "components": {
+                "minecraft:inventory": {}
+            }
         },
         "minecraft:crimson_door": {
             "tags": [
@@ -3025,7 +3031,9 @@
         "minecraft:lime_bundle": {
             "tags": [],
             "maxStack": 1,
-            "components": {}
+            "components": {
+                "minecraft:inventory": {}
+            }
         },
         "minecraft:pale_oak_hanging_sign": {
             "tags": [
@@ -4275,7 +4283,9 @@
         "minecraft:light_blue_bundle": {
             "tags": [],
             "maxStack": 1,
-            "components": {}
+            "components": {
+                "minecraft:inventory": {}
+            }
         },
         "minecraft:lit_pumpkin": {
             "tags": [],
@@ -4525,7 +4535,9 @@
         "minecraft:orange_bundle": {
             "tags": [],
             "maxStack": 1,
-            "components": {}
+            "components": {
+                "minecraft:inventory": {}
+            }
         },
         "minecraft:smooth_quartz": {
             "tags": [],
@@ -4917,7 +4929,9 @@
         "minecraft:bundle": {
             "tags": [],
             "maxStack": 1,
-            "components": {}
+            "components": {
+                "minecraft:inventory": {}
+            }
         },
         "minecraft:iron_sword": {
             "tags": [
@@ -6480,7 +6494,9 @@
         "minecraft:gray_bundle": {
             "tags": [],
             "maxStack": 1,
-            "components": {}
+            "components": {
+                "minecraft:inventory": {}
+            }
         },
         "minecraft:chest_minecart": {
             "tags": [
@@ -6889,7 +6905,9 @@
         "minecraft:black_bundle": {
             "tags": [],
             "maxStack": 1,
-            "components": {}
+            "components": {
+                "minecraft:inventory": {}
+            }
         },
         "minecraft:tall_grass": {
             "tags": [],
@@ -7554,7 +7572,9 @@
         "minecraft:yellow_bundle": {
             "tags": [],
             "maxStack": 1,
-            "components": {}
+            "components": {
+                "minecraft:inventory": {}
+            }
         },
         "minecraft:golden_chestplate": {
             "tags": [
@@ -7830,69 +7850,23 @@
                 "minecraft:dyeable": {}
             }
         },
-        "minecraft:dragon_breath": {
-            "tags": [],
-            "maxStack": 64,
-            "components": {}
-        },
-        "minecraft:white_bundle": {
-            "tags": [],
-            "maxStack": 1,
-            "components": {}
-        },
-        "minecraft:red_bundle": {
-            "tags": [],
-            "maxStack": 1,
-            "components": {}
-        },
-        "minecraft:light_gray_bundle": {
-            "tags": [],
-            "maxStack": 1,
-            "components": {}
-        },
-        "minecraft:green_bundle": {
-            "tags": [],
-            "maxStack": 1,
-            "components": {}
-        },
-        "minecraft:cyan_bundle": {
-            "tags": [],
-            "maxStack": 1,
-            "components": {}
-        },
-        "minecraft:magenta_bundle": {
-            "tags": [],
-            "maxStack": 1,
-            "components": {}
-        },
-        "minecraft:pink_bundle": {
-            "tags": [],
-            "maxStack": 1,
-            "components": {}
-        },
-        "minecraft:turtle_helmet": {
-            "tags": [
-                18,
-                20
-            ],
-            "maxStack": 1,
-            "components": {
-                "minecraft:durability": {},
-                "minecraft:enchantable": {}
-            }
-        },
-        "minecraft:potion": {
-            "tags": [],
-            "maxStack": 1,
-            "components": {
-                "minecraft:potion": {}
-            }
-        },
         "minecraft:red_harness": {
             "tags": [
                 23
             ],
             "maxStack": 1,
+            "components": {}
+        },
+        "minecraft:white_bundle": {
+            "tags": [],
+            "maxStack": 1,
+            "components": {
+                "minecraft:inventory": {}
+            }
+        },
+        "minecraft:dragon_breath": {
+            "tags": [],
+            "maxStack": 64,
             "components": {}
         },
         "minecraft:light_gray_harness": {
@@ -7927,6 +7901,66 @@
             ],
             "maxStack": 1,
             "components": {}
+        },
+        "minecraft:red_bundle": {
+            "tags": [],
+            "maxStack": 1,
+            "components": {
+                "minecraft:inventory": {}
+            }
+        },
+        "minecraft:light_gray_bundle": {
+            "tags": [],
+            "maxStack": 1,
+            "components": {
+                "minecraft:inventory": {}
+            }
+        },
+        "minecraft:green_bundle": {
+            "tags": [],
+            "maxStack": 1,
+            "components": {
+                "minecraft:inventory": {}
+            }
+        },
+        "minecraft:cyan_bundle": {
+            "tags": [],
+            "maxStack": 1,
+            "components": {
+                "minecraft:inventory": {}
+            }
+        },
+        "minecraft:magenta_bundle": {
+            "tags": [],
+            "maxStack": 1,
+            "components": {
+                "minecraft:inventory": {}
+            }
+        },
+        "minecraft:pink_bundle": {
+            "tags": [],
+            "maxStack": 1,
+            "components": {
+                "minecraft:inventory": {}
+            }
+        },
+        "minecraft:turtle_helmet": {
+            "tags": [
+                18,
+                20
+            ],
+            "maxStack": 1,
+            "components": {
+                "minecraft:durability": {},
+                "minecraft:enchantable": {}
+            }
+        },
+        "minecraft:potion": {
+            "tags": [],
+            "maxStack": 1,
+            "components": {
+                "minecraft:potion": {}
+            }
         },
         "minecraft:soul_torch": {
             "tags": [],
@@ -8126,6 +8160,13 @@
             "components": {}
         },
         "minecraft:music_disc_creator_music_box": {
+            "tags": [
+                26
+            ],
+            "maxStack": 1,
+            "components": {}
+        },
+        "minecraft:music_disc_tears": {
             "tags": [
                 26
             ],
