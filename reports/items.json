@@ -2413,7 +2413,9 @@
                 28
             ],
             "maxStack": 1,
-            "components": {}
+            "components": {
+                "minecraft:book": {}
+            }
         },
         "minecraft:waxed_exposed_cut_copper": {
             "tags": [],
