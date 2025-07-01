@@ -13,6 +13,7 @@
         "diamond_pick_diggable",
         "minecraft:stone_tier_destructible",
         "stone_pick_diggable",
+        "not_feature_replaceable",
         "one_way_collidable",
         "stone",
         "minecraft:is_hoe_item_destructible",
@@ -26,7 +27,6 @@
         "minecraft:diamond_tier_destructible",
         "oak",
         "metal",
-        "not_feature_replaceable",
         "spruce",
         "grass",
         "mob_spawner",
@@ -102,15 +102,15 @@
                 1
             ]
         },
-        "minecraft:yellow_candle_cake": {
-            "tags": []
-        },
         "minecraft:sticky_piston": {
             "tags": [
                 1
             ]
         },
         "minecraft:zombie_head": {
+            "tags": []
+        },
+        "minecraft:yellow_candle_cake": {
             "tags": []
         },
         "minecraft:acacia_wall_sign": {
@@ -164,6 +164,14 @@
                 0
             ]
         },
+        "minecraft:waxed_weathered_copper_chest": {
+            "tags": [
+                1,
+                11,
+                12,
+                13
+            ]
+        },
         "minecraft:leaf_litter": {
             "tags": []
         },
@@ -189,7 +197,7 @@
         },
         "minecraft:warped_door": {
             "tags": [
-                13,
+                14,
                 5
             ]
         },
@@ -214,7 +222,7 @@
         },
         "minecraft:pale_oak_fence_gate": {
             "tags": [
-                13,
+                14,
                 5,
                 6
             ]
@@ -241,7 +249,7 @@
         },
         "minecraft:wooden_door": {
             "tags": [
-                13,
+                14,
                 5,
                 6
             ]
@@ -288,7 +296,7 @@
         "minecraft:diorite_wall": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:tuff": {
@@ -301,12 +309,12 @@
         },
         "minecraft:wet_sponge": {
             "tags": [
-                15
+                16
             ]
         },
         "minecraft:pale_moss_carpet": {
             "tags": [
-                15
+                16
             ]
         },
         "minecraft:bamboo_mosaic_slab": {
@@ -332,7 +340,7 @@
         "minecraft:brick_slab": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:mushroom_stem": {
@@ -343,7 +351,7 @@
         "minecraft:end_stone_brick_wall": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:white_tulip": {
@@ -354,7 +362,7 @@
         "minecraft:granite": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:open_eyeblossom": {
@@ -398,7 +406,7 @@
         },
         "minecraft:fence_gate": {
             "tags": [
-                13,
+                14,
                 5,
                 6
             ]
@@ -429,6 +437,14 @@
         "minecraft:stone_brick_stairs": {
             "tags": [
                 1
+            ]
+        },
+        "minecraft:waxed_exposed_copper_chest": {
+            "tags": [
+                1,
+                11,
+                12,
+                13
             ]
         },
         "minecraft:waxed_oxidized_cut_copper_slab": {
@@ -469,6 +485,11 @@
                 9
             ]
         },
+        "minecraft:gray_concrete": {
+            "tags": [
+                1
+            ]
+        },
         "minecraft:waxed_oxidized_cut_copper": {
             "tags": [
                 1,
@@ -478,11 +499,6 @@
         },
         "minecraft:dead_horn_coral_wall_fan": {
             "tags": []
-        },
-        "minecraft:gray_concrete": {
-            "tags": [
-                1
-            ]
         },
         "minecraft:pale_oak_double_slab": {
             "tags": [
@@ -495,7 +511,7 @@
         "minecraft:cobblestone_slab": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:green_terracotta": {
@@ -508,8 +524,8 @@
         },
         "minecraft:waxed_copper_trapdoor": {
             "tags": [
-                16,
-                13,
+                17,
+                14,
                 1,
                 11
             ]
@@ -612,7 +628,7 @@
         },
         "minecraft:jungle_door": {
             "tags": [
-                13,
+                14,
                 5,
                 6
             ]
@@ -620,7 +636,7 @@
         "minecraft:diorite": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:darkoak_wall_sign": {
@@ -636,7 +652,7 @@
         "minecraft:dripstone_block": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:gray_candle_cake": {
@@ -644,8 +660,8 @@
         },
         "minecraft:exposed_copper_trapdoor": {
             "tags": [
-                16,
-                13,
+                17,
+                14,
                 1,
                 11
             ]
@@ -741,7 +757,7 @@
         "minecraft:stone_stairs": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:beacon": {
@@ -755,7 +771,7 @@
         "minecraft:brick_wall": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:soul_sand": {
@@ -773,14 +789,14 @@
         },
         "minecraft:snow_layer": {
             "tags": [
-                17,
+                18,
                 2
             ]
         },
         "minecraft:brick_double_slab": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:white_carpet": {
@@ -806,7 +822,7 @@
         "minecraft:red_sandstone_wall": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:pale_oak_hanging_sign": {
@@ -819,7 +835,7 @@
         "minecraft:mycelium": {
             "tags": [
                 2,
-                18
+                19
             ]
         },
         "minecraft:diorite_slab": {
@@ -868,8 +884,8 @@
             "tags": [
                 5,
                 6,
-                19,
-                20
+                20,
+                21
             ]
         },
         "minecraft:bubble_coral_fan": {
@@ -895,7 +911,7 @@
         },
         "minecraft:sculk_shrieker": {
             "tags": [
-                15
+                16
             ]
         },
         "minecraft:bamboo_mosaic_stairs": {
@@ -949,14 +965,14 @@
         },
         "minecraft:dark_oak_door": {
             "tags": [
-                13,
+                14,
                 5,
                 6
             ]
         },
         "minecraft:wheat": {
             "tags": [
-                21
+                22
             ]
         },
         "minecraft:grindstone": {
@@ -992,8 +1008,8 @@
         },
         "minecraft:trapdoor": {
             "tags": [
-                16,
-                13,
+                17,
+                14,
                 5,
                 6
             ]
@@ -1027,10 +1043,10 @@
         "minecraft:seagrass": {
             "tags": []
         },
-        "minecraft:tube_coral_fan": {
+        "minecraft:unknown": {
             "tags": []
         },
-        "minecraft:unknown": {
+        "minecraft:tube_coral_fan": {
             "tags": []
         },
         "minecraft:cherry_stairs": {
@@ -1052,7 +1068,7 @@
         "minecraft:quartz_slab": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:fire_coral_block": {
@@ -1083,7 +1099,7 @@
         "minecraft:mossy_cobblestone": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:element_113": {
@@ -1139,8 +1155,8 @@
         },
         "minecraft:pitcher_crop": {
             "tags": [
-                21,
-                22
+                22,
+                23
             ]
         },
         "minecraft:brown_wool": {
@@ -1182,8 +1198,8 @@
         },
         "minecraft:iron_trapdoor": {
             "tags": [
-                16,
-                13,
+                17,
+                14,
                 1
             ]
         },
@@ -1222,7 +1238,7 @@
         "minecraft:crying_obsidian": {
             "tags": [
                 1,
-                23
+                24
             ]
         },
         "minecraft:oak_stairs": {
@@ -1238,8 +1254,8 @@
             "tags": [
                 5,
                 6,
-                19,
-                24
+                20,
+                25
             ]
         },
         "minecraft:waxed_weathered_cut_copper": {
@@ -1252,7 +1268,7 @@
         "minecraft:andesite": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:brown_stained_glass_pane": {
@@ -1260,7 +1276,7 @@
         },
         "minecraft:sculk_vein": {
             "tags": [
-                15
+                16
             ]
         },
         "minecraft:pink_stained_glass_pane": {
@@ -1295,7 +1311,7 @@
         "minecraft:iron_bars": {
             "tags": [
                 1,
-                25
+                26
             ]
         },
         "minecraft:oxidized_cut_copper": {
@@ -1308,7 +1324,7 @@
         "minecraft:polished_granite": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:element_39": {
@@ -1338,7 +1354,7 @@
         },
         "minecraft:moss_carpet": {
             "tags": [
-                15
+                16
             ]
         },
         "minecraft:crimson_stairs": {
@@ -1358,7 +1374,7 @@
         "minecraft:stone_brick_double_slab": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:copper_ore": {
@@ -1370,9 +1386,9 @@
         },
         "minecraft:pale_moss_block": {
             "tags": [
-                15,
+                16,
                 0,
-                18
+                19
             ]
         },
         "minecraft:gray_candle": {
@@ -1385,7 +1401,7 @@
         },
         "minecraft:bamboo_door": {
             "tags": [
-                13,
+                14,
                 5
             ]
         },
@@ -1412,7 +1428,7 @@
             "tags": [
                 1,
                 8,
-                25
+                26
             ]
         },
         "minecraft:flower_pot": {
@@ -1421,7 +1437,7 @@
         "minecraft:chiseled_bookshelf": {
             "tags": [
                 5,
-                26
+                13
             ]
         },
         "minecraft:jungle_fence": {
@@ -1434,7 +1450,7 @@
             "tags": [
                 5,
                 6,
-                19,
+                20,
                 27
             ]
         },
@@ -1466,7 +1482,7 @@
             "tags": [
                 2,
                 28,
-                18
+                19
             ]
         },
         "minecraft:small_amethyst_bud": {
@@ -1477,7 +1493,7 @@
         "minecraft:podzol": {
             "tags": [
                 2,
-                18
+                19
             ]
         },
         "minecraft:activator_rail": {
@@ -1493,13 +1509,13 @@
         },
         "minecraft:potatoes": {
             "tags": [
-                21
+                22
             ]
         },
         "minecraft:muddy_mangrove_roots": {
             "tags": [
                 2,
-                18
+                19
             ]
         },
         "minecraft:pale_oak_pressure_plate": {
@@ -1513,7 +1529,7 @@
         },
         "minecraft:trial_spawner": {
             "tags": [
-                26
+                13
             ]
         },
         "minecraft:stripped_jungle_wood": {
@@ -1552,7 +1568,7 @@
         "minecraft:netherite_block": {
             "tags": [
                 1,
-                23
+                24
             ]
         },
         "minecraft:pale_oak_fence": {
@@ -1562,13 +1578,13 @@
         },
         "minecraft:pale_oak_leaves": {
             "tags": [
-                15
+                16
             ]
         },
         "minecraft:sandstone_slab": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:white_shulker_box": {
@@ -1624,7 +1640,7 @@
             "tags": [
                 1,
                 29,
-                26
+                13
             ]
         },
         "minecraft:copper_grate": {
@@ -1650,7 +1666,7 @@
         },
         "minecraft:acacia_fence_gate": {
             "tags": [
-                13,
+                14,
                 5,
                 6
             ]
@@ -1678,15 +1694,6 @@
                 6
             ]
         },
-        "minecraft:cyan_candle": {
-            "tags": []
-        },
-        "minecraft:red_nether_brick_wall": {
-            "tags": [
-                1,
-                14
-            ]
-        },
         "minecraft:powered_comparator": {
             "tags": []
         },
@@ -1700,12 +1707,20 @@
         },
         "minecraft:spruce_sapling": {
             "tags": [
-                22
+                23
             ]
         },
         "minecraft:cut_sandstone_slab": {
             "tags": [
                 1
+            ]
+        },
+        "minecraft:weathered_copper_chest": {
+            "tags": [
+                1,
+                11,
+                12,
+                13
             ]
         },
         "minecraft:blast_furnace": {
@@ -1732,13 +1747,13 @@
         },
         "minecraft:dark_oak_sapling": {
             "tags": [
-                22
+                23
             ]
         },
         "minecraft:sandstone_double_slab": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:pale_oak_sapling": {
@@ -1791,8 +1806,8 @@
         },
         "minecraft:oxidized_copper_trapdoor": {
             "tags": [
-                16,
-                13,
+                17,
+                14,
                 1,
                 11
             ]
@@ -1803,17 +1818,25 @@
         "minecraft:brain_coral": {
             "tags": []
         },
+        "minecraft:waxed_copper_chest": {
+            "tags": [
+                1,
+                11,
+                12,
+                13
+            ]
+        },
         "minecraft:obsidian": {
             "tags": [
                 1,
-                23,
+                24,
                 10
             ]
         },
         "minecraft:chest": {
             "tags": [
                 5,
-                26
+                13
             ]
         },
         "minecraft:dead_bubble_coral_block": {
@@ -1832,7 +1855,7 @@
         "minecraft:glowingobsidian": {
             "tags": [
                 1,
-                23
+                24
             ]
         },
         "minecraft:deepslate_brick_wall": {
@@ -1850,7 +1873,7 @@
         "minecraft:cauldron": {
             "tags": [
                 1,
-                25
+                26
             ]
         },
         "minecraft:stripped_spruce_wood": {
@@ -1915,7 +1938,7 @@
         "minecraft:nether_brick_slab": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:heavy_weighted_pressure_plate": {
@@ -1929,13 +1952,13 @@
         "minecraft:stone_button": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:stone": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:red_nether_brick_double_slab": {
@@ -1945,7 +1968,7 @@
         },
         "minecraft:pitcher_plant": {
             "tags": [
-                22
+                23
             ]
         },
         "minecraft:element_101": {
@@ -1965,7 +1988,7 @@
         },
         "minecraft:sponge": {
             "tags": [
-                15
+                16
             ]
         },
         "minecraft:bone_block": {
@@ -2106,7 +2129,7 @@
         },
         "minecraft:mangrove_leaves": {
             "tags": [
-                15
+                16
             ]
         },
         "minecraft:light_block_3": {
@@ -2114,7 +2137,7 @@
         },
         "minecraft:acacia_leaves": {
             "tags": [
-                15
+                16
             ]
         },
         "minecraft:barrier": {
@@ -2128,7 +2151,7 @@
         },
         "minecraft:pale_oak_door": {
             "tags": [
-                13,
+                14,
                 5
             ]
         },
@@ -2147,7 +2170,7 @@
         },
         "minecraft:oak_sapling": {
             "tags": [
-                22
+                23
             ]
         },
         "minecraft:light_gray_terracotta": {
@@ -2179,7 +2202,7 @@
             "tags": [
                 5,
                 6,
-                19,
+                20,
                 30
             ]
         },
@@ -2216,7 +2239,7 @@
         "minecraft:respawn_anchor": {
             "tags": [
                 1,
-                23
+                24
             ]
         },
         "minecraft:dead_fire_coral_wall_fan": {
@@ -2252,16 +2275,16 @@
         },
         "minecraft:hay_block": {
             "tags": [
-                15
+                16
             ]
-        },
-        "minecraft:red_stained_glass": {
-            "tags": []
         },
         "minecraft:purple_shulker_box": {
             "tags": [
                 1
             ]
+        },
+        "minecraft:red_stained_glass": {
+            "tags": []
         },
         "minecraft:polished_tuff_double_slab": {
             "tags": [
@@ -2287,7 +2310,7 @@
         },
         "minecraft:oxidized_copper_door": {
             "tags": [
-                13,
+                14,
                 1
             ]
         },
@@ -2326,7 +2349,7 @@
         },
         "minecraft:oak_leaves": {
             "tags": [
-                15
+                16
             ]
         },
         "minecraft:element_53": {
@@ -2356,8 +2379,8 @@
         },
         "minecraft:cherry_trapdoor": {
             "tags": [
-                16,
-                13,
+                17,
+                14,
                 5,
                 6
             ]
@@ -2429,8 +2452,8 @@
         },
         "minecraft:weathered_copper_trapdoor": {
             "tags": [
-                16,
-                13,
+                17,
+                14,
                 1,
                 11
             ]
@@ -2497,7 +2520,7 @@
         "minecraft:quartz_double_slab": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:mangrove_slab": {
@@ -2560,7 +2583,7 @@
         "minecraft:ancient_debris": {
             "tags": [
                 1,
-                23
+                24
             ]
         },
         "minecraft:dark_oak_planks": {
@@ -2571,7 +2594,7 @@
         },
         "minecraft:jungle_leaves": {
             "tags": [
-                15
+                16
             ]
         },
         "minecraft:brown_candle_cake": {
@@ -2588,7 +2611,7 @@
         "minecraft:mossy_cobblestone_wall": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:redstone_torch": {
@@ -2616,7 +2639,7 @@
         "minecraft:cobblestone_wall": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:light_blue_stained_glass_pane": {
@@ -2651,7 +2674,7 @@
             "tags": [
                 5,
                 6,
-                19,
+                20,
                 34
             ]
         },
@@ -2714,7 +2737,7 @@
         },
         "minecraft:birch_leaves": {
             "tags": [
-                15
+                16
             ]
         },
         "minecraft:silver_glazed_terracotta": {
@@ -2765,14 +2788,14 @@
         },
         "minecraft:birch_fence_gate": {
             "tags": [
-                13,
+                14,
                 5,
                 6
             ]
         },
         "minecraft:sculk_catalyst": {
             "tags": [
-                15
+                16
             ]
         },
         "minecraft:element_115": {
@@ -2781,7 +2804,7 @@
         "minecraft:cobblestone": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:horn_coral": {
@@ -2901,7 +2924,7 @@
         },
         "minecraft:bedrock": {
             "tags": [
-                26
+                13
             ]
         },
         "minecraft:smithing_table": {
@@ -2923,8 +2946,30 @@
         },
         "minecraft:rose_bush": {
             "tags": [
-                22
+                23
             ]
+        },
+        "minecraft:copper_chest": {
+            "tags": [
+                1,
+                11,
+                12,
+                13
+            ]
+        },
+        "minecraft:acacia_pressure_plate": {
+            "tags": [
+                5,
+                6
+            ]
+        },
+        "minecraft:smooth_red_sandstone_slab": {
+            "tags": [
+                1
+            ]
+        },
+        "minecraft:jigsaw": {
+            "tags": []
         },
         "minecraft:green_carpet": {
             "tags": []
@@ -2945,7 +2990,7 @@
         "minecraft:stone_pressure_plate": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:compound_creator": {
@@ -3011,7 +3056,7 @@
         },
         "minecraft:crimson_door": {
             "tags": [
-                13,
+                14,
                 5
             ]
         },
@@ -3047,13 +3092,10 @@
         "minecraft:farmland": {
             "tags": [
                 2,
-                18
+                19
             ]
         },
         "minecraft:dead_brain_coral_wall_fan": {
-            "tags": []
-        },
-        "minecraft:pink_candle": {
             "tags": []
         },
         "minecraft:normal_stone_double_slab": {
@@ -3080,13 +3122,13 @@
         },
         "minecraft:carrots": {
             "tags": [
-                21
+                22
             ]
         },
         "minecraft:acacia_trapdoor": {
             "tags": [
-                16,
-                13,
+                17,
+                14,
                 5,
                 6
             ]
@@ -3108,7 +3150,7 @@
         },
         "minecraft:waxed_weathered_copper_door": {
             "tags": [
-                13,
+                14,
                 1
             ]
         },
@@ -3144,21 +3186,23 @@
                 1
             ]
         },
+        "minecraft:waxed_oxidized_copper_chest": {
+            "tags": [
+                1,
+                11,
+                12,
+                13
+            ]
+        },
         "minecraft:dark_oak_fence_gate": {
             "tags": [
-                13,
+                14,
                 5,
                 6
             ]
         },
         "minecraft:pale_hanging_moss": {
             "tags": []
-        },
-        "minecraft:cherry_button": {
-            "tags": [
-                5,
-                6
-            ]
         },
         "minecraft:crimson_nylium": {
             "tags": [
@@ -3176,7 +3220,7 @@
         },
         "minecraft:bamboo_fence_gate": {
             "tags": [
-                13,
+                14,
                 5,
                 6
             ]
@@ -3226,7 +3270,7 @@
         },
         "minecraft:calibrated_sculk_sensor": {
             "tags": [
-                15
+                16
             ]
         },
         "minecraft:oak_slab": {
@@ -3251,7 +3295,7 @@
         "minecraft:sandstone_wall": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:slime": {
@@ -3278,13 +3322,13 @@
         },
         "minecraft:azalea_leaves": {
             "tags": [
-                15
+                16
             ]
         },
         "minecraft:smooth_stone_slab": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:bamboo_double_slab": {
@@ -3319,7 +3363,7 @@
         },
         "minecraft:spruce_door": {
             "tags": [
-                13,
+                14,
                 5,
                 6
             ]
@@ -3342,7 +3386,7 @@
         },
         "minecraft:acacia_door": {
             "tags": [
-                13,
+                14,
                 5,
                 6
             ]
@@ -3354,7 +3398,7 @@
         },
         "minecraft:nether_wart_block": {
             "tags": [
-                15
+                16
             ]
         },
         "minecraft:light_blue_glazed_terracotta": {
@@ -3377,13 +3421,13 @@
         },
         "minecraft:cherry_door": {
             "tags": [
-                13,
+                14,
                 5
             ]
         },
         "minecraft:mangrove_door": {
             "tags": [
-                13,
+                14,
                 5
             ]
         },
@@ -3406,7 +3450,7 @@
             "tags": [
                 5,
                 6,
-                19,
+                20,
                 35
             ]
         },
@@ -3415,8 +3459,8 @@
         },
         "minecraft:crimson_trapdoor": {
             "tags": [
-                16,
-                13,
+                17,
+                14,
                 5
             ]
         },
@@ -3438,8 +3482,8 @@
         },
         "minecraft:waxed_weathered_copper_trapdoor": {
             "tags": [
-                16,
-                13,
+                17,
+                14,
                 1,
                 11
             ]
@@ -3447,7 +3491,7 @@
         "minecraft:polished_diorite": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:cyan_glazed_terracotta": {
@@ -3458,7 +3502,7 @@
         "minecraft:nether_brick_wall": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:lit_redstone_lamp": {
@@ -3495,7 +3539,7 @@
         },
         "minecraft:sculk_sensor": {
             "tags": [
-                15
+                16
             ]
         },
         "minecraft:copper_bulb": {
@@ -3519,12 +3563,12 @@
         "minecraft:smooth_stone_double_slab": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:spruce_leaves": {
             "tags": [
-                15
+                16
             ]
         },
         "minecraft:red_stained_glass_pane": {
@@ -3549,7 +3593,7 @@
         "minecraft:dirt_with_roots": {
             "tags": [
                 2,
-                18
+                19
             ]
         },
         "minecraft:stripped_cherry_log": {
@@ -3563,7 +3607,7 @@
         },
         "minecraft:copper_door": {
             "tags": [
-                13,
+                14,
                 1
             ]
         },
@@ -3584,15 +3628,15 @@
         },
         "minecraft:iron_door": {
             "tags": [
-                13,
+                14,
                 1,
-                25
+                26
             ]
         },
         "minecraft:mangrove_trapdoor": {
             "tags": [
-                16,
-                13,
+                17,
+                14,
                 5,
                 6
             ]
@@ -3615,15 +3659,10 @@
         },
         "minecraft:torchflower_crop": {
             "tags": [
-                21
+                22
             ]
         },
         "minecraft:cracked_nether_bricks": {
-            "tags": [
-                1
-            ]
-        },
-        "minecraft:lab_table": {
             "tags": [
                 1
             ]
@@ -3634,6 +3673,11 @@
                 32
             ]
         },
+        "minecraft:lab_table": {
+            "tags": [
+                1
+            ]
+        },
         "minecraft:element_constructor": {
             "tags": [
                 1
@@ -3642,7 +3686,7 @@
         "minecraft:brick_block": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:wildflowers": {
@@ -3708,9 +3752,15 @@
                 1
             ]
         },
+        "minecraft:cherry_button": {
+            "tags": [
+                5,
+                6
+            ]
+        },
         "minecraft:mangrove_fence_gate": {
             "tags": [
-                13,
+                14,
                 5,
                 6
             ]
@@ -3720,16 +3770,16 @@
         },
         "minecraft:sunflower": {
             "tags": [
-                22
+                23
             ]
-        },
-        "minecraft:allow": {
-            "tags": []
         },
         "minecraft:gray_concrete_powder": {
             "tags": [
                 2
             ]
+        },
+        "minecraft:allow": {
+            "tags": []
         },
         "minecraft:bamboo_hanging_sign": {
             "tags": [
@@ -3768,7 +3818,7 @@
         },
         "minecraft:crimson_fence_gate": {
             "tags": [
-                13,
+                14,
                 5
             ]
         },
@@ -3805,8 +3855,8 @@
         },
         "minecraft:copper_trapdoor": {
             "tags": [
-                16,
-                13,
+                17,
+                14,
                 1,
                 11
             ]
@@ -3841,14 +3891,14 @@
         },
         "minecraft:exposed_copper_door": {
             "tags": [
-                13,
+                14,
                 1
             ]
         },
         "minecraft:warped_trapdoor": {
             "tags": [
-                16,
-                13,
+                17,
+                14,
                 5
             ]
         },
@@ -3917,8 +3967,8 @@
         },
         "minecraft:waxed_oxidized_copper_trapdoor": {
             "tags": [
-                16,
-                13,
+                17,
+                14,
                 1,
                 11
             ]
@@ -3934,24 +3984,10 @@
                 6
             ]
         },
-        "minecraft:acacia_pressure_plate": {
-            "tags": [
-                5,
-                6
-            ]
-        },
-        "minecraft:smooth_red_sandstone_slab": {
-            "tags": [
-                1
-            ]
-        },
-        "minecraft:jigsaw": {
-            "tags": []
-        },
         "minecraft:prismarine_wall": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:border_block": {
@@ -3961,7 +3997,7 @@
         },
         "minecraft:shroomlight": {
             "tags": [
-                15
+                16
             ]
         },
         "minecraft:yellow_candle": {
@@ -4003,6 +4039,14 @@
                 6
             ]
         },
+        "minecraft:exposed_copper_chest": {
+            "tags": [
+                1,
+                11,
+                12,
+                13
+            ]
+        },
         "minecraft:infested_stone_bricks": {
             "tags": [
                 1
@@ -4010,8 +4054,8 @@
         },
         "minecraft:bamboo_trapdoor": {
             "tags": [
-                16,
-                13,
+                17,
+                14,
                 5,
                 6
             ]
@@ -4032,7 +4076,7 @@
         },
         "minecraft:beetroot": {
             "tags": [
-                21
+                22
             ]
         },
         "minecraft:raw_copper_block": {
@@ -4050,8 +4094,8 @@
         },
         "minecraft:spruce_trapdoor": {
             "tags": [
-                16,
-                13,
+                17,
+                14,
                 5,
                 6
             ]
@@ -4092,7 +4136,7 @@
         "minecraft:petrified_oak_double_slab": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:structure_block": {
@@ -4116,7 +4160,7 @@
         },
         "minecraft:jungle_fence_gate": {
             "tags": [
-                13,
+                14,
                 5,
                 6
             ]
@@ -4147,8 +4191,8 @@
         },
         "minecraft:jungle_trapdoor": {
             "tags": [
-                16,
-                13,
+                17,
+                14,
                 5,
                 6
             ]
@@ -4160,7 +4204,7 @@
         },
         "minecraft:warped_fence_gate": {
             "tags": [
-                13,
+                14,
                 5
             ]
         },
@@ -4180,7 +4224,7 @@
         },
         "minecraft:waxed_exposed_copper_door": {
             "tags": [
-                13,
+                14,
                 1
             ]
         },
@@ -4208,7 +4252,7 @@
         "minecraft:stone_brick_wall": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:smooth_red_sandstone_stairs": {
@@ -4268,7 +4312,7 @@
         "minecraft:andesite_wall": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:cobbled_deepslate_slab": {
@@ -4361,7 +4405,7 @@
             "tags": [
                 2,
                 28,
-                18
+                19
             ]
         },
         "minecraft:reeds": {
@@ -4403,7 +4447,7 @@
         "minecraft:granite_wall": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:spruce_hanging_sign": {
@@ -4427,7 +4471,7 @@
         },
         "minecraft:cherry_leaves": {
             "tags": [
-                15
+                16
             ]
         },
         "minecraft:black_glazed_terracotta": {
@@ -4440,7 +4484,7 @@
         },
         "minecraft:end_portal_frame": {
             "tags": [
-                26
+                13
             ]
         },
         "minecraft:stripped_acacia_log": {
@@ -4476,8 +4520,8 @@
         },
         "minecraft:waxed_exposed_copper_trapdoor": {
             "tags": [
-                16,
-                13,
+                17,
+                14,
                 1,
                 11
             ]
@@ -4502,12 +4546,12 @@
         },
         "minecraft:vault": {
             "tags": [
-                26
+                13
             ]
         },
         "minecraft:azalea_leaves_flowered": {
             "tags": [
-                15
+                16
             ]
         },
         "minecraft:crimson_slab": {
@@ -4533,7 +4577,7 @@
         },
         "minecraft:warped_wart_block": {
             "tags": [
-                15
+                16
             ]
         },
         "minecraft:tuff_stairs": {
@@ -4549,7 +4593,7 @@
         },
         "minecraft:waxed_oxidized_copper_door": {
             "tags": [
-                13,
+                14,
                 1
             ]
         },
@@ -4558,7 +4602,7 @@
                 2,
                 28,
                 0,
-                18
+                19
             ]
         },
         "minecraft:tripwire_hook": {
@@ -4586,12 +4630,12 @@
         },
         "minecraft:large_fern": {
             "tags": [
-                22
+                23
             ]
         },
         "minecraft:sweet_berry_bush": {
             "tags": [
-                21
+                22
             ]
         },
         "minecraft:polished_blackstone_slab": {
@@ -4609,7 +4653,7 @@
         },
         "minecraft:jungle_sapling": {
             "tags": [
-                22
+                23
             ]
         },
         "minecraft:pale_oak_log": {
@@ -4649,7 +4693,7 @@
         },
         "minecraft:dark_oak_leaves": {
             "tags": [
-                15
+                16
             ]
         },
         "minecraft:fire": {
@@ -4696,15 +4740,15 @@
         },
         "minecraft:moss_block": {
             "tags": [
-                15,
+                16,
                 0,
-                18
+                19
             ]
         },
         "minecraft:nether_brick_double_slab": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:prismarine_brick_double_slab": {
@@ -4760,7 +4804,7 @@
         },
         "minecraft:sculk": {
             "tags": [
-                15
+                16
             ]
         },
         "minecraft:tuff_brick_stairs": {
@@ -4774,7 +4818,7 @@
         "minecraft:stone_brick_slab": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:stripped_spruce_log": {
@@ -4816,7 +4860,7 @@
         },
         "minecraft:acacia_sapling": {
             "tags": [
-                22
+                23
             ]
         },
         "minecraft:andesite_slab": {
@@ -4837,7 +4881,7 @@
         },
         "minecraft:target": {
             "tags": [
-                15
+                16
             ]
         },
         "minecraft:wooden_button": {
@@ -4853,7 +4897,7 @@
         },
         "minecraft:weathered_copper_door": {
             "tags": [
-                13,
+                14,
                 1
             ]
         },
@@ -4862,7 +4906,7 @@
         },
         "minecraft:tall_grass": {
             "tags": [
-                22
+                23
             ]
         },
         "minecraft:light_block_15": {
@@ -4957,7 +5001,7 @@
         },
         "minecraft:spruce_fence_gate": {
             "tags": [
-                13,
+                14,
                 5,
                 6
             ]
@@ -4992,8 +5036,8 @@
         },
         "minecraft:birch_trapdoor": {
             "tags": [
-                16,
-                13,
+                17,
+                14,
                 5,
                 6
             ]
@@ -5006,7 +5050,7 @@
         "minecraft:mud": {
             "tags": [
                 2,
-                18
+                19
             ]
         },
         "minecraft:ice": {
@@ -5030,6 +5074,14 @@
         },
         "minecraft:dead_tube_coral_fan": {
             "tags": []
+        },
+        "minecraft:oxidized_copper_chest": {
+            "tags": [
+                1,
+                11,
+                12,
+                13
+            ]
         },
         "minecraft:element_71": {
             "tags": []
@@ -5216,7 +5268,7 @@
         },
         "minecraft:birch_door": {
             "tags": [
-                13,
+                14,
                 5,
                 6
             ]
@@ -5367,13 +5419,13 @@
         },
         "minecraft:lilac": {
             "tags": [
-                22
+                23
             ]
         },
         "minecraft:pale_oak_trapdoor": {
             "tags": [
-                16,
-                13,
+                17,
+                14,
                 5,
                 6
             ]
@@ -5400,7 +5452,19 @@
         "minecraft:petrified_oak_slab": {
             "tags": [
                 1,
-                14
+                15
+            ]
+        },
+        "minecraft:pink_candle": {
+            "tags": []
+        },
+        "minecraft:cyan_candle": {
+            "tags": []
+        },
+        "minecraft:red_nether_brick_wall": {
+            "tags": [
+                1,
+                15
             ]
         },
         "minecraft:carved_pumpkin": {
@@ -5498,13 +5562,13 @@
         },
         "minecraft:birch_sapling": {
             "tags": [
-                22
+                23
             ]
         },
         "minecraft:dark_oak_trapdoor": {
             "tags": [
-                16,
-                13,
+                17,
+                14,
                 5,
                 6
             ]
@@ -5524,7 +5588,7 @@
         "minecraft:polished_andesite": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:sea_lantern": {
@@ -5837,7 +5901,7 @@
         },
         "minecraft:waxed_copper_door": {
             "tags": [
-                13,
+                14,
                 1
             ]
         },
@@ -5846,7 +5910,7 @@
         },
         "minecraft:peony": {
             "tags": [
-                22
+                23
             ]
         },
         "minecraft:crafter": {
@@ -5880,7 +5944,7 @@
         },
         "minecraft:dried_kelp_block": {
             "tags": [
-                15
+                16
             ]
         },
         "minecraft:hard_light_gray_stained_glass": {
@@ -5918,7 +5982,7 @@
         "minecraft:cobblestone_double_slab": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:deepslate_diamond_ore": {
@@ -5995,7 +6059,7 @@
         "minecraft:mossy_stone_brick_wall": {
             "tags": [
                 1,
-                14
+                15
             ]
         },
         "minecraft:lime_terracotta": {
@@ -6005,7 +6069,7 @@
         },
         "minecraft:cherry_fence_gate": {
             "tags": [
-                13,
+                14,
                 5,
                 6
             ]
@@ -6032,7 +6096,7 @@
             "tags": [
                 1,
                 11,
-                25
+                26
             ]
         },
         "minecraft:cartography_table": {

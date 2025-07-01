@@ -45,17 +45,18 @@
         "minecraft:soul_fire_base_blocks",
         "minecraft:is_axe",
         "minecraft:leather_tier",
+        "minecraft:copper_tier",
         "minecraft:egg",
         "minecraft:arrow",
         "minecraft:stone_crafting_materials",
         "minecraft:stone_tool_materials",
-        "minecraft:chainmail_tier",
         "minecraft:is_minecart",
         "minecraft:lectern_books",
         "minecraft:is_sword",
         "minecraft:transform_materials",
         "minecraft:coals",
         "minecraft:transform_templates",
+        "minecraft:chainmail_tier",
         "minecraft:is_trident",
         "minecraft:sand",
         "minecraft:hanging_actor",
@@ -437,7 +438,7 @@
             "maxStack": 64,
             "components": {}
         },
-        "minecraft:birch_fence": {
+        "minecraft:stone_brick_wall": {
             "tags": [],
             "maxStack": 64,
             "components": {}
@@ -447,7 +448,7 @@
             "maxStack": 64,
             "components": {}
         },
-        "minecraft:stone_brick_wall": {
+        "minecraft:birch_fence": {
             "tags": [],
             "maxStack": 64,
             "components": {}
@@ -674,12 +675,12 @@
             "maxStack": 64,
             "components": {}
         },
-        "minecraft:orange_dye": {
+        "minecraft:pearlescent_froglight": {
             "tags": [],
             "maxStack": 64,
             "components": {}
         },
-        "minecraft:pearlescent_froglight": {
+        "minecraft:orange_dye": {
             "tags": [],
             "maxStack": 64,
             "components": {}
@@ -1219,11 +1220,6 @@
                 "minecraft:compostable": {}
             }
         },
-        "minecraft:torch": {
-            "tags": [],
-            "maxStack": 64,
-            "components": {}
-        },
         "minecraft:redstone_block": {
             "tags": [],
             "maxStack": 64,
@@ -1244,11 +1240,6 @@
         "minecraft:granite_wall": {
             "tags": [],
             "maxStack": 64,
-            "components": {}
-        },
-        "minecraft:bed": {
-            "tags": [],
-            "maxStack": 1,
             "components": {}
         },
         "minecraft:rotten_flesh": {
@@ -1396,7 +1387,12 @@
             "maxStack": 64,
             "components": {}
         },
-        "minecraft:bamboo_mosaic_slab": {
+        "minecraft:dark_prismarine_slab": {
+            "tags": [],
+            "maxStack": 64,
+            "components": {}
+        },
+        "minecraft:prismarine_bricks_stairs": {
             "tags": [],
             "maxStack": 64,
             "components": {}
@@ -1406,12 +1402,7 @@
             "maxStack": 64,
             "components": {}
         },
-        "minecraft:dark_prismarine_slab": {
-            "tags": [],
-            "maxStack": 64,
-            "components": {}
-        },
-        "minecraft:prismarine_bricks_stairs": {
+        "minecraft:bamboo_mosaic_slab": {
             "tags": [],
             "maxStack": 64,
             "components": {}
@@ -1570,16 +1561,6 @@
             "maxStack": 64,
             "components": {}
         },
-        "minecraft:poisonous_potato": {
-            "tags": [],
-            "maxStack": 64,
-            "components": {}
-        },
-        "minecraft:prismarine_slab": {
-            "tags": [],
-            "maxStack": 64,
-            "components": {}
-        },
         "minecraft:brown_bundle": {
             "tags": [],
             "maxStack": 1,
@@ -1652,11 +1633,6 @@
             }
         },
         "minecraft:red_candle": {
-            "tags": [],
-            "maxStack": 64,
-            "components": {}
-        },
-        "minecraft:infested_cracked_stone_bricks": {
             "tags": [],
             "maxStack": 64,
             "components": {}
@@ -2093,6 +2069,19 @@
             "maxStack": 64,
             "components": {}
         },
+        "minecraft:copper_hoe": {
+            "tags": [
+                9,
+                32,
+                11,
+                45
+            ],
+            "maxStack": 1,
+            "components": {
+                "minecraft:durability": {},
+                "minecraft:enchantable": {}
+            }
+        },
         "minecraft:tuff_brick_wall": {
             "tags": [],
             "maxStack": 64,
@@ -2119,14 +2108,14 @@
         },
         "minecraft:egg": {
             "tags": [
-                45
+                46
             ],
             "maxStack": 16,
             "components": {}
         },
         "minecraft:arrow": {
             "tags": [
-                46
+                47
             ],
             "maxStack": 64,
             "components": {}
@@ -2213,19 +2202,6 @@
             "maxStack": 64,
             "components": {}
         },
-        "minecraft:exposed_cut_copper_stairs": {
-            "tags": [],
-            "maxStack": 64,
-            "components": {}
-        },
-        "minecraft:brush": {
-            "tags": [],
-            "maxStack": 1,
-            "components": {
-                "minecraft:durability": {},
-                "minecraft:enchantable": {}
-            }
-        },
         "minecraft:dark_oak_door": {
             "tags": [
                 16
@@ -2309,8 +2285,8 @@
         },
         "minecraft:cobbled_deepslate": {
             "tags": [
-                47,
-                48
+                48,
+                49
             ],
             "maxStack": 64,
             "components": {}
@@ -2321,18 +2297,6 @@
             ],
             "maxStack": 64,
             "components": {}
-        },
-        "minecraft:chainmail_leggings": {
-            "tags": [
-                18,
-                49,
-                20
-            ],
-            "maxStack": 1,
-            "components": {
-                "minecraft:durability": {},
-                "minecraft:enchantable": {}
-            }
         },
         "minecraft:saddle": {
             "tags": [],
@@ -2569,11 +2533,6 @@
             "maxStack": 64,
             "components": {}
         },
-        "minecraft:sniffer_egg": {
-            "tags": [],
-            "maxStack": 64,
-            "components": {}
-        },
         "minecraft:warped_fence": {
             "tags": [],
             "maxStack": 64,
@@ -2696,6 +2655,30 @@
         },
         "minecraft:polished_diorite_slab": {
             "tags": [],
+            "maxStack": 64,
+            "components": {}
+        },
+        "minecraft:prismarine_stairs": {
+            "tags": [],
+            "maxStack": 64,
+            "components": {}
+        },
+        "minecraft:copper_boots": {
+            "tags": [
+                18,
+                45,
+                20
+            ],
+            "maxStack": 1,
+            "components": {
+                "minecraft:durability": {},
+                "minecraft:enchantable": {}
+            }
+        },
+        "minecraft:iron_door": {
+            "tags": [
+                16
+            ],
             "maxStack": 64,
             "components": {}
         },
@@ -3007,6 +2990,31 @@
             "maxStack": 64,
             "components": {}
         },
+        "minecraft:exposed_copper_chest": {
+            "tags": [],
+            "maxStack": 64,
+            "components": {}
+        },
+        "minecraft:brown_egg": {
+            "tags": [
+                46
+            ],
+            "maxStack": 16,
+            "components": {}
+        },
+        "minecraft:pale_oak_wood": {
+            "tags": [
+                0,
+                1
+            ],
+            "maxStack": 64,
+            "components": {}
+        },
+        "minecraft:blue_glazed_terracotta": {
+            "tags": [],
+            "maxStack": 64,
+            "components": {}
+        },
         "minecraft:nether_gold_ore": {
             "tags": [],
             "maxStack": 64,
@@ -3024,6 +3032,11 @@
                 "minecraft:durability": {},
                 "minecraft:enchantable": {}
             }
+        },
+        "minecraft:oxidized_copper_chest": {
+            "tags": [],
+            "maxStack": 64,
+            "components": {}
         },
         "minecraft:mangrove_stairs": {
             "tags": [],
@@ -3212,18 +3225,6 @@
             "maxStack": 64,
             "components": {}
         },
-        "minecraft:prismarine_stairs": {
-            "tags": [],
-            "maxStack": 64,
-            "components": {}
-        },
-        "minecraft:iron_door": {
-            "tags": [
-                16
-            ],
-            "maxStack": 64,
-            "components": {}
-        },
         "minecraft:dark_prismarine_stairs": {
             "tags": [],
             "maxStack": 64,
@@ -3308,7 +3309,7 @@
         },
         "minecraft:blue_egg": {
             "tags": [
-                45
+                46
             ],
             "maxStack": 16,
             "components": {}
@@ -3467,6 +3468,19 @@
             "maxStack": 64,
             "components": {}
         },
+        "minecraft:copper_pickaxe": {
+            "tags": [
+                9,
+                10,
+                11,
+                45
+            ],
+            "maxStack": 1,
+            "components": {
+                "minecraft:durability": {},
+                "minecraft:enchantable": {}
+            }
+        },
         "minecraft:gold_ore": {
             "tags": [],
             "maxStack": 64,
@@ -3555,6 +3569,18 @@
             "maxStack": 64,
             "components": {}
         },
+        "minecraft:copper_chestplate": {
+            "tags": [
+                18,
+                45,
+                20
+            ],
+            "maxStack": 1,
+            "components": {
+                "minecraft:durability": {},
+                "minecraft:enchantable": {}
+            }
+        },
         "minecraft:resin_block": {
             "tags": [],
             "maxStack": 64,
@@ -3631,8 +3657,8 @@
         },
         "minecraft:cobblestone": {
             "tags": [
-                47,
-                48
+                48,
+                49
             ],
             "maxStack": 64,
             "components": {}
@@ -3730,6 +3756,19 @@
             "maxStack": 64,
             "components": {}
         },
+        "minecraft:brush": {
+            "tags": [],
+            "maxStack": 1,
+            "components": {
+                "minecraft:durability": {},
+                "minecraft:enchantable": {}
+            }
+        },
+        "minecraft:exposed_cut_copper_stairs": {
+            "tags": [],
+            "maxStack": 64,
+            "components": {}
+        },
         "minecraft:brown_glazed_terracotta": {
             "tags": [],
             "maxStack": 64,
@@ -3770,6 +3809,19 @@
             "components": {}
         },
         "minecraft:deepslate_brick_stairs": {
+            "tags": [],
+            "maxStack": 64,
+            "components": {}
+        },
+        "minecraft:blackstone": {
+            "tags": [
+                48,
+                49
+            ],
+            "maxStack": 64,
+            "components": {}
+        },
+        "minecraft:waxed_exposed_copper_chest": {
             "tags": [],
             "maxStack": 64,
             "components": {}
@@ -3983,6 +4035,25 @@
             "maxStack": 64,
             "components": {}
         },
+        "minecraft:copper_bulb": {
+            "tags": [],
+            "maxStack": 64,
+            "components": {}
+        },
+        "minecraft:creeper_spawn_egg": {
+            "tags": [
+                3
+            ],
+            "maxStack": 64,
+            "components": {}
+        },
+        "minecraft:salmon_spawn_egg": {
+            "tags": [
+                3
+            ],
+            "maxStack": 64,
+            "components": {}
+        },
         "minecraft:flint_and_steel": {
             "tags": [],
             "maxStack": 1,
@@ -4002,25 +4073,6 @@
             "components": {
                 "minecraft:compostable": {}
             }
-        },
-        "minecraft:copper_bulb": {
-            "tags": [],
-            "maxStack": 64,
-            "components": {}
-        },
-        "minecraft:creeper_spawn_egg": {
-            "tags": [
-                3
-            ],
-            "maxStack": 64,
-            "components": {}
-        },
-        "minecraft:salmon_spawn_egg": {
-            "tags": [
-                3
-            ],
-            "maxStack": 64,
-            "components": {}
         },
         "minecraft:spruce_door": {
             "tags": [
@@ -4362,6 +4414,18 @@
             "maxStack": 64,
             "components": {}
         },
+        "minecraft:copper_sword": {
+            "tags": [
+                52,
+                11,
+                45
+            ],
+            "maxStack": 1,
+            "components": {
+                "minecraft:durability": {},
+                "minecraft:enchantable": {}
+            }
+        },
         "minecraft:waxed_oxidized_copper_door": {
             "tags": [
                 16
@@ -4405,21 +4469,6 @@
             "maxStack": 1,
             "components": {}
         },
-        "minecraft:slime_ball": {
-            "tags": [],
-            "maxStack": 64,
-            "components": {}
-        },
-        "minecraft:tube_coral": {
-            "tags": [],
-            "maxStack": 64,
-            "components": {}
-        },
-        "minecraft:stick": {
-            "tags": [],
-            "maxStack": 64,
-            "components": {}
-        },
         "minecraft:chain_command_block": {
             "tags": [],
             "maxStack": 64,
@@ -4436,6 +4485,16 @@
             "components": {}
         },
         "minecraft:acacia_trapdoor": {
+            "tags": [],
+            "maxStack": 64,
+            "components": {}
+        },
+        "minecraft:cut_sandstone_slab": {
+            "tags": [],
+            "maxStack": 64,
+            "components": {}
+        },
+        "minecraft:weathered_copper_chest": {
             "tags": [],
             "maxStack": 64,
             "components": {}
@@ -4462,14 +4521,6 @@
         },
         "minecraft:glowstone_dust": {
             "tags": [],
-            "maxStack": 64,
-            "components": {}
-        },
-        "minecraft:blackstone": {
-            "tags": [
-                47,
-                48
-            ],
             "maxStack": 64,
             "components": {}
         },
@@ -4525,6 +4576,11 @@
             "components": {}
         },
         "minecraft:acacia_pressure_plate": {
+            "tags": [],
+            "maxStack": 64,
+            "components": {}
+        },
+        "minecraft:copper_chest": {
             "tags": [],
             "maxStack": 64,
             "components": {}
@@ -4602,12 +4658,12 @@
                 "minecraft:compostable": {}
             }
         },
-        "minecraft:glow_frame": {
+        "minecraft:turtle_scute": {
             "tags": [],
             "maxStack": 64,
             "components": {}
         },
-        "minecraft:turtle_scute": {
+        "minecraft:glow_frame": {
             "tags": [],
             "maxStack": 64,
             "components": {}
@@ -4624,11 +4680,6 @@
                 "minecraft:compostable": {}
             }
         },
-        "minecraft:cut_sandstone_slab": {
-            "tags": [],
-            "maxStack": 64,
-            "components": {}
-        },
         "minecraft:gray_stained_glass": {
             "tags": [],
             "maxStack": 64,
@@ -4642,7 +4693,7 @@
         "minecraft:chainmail_helmet": {
             "tags": [
                 18,
-                49,
+                56,
                 20
             ],
             "maxStack": 1,
@@ -4721,6 +4772,18 @@
             "tags": [],
             "maxStack": 64,
             "components": {}
+        },
+        "minecraft:copper_leggings": {
+            "tags": [
+                18,
+                45,
+                20
+            ],
+            "maxStack": 1,
+            "components": {
+                "minecraft:durability": {},
+                "minecraft:enchantable": {}
+            }
         },
         "minecraft:purple_stained_glass": {
             "tags": [],
@@ -5075,6 +5138,16 @@
             "maxStack": 64,
             "components": {}
         },
+        "minecraft:poisonous_potato": {
+            "tags": [],
+            "maxStack": 64,
+            "components": {}
+        },
+        "minecraft:prismarine_slab": {
+            "tags": [],
+            "maxStack": 64,
+            "components": {}
+        },
         "minecraft:sandstone_slab": {
             "tags": [],
             "maxStack": 64,
@@ -5366,13 +5439,6 @@
             "maxStack": 64,
             "components": {}
         },
-        "minecraft:chicken_spawn_egg": {
-            "tags": [
-                3
-            ],
-            "maxStack": 64,
-            "components": {}
-        },
         "minecraft:waxed_weathered_cut_copper_slab": {
             "tags": [],
             "maxStack": 64,
@@ -5520,6 +5586,11 @@
             "maxStack": 64,
             "components": {}
         },
+        "minecraft:waxed_copper_chest": {
+            "tags": [],
+            "maxStack": 64,
+            "components": {}
+        },
         "minecraft:obsidian": {
             "tags": [],
             "maxStack": 64,
@@ -5565,6 +5636,13 @@
                 "minecraft:durability": {},
                 "minecraft:enchantable": {}
             }
+        },
+        "minecraft:music_disc_lava_chicken": {
+            "tags": [
+                26
+            ],
+            "maxStack": 1,
+            "components": {}
         },
         "minecraft:kelp": {
             "tags": [],
@@ -5643,26 +5721,6 @@
             "maxStack": 64,
             "components": {}
         },
-        "minecraft:brown_egg": {
-            "tags": [
-                45
-            ],
-            "maxStack": 16,
-            "components": {}
-        },
-        "minecraft:pale_oak_wood": {
-            "tags": [
-                0,
-                1
-            ],
-            "maxStack": 64,
-            "components": {}
-        },
-        "minecraft:blue_glazed_terracotta": {
-            "tags": [],
-            "maxStack": 64,
-            "components": {}
-        },
         "minecraft:infested_stone": {
             "tags": [],
             "maxStack": 64,
@@ -5737,6 +5795,18 @@
             "tags": [],
             "maxStack": 64,
             "components": {}
+        },
+        "minecraft:copper_helmet": {
+            "tags": [
+                18,
+                45,
+                20
+            ],
+            "maxStack": 1,
+            "components": {
+                "minecraft:durability": {},
+                "minecraft:enchantable": {}
+            }
         },
         "minecraft:deepslate_coal_ore": {
             "tags": [],
@@ -5855,7 +5925,7 @@
         "minecraft:chainmail_chestplate": {
             "tags": [
                 18,
-                49,
+                56,
                 20
             ],
             "maxStack": 1,
@@ -5863,6 +5933,13 @@
                 "minecraft:durability": {},
                 "minecraft:enchantable": {}
             }
+        },
+        "minecraft:copper_golem_spawn_egg": {
+            "tags": [
+                3
+            ],
+            "maxStack": 64,
+            "components": {}
         },
         "minecraft:structure_void": {
             "tags": [],
@@ -5883,7 +5960,7 @@
         },
         "minecraft:trident": {
             "tags": [
-                56
+                57
             ],
             "maxStack": 1,
             "components": {
@@ -5906,6 +5983,11 @@
             "components": {}
         },
         "minecraft:lime_dye": {
+            "tags": [],
+            "maxStack": 64,
+            "components": {}
+        },
+        "minecraft:waxed_weathered_copper_chest": {
             "tags": [],
             "maxStack": 64,
             "components": {}
@@ -5979,6 +6061,11 @@
             "tags": [
                 14
             ],
+            "maxStack": 64,
+            "components": {}
+        },
+        "minecraft:waxed_oxidized_copper_chest": {
+            "tags": [],
             "maxStack": 64,
             "components": {}
         },
@@ -6475,7 +6562,7 @@
         },
         "minecraft:red_sand": {
             "tags": [
-                57
+                58
             ],
             "maxStack": 64,
             "components": {}
@@ -6664,6 +6751,19 @@
             "maxStack": 64,
             "components": {}
         },
+        "minecraft:copper_axe": {
+            "tags": [
+                9,
+                43,
+                11,
+                45
+            ],
+            "maxStack": 1,
+            "components": {
+                "minecraft:durability": {},
+                "minecraft:enchantable": {}
+            }
+        },
         "minecraft:stripped_dark_oak_wood": {
             "tags": [
                 0,
@@ -6783,6 +6883,11 @@
                 "minecraft:compostable": {}
             }
         },
+        "minecraft:experience_bottle": {
+            "tags": [],
+            "maxStack": 64,
+            "components": {}
+        },
         "minecraft:wet_sponge": {
             "tags": [],
             "maxStack": 64,
@@ -6801,11 +6906,6 @@
             "components": {
                 "minecraft:compostable": {}
             }
-        },
-        "minecraft:experience_bottle": {
-            "tags": [],
-            "maxStack": 64,
-            "components": {}
         },
         "minecraft:suspicious_stew": {
             "tags": [],
@@ -6969,6 +7069,16 @@
             "components": {}
         },
         "minecraft:fire_coral": {
+            "tags": [],
+            "maxStack": 64,
+            "components": {}
+        },
+        "minecraft:slime_ball": {
+            "tags": [],
+            "maxStack": 64,
+            "components": {}
+        },
+        "minecraft:tube_coral": {
             "tags": [],
             "maxStack": 64,
             "components": {}
@@ -7175,7 +7285,7 @@
         "minecraft:chainmail_boots": {
             "tags": [
                 18,
-                49,
+                56,
                 20
             ],
             "maxStack": 1,
@@ -7251,6 +7361,35 @@
             "maxStack": 64,
             "components": {}
         },
+        "minecraft:infested_cracked_stone_bricks": {
+            "tags": [],
+            "maxStack": 64,
+            "components": {}
+        },
+        "minecraft:sniffer_egg": {
+            "tags": [],
+            "maxStack": 64,
+            "components": {}
+        },
+        "minecraft:chainmail_leggings": {
+            "tags": [
+                18,
+                56,
+                20
+            ],
+            "maxStack": 1,
+            "components": {
+                "minecraft:durability": {},
+                "minecraft:enchantable": {}
+            }
+        },
+        "minecraft:chicken_spawn_egg": {
+            "tags": [
+                3
+            ],
+            "maxStack": 64,
+            "components": {}
+        },
         "minecraft:ocelot_spawn_egg": {
             "tags": [
                 3
@@ -7309,6 +7448,11 @@
             "tags": [
                 3
             ],
+            "maxStack": 64,
+            "components": {}
+        },
+        "minecraft:copper_nugget": {
+            "tags": [],
             "maxStack": 64,
             "components": {}
         },
@@ -7753,6 +7897,19 @@
                 "minecraft:enchantable": {}
             }
         },
+        "minecraft:copper_shovel": {
+            "tags": [
+                9,
+                39,
+                11,
+                45
+            ],
+            "maxStack": 1,
+            "components": {
+                "minecraft:durability": {},
+                "minecraft:enchantable": {}
+            }
+        },
         "minecraft:golden_hoe": {
             "tags": [
                 9,
@@ -7963,6 +8120,21 @@
             "components": {
                 "minecraft:potion": {}
             }
+        },
+        "minecraft:stick": {
+            "tags": [],
+            "maxStack": 64,
+            "components": {}
+        },
+        "minecraft:bed": {
+            "tags": [],
+            "maxStack": 1,
+            "components": {}
+        },
+        "minecraft:torch": {
+            "tags": [],
+            "maxStack": 64,
+            "components": {}
         },
         "minecraft:soul_torch": {
             "tags": [],
@@ -8251,7 +8423,7 @@
         },
         "minecraft:painting": {
             "tags": [
-                58
+                59
             ],
             "maxStack": 64,
             "components": {}
@@ -8353,7 +8525,7 @@
         },
         "minecraft:banner": {
             "tags": [
-                59
+                60
             ],
             "maxStack": 16,
             "components": {}
@@ -8661,12 +8833,12 @@
                 "minecraft:enchantable": {}
             }
         },
-        "minecraft:border_block": {
+        "minecraft:light_block_2": {
             "tags": [],
             "maxStack": 64,
             "components": {}
         },
-        "minecraft:light_block_2": {
+        "minecraft:border_block": {
             "tags": [],
             "maxStack": 64,
             "components": {}
@@ -8708,7 +8880,7 @@
         },
         "minecraft:sand": {
             "tags": [
-                57
+                58
             ],
             "maxStack": 64,
             "components": {}
