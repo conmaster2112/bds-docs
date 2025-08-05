@@ -32,19 +32,19 @@
         },
         {
             "code": "() => world.beforeEvents.playerBreakBlock.subscribe(() => {}, { blockTypes: [new ItemStack(\"stick\")] })",
-            "message": "Array contains unsupported type. Array element [0] expected type: string (failed parsing array to Interface property ['blockTypes'], failed parsing interface to Function argument [1])",
+            "message": "Array contains unsupported type. Array element [0] expected type: string (failed parsing array to Interface property ['blockTypes'], failed parsing interface to Function argument [1]).",
             "type": "TypeError",
             "id": 6
         },
         {
             "code": "() => world.beforeEvents.playerBreakBlock.subscribe(() => {}, { blockTypes: [new String(\"stick\")] })",
-            "message": "Object has an invalid native handle. Array element [0] expected type: string (failed parsing array to Interface property ['blockTypes'], failed parsing interface to Function argument [1])",
+            "message": "Object has an invalid native handle. Array element [0] expected type: string (failed parsing array to Interface property ['blockTypes'], failed parsing interface to Function argument [1]).",
             "type": "TypeError",
             "id": 7
         },
         {
             "code": "() => world.beforeEvents.playerBreakBlock.subscribe(() => {}, { blockTypes: [{}] })",
-            "message": "Object did not have a native handle. Array element [0] expected type: string (failed parsing array to Interface property ['blockTypes'], failed parsing interface to Function argument [1])",
+            "message": "Object did not have a native handle. Array element [0] expected type: string (failed parsing array to Interface property ['blockTypes'], failed parsing interface to Function argument [1]).",
             "type": "TypeError",
             "id": 8
         },
