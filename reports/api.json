@@ -36,9 +36,9 @@
         "id": "entity",
         "results": [
             "minecraft:cow",
-            "{\"x\":0.22499999403953552,\"y\":0,\"z\":2.2249999046325684}",
+            "{\"x\":-0.44999998807907104,\"y\":-0.2999999523162842,\"z\":2}",
             "entity.cow.name",
-            "[{\"typeId\":\"minecraft:movement\"},{\"typeId\":\"minecraft:movement.jump\"},{\"typeId\":\"minecraft:ageable\"},{\"typeId\":\"minecraft:lava_movement\"},{\"typeId\":\"minecraft:breathable\"},{\"typeId\":\"minecraft:health\"},{\"typeId\":\"minecraft:navigation.walk\"},{\"typeId\":\"minecraft:leashable\"},{\"typeId\":\"minecraft:type_family\"},{\"typeId\":\"minecraft:movement.basic\"},{\"typeId\":\"minecraft:is_hidden_when_invisible\"},{\"typeId\":\"minecraft:rideable\"},{\"typeId\":\"minecraft:underwater_movement\"},{\"typeId\":\"minecraft:can_climb\"},{\"typeId\":\"minecraft:is_baby\"},{\"typeId\":\"minecraft:scale\"}]",
+            "[{\"typeId\":\"minecraft:movement\"},{\"typeId\":\"minecraft:movement.jump\"},{\"typeId\":\"minecraft:lava_movement\"},{\"typeId\":\"minecraft:breathable\"},{\"typeId\":\"minecraft:health\"},{\"typeId\":\"minecraft:navigation.walk\"},{\"typeId\":\"minecraft:leashable\"},{\"typeId\":\"minecraft:type_family\"},{\"typeId\":\"minecraft:movement.basic\"},{\"typeId\":\"minecraft:is_hidden_when_invisible\"},{\"typeId\":\"minecraft:rideable\"},{\"typeId\":\"minecraft:underwater_movement\"},{\"typeId\":\"minecraft:can_climb\"}]",
             "{\"typeId\":\"minecraft:cow\",\"id\":\"-8589934480\"}"
         ]
     },
