@@ -1,6 +1,1 @@
-bin/
-node_modules/
-private/
-test/
-package-lock.json
-dist/
+__*__
