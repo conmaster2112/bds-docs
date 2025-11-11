@@ -8,6 +8,7 @@
       "max_weight_limit": {
          "type": "integer",
          "default": 64,
+         "minimum": -2147483648,
          "maximum": 64
       }
    }

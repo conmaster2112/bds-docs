@@ -8,10 +8,14 @@
          "type": "object",
          "properties": {
             "max": {
-               "type": "integer"
+               "type": "integer",
+               "minimum": -2147483648,
+               "maximum": 2147483647
             },
             "min": {
-               "type": "integer"
+               "type": "integer",
+               "minimum": -2147483648,
+               "maximum": 2147483647
             }
          },
          "required": [

@@ -2399,7 +2399,7 @@ export class Player extends Entity {
    public readonly xpEarnedAtCurrentLevel: number;
    public addExperience(amount: number): number;
    public addLevels(amount: number): number;
-   public clearPropertyOverridesForEntity(targetEntity: Entity): void;
+   public clearPropertyOverridesForEntity(targetEntity: Entity | string): void;
    public getGameMode(): GameMode;
    public getItemCooldown(cooldownCategory: string): number;
    public getSpawnPoint(): (DimensionLocation | undefined);

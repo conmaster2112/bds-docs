@@ -27,12 +27,15 @@
       },
       "nutrition": {
          "type": "integer",
-         "default": 0
+         "default": 0,
+         "minimum": -2147483648,
+         "maximum": 2147483647
       },
       "saturation_modifier": {
          "type": "number",
          "default": 0.6000000238418579,
-         "minimum": 0
+         "minimum": 0,
+         "maximum": 3.4028234663852886e+38
       },
       "using_converts_to": {
          "default": {},

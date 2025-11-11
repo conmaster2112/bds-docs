@@ -7,7 +7,9 @@
          "title": "compound_proxy",
          "oneOf": [
             {
-               "type": "integer"
+               "type": "integer",
+               "minimum": -2147483648,
+               "maximum": 2147483647
             },
             {
                "type": "string"
@@ -25,7 +27,9 @@
                "$ref": "#/definitions/2794205495"
             },
             "speed": {
-               "type": "integer"
+               "type": "integer",
+               "minimum": -2147483648,
+               "maximum": 2147483647
             }
          },
          "required": [

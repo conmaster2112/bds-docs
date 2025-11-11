@@ -7,11 +7,15 @@
    "properties": {
       "bottom": {
          "type": "integer",
-         "default": 0
+         "default": 0,
+         "minimum": 0,
+         "maximum": 4294967295
       },
       "top": {
          "type": "integer",
-         "default": 0
+         "default": 0,
+         "minimum": 0,
+         "maximum": 4294967295
       }
    }
 }

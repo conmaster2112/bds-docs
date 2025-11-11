@@ -20,16 +20,21 @@
       },
       "goal_radius": {
          "type": "number",
-         "default": 1.5
+         "default": 1.5,
+         "minimum": 1.1754943508222875e-38,
+         "maximum": 3.4028234663852886e+38
       },
       "priority": {
          "type": "integer",
          "default": 0,
-         "minimum": 0
+         "minimum": 0,
+         "maximum": 2147483647
       },
       "speed_multiplier": {
          "type": "number",
-         "default": 1
+         "default": 1,
+         "minimum": 1.1754943508222875e-38,
+         "maximum": 3.4028234663852886e+38
       }
    }
 }

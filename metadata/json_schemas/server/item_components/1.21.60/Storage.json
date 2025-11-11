@@ -42,6 +42,7 @@
       "max_slots": {
          "type": "integer",
          "default": 64,
+         "minimum": -2147483648,
          "maximum": 64
       }
    }

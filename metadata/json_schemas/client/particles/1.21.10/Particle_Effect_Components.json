@@ -21,11 +21,15 @@
          "properties": {
             "coefficient_of_restitution": {
                "type": "number",
-               "default": 0
+               "default": 0,
+               "minimum": 1.1754943508222875e-38,
+               "maximum": 3.4028234663852886e+38
             },
             "collision_drag": {
                "type": "number",
-               "default": 0
+               "default": 0,
+               "minimum": 1.1754943508222875e-38,
+               "maximum": 3.4028234663852886e+38
             },
             "collision_radius": {
                "type": "number",
@@ -89,7 +93,9 @@
             },
             "min_speed_threshold": {
                "type": "number",
-               "default": 0
+               "default": 0,
+               "minimum": 1.1754943508222875e-38,
+               "maximum": 3.4028234663852886e+38
             },
             "mode": {
                "title": "particle_appearance_billboard direction_settings_mode",
@@ -132,7 +138,9 @@
             },
             "frames_per_second": {
                "type": "number",
-               "default": 0
+               "default": 0,
+               "minimum": 1.1754943508222875e-38,
+               "maximum": 3.4028234663852886e+38
             },
             "loop": {
                "type": "boolean",
@@ -148,7 +156,9 @@
                   1
                ],
                "items": {
-                  "type": "number"
+                  "type": "number",
+                  "minimum": 1.1754943508222875e-38,
+                  "maximum": 3.4028234663852886e+38
                },
                "minItems": 2,
                "maxItems": 2
@@ -160,7 +170,9 @@
                   0
                ],
                "items": {
-                  "type": "number"
+                  "type": "number",
+                  "minimum": 1.1754943508222875e-38,
+                  "maximum": 3.4028234663852886e+38
                },
                "minItems": 2,
                "maxItems": 2
@@ -371,7 +383,9 @@
                      "type": "string"
                   },
                   "version": {
-                     "type": "integer"
+                     "type": "integer",
+                     "minimum": -32768,
+                     "maximum": 32767
                   }
                },
                "required": [
@@ -445,7 +459,9 @@
             },
             "min_speed": {
                "type": "number",
-               "default": 2
+               "default": 2,
+               "minimum": 1.1754943508222875e-38,
+               "maximum": 3.4028234663852886e+38
             }
          },
          "required": [
@@ -609,7 +625,9 @@
                "$ref": "#/definitions/2267778531"
             },
             {
-               "type": "number"
+               "type": "number",
+               "minimum": 1.1754943508222875e-38,
+               "maximum": 3.4028234663852886e+38
             }
          ]
       },
@@ -631,7 +649,9 @@
          "title": "particle_kill_plane",
          "type": "array",
          "items": {
-            "type": "number"
+            "type": "number",
+            "minimum": 1.1754943508222875e-38,
+            "maximum": 3.4028234663852886e+38
          },
          "minItems": 4,
          "maxItems": 4
@@ -645,11 +665,15 @@
             },
             "texture_height": {
                "type": "integer",
-               "default": 1
+               "default": 1,
+               "minimum": -2147483648,
+               "maximum": 2147483647
             },
             "texture_width": {
                "type": "integer",
-               "default": 1
+               "default": 1,
+               "minimum": -2147483648,
+               "maximum": 2147483647
             },
             "uv": {
                "type": "array",
@@ -771,7 +795,8 @@
          "properties": {
             "distance": {
                "type": "number",
-               "minimum": 0
+               "minimum": 0,
+               "maximum": 3.4028234663852886e+38
             },
             "effects": {
                "$ref": "#/definitions/771176265"

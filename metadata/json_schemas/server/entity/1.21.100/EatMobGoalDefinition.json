@@ -20,7 +20,9 @@
       },
       "eat_animation_time": {
          "type": "number",
-         "default": 1
+         "default": 1,
+         "minimum": 1.1754943508222875e-38,
+         "maximum": 3.4028234663852886e+38
       },
       "eat_mob_sound": {
          "type": "string",
@@ -33,19 +35,26 @@
       "priority": {
          "type": "integer",
          "default": 0,
-         "minimum": 0
+         "minimum": 0,
+         "maximum": 2147483647
       },
       "pull_in_force": {
          "type": "number",
-         "default": 1
+         "default": 1,
+         "minimum": 1.1754943508222875e-38,
+         "maximum": 3.4028234663852886e+38
       },
       "reach_mob_distance": {
          "type": "number",
-         "default": 1
+         "default": 1,
+         "minimum": 1.1754943508222875e-38,
+         "maximum": 3.4028234663852886e+38
       },
       "run_speed": {
          "type": "number",
-         "default": 1
+         "default": 1,
+         "minimum": 1.1754943508222875e-38,
+         "maximum": 3.4028234663852886e+38
       }
    }
 }

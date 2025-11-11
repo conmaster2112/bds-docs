@@ -9,7 +9,9 @@
          "properties": {
             "durability": {
                "type": "integer",
-               "default": 0
+               "default": 0,
+               "minimum": -2147483648,
+               "maximum": 2147483647
             },
             "particle_type": {
                "title": "ParticleType",
@@ -644,6 +646,8 @@
                   "item.wooden_spear.attack_miss",
                   "imitate.parched",
                   "imitate.camel_husk",
+                  "item.spear.use",
+                  "item.wooden_spear.use",
                   "undefined"
                ]
             }

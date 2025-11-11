@@ -8,7 +8,8 @@
       "distance_to_players": {
          "type": "number",
          "default": 128,
-         "minimum": 128
+         "minimum": 128,
+         "maximum": 3.4028234663852886e+38
       },
       "never_despawn": {
          "type": "boolean",

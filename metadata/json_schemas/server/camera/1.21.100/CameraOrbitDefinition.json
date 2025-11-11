@@ -8,12 +8,14 @@
       "azimuth_smoothing_spring": {
          "type": "number",
          "default": 4,
-         "minimum": 0
+         "minimum": 0,
+         "maximum": 3.4028234663852886e+38
       },
       "distance_smoothing_spring": {
          "type": "number",
          "default": 4,
-         "minimum": 0
+         "minimum": 0,
+         "maximum": 3.4028234663852886e+38
       },
       "invert_x_input": {
          "type": "boolean",
@@ -38,7 +40,8 @@
       "polar_angle_smoothing_spring": {
          "type": "number",
          "default": 4,
-         "minimum": 0
+         "minimum": 0,
+         "maximum": 3.4028234663852886e+38
       },
       "radius": {
          "type": "number",

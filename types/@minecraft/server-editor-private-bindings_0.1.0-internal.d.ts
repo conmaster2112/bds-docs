@@ -35,20 +35,6 @@ export enum PrefabInstanceInteractionEventType {
    Clicked = "Clicked",
    Moved = "Moved",
 }
-export enum PrefabMirror {
-   Default = "Default",
-   None = "None",
-   X = "X",
-   XZ = "XZ",
-   Z = "Z",
-}
-export enum PrefabRotation {
-   Default = "Default",
-   None = "None",
-   Rotate180 = "Rotate180",
-   Rotate270 = "Rotate270",
-   Rotate90 = "Rotate90",
-}
 export enum PrefabSource {
    Global = "Global",
    Project = "Project",
@@ -138,13 +124,13 @@ export interface PrefabServiceCreateTemplateOptions {
    tags?: Array<string>;
 }
 export interface PrefabTemplateAddStructureOptions {
-   mirror?: PrefabMirror;
+   mirror?: server.StructureMirrorAxis;
    offset?: server.Vector3;
-   rotation?: PrefabRotation;
+   rotation?: server.StructureRotation;
 }
 export interface PrefabTemplateCreateInstanceOptions {
-   mirror?: PrefabMirror;
-   rotation?: PrefabRotation;
+   mirror?: server.StructureMirrorAxis;
+   rotation?: server.StructureRotation;
 }
 export interface PrefabTemplateMetadata {
    description: string;
@@ -370,24 +356,25 @@ export class PrefabTemplate {
    private constructor();
 }
 export class PrefabTemplateInstance {
-   public instanceMirror: PrefabMirror;
-   public instanceRotation: PrefabRotation;
+   public instanceMirror: server.StructureMirrorAxis;
+   public instanceRotation: server.StructureRotation;
    public location: server.Vector3;
+   public bakeInstance(): void;
    public getStructureRefs(): Array<PrefabTemplateInstanceStructure>;
    public getTemplate(): PrefabTemplate;
    private constructor();
 }
 export class PrefabTemplateInstanceStructure {
-   public instanceMirror: PrefabMirror;
-   public instanceRotation: PrefabRotation;
+   public instanceMirror: server.StructureMirrorAxis;
+   public instanceRotation: server.StructureRotation;
    public getTemplateStructure(): PrefabTemplateStructure;
    private constructor();
 }
 export class PrefabTemplateStructure {
    public readonly id: string;
-   public instanceMirror: PrefabMirror;
+   public instanceMirror: server.StructureMirrorAxis;
    public instanceOffset: server.Vector3;
-   public instanceRotation: PrefabRotation;
+   public instanceRotation: server.StructureRotation;
    public readonly structureNormalizedOrigin: server.Vector3;
    public readonly structureOffset: server.Vector3;
    public readonly structureSize: server.Vector3;

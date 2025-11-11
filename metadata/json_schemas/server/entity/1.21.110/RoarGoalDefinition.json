@@ -21,12 +21,14 @@
       "duration": {
          "type": "number",
          "default": 0,
-         "minimum": 0
+         "minimum": 0,
+         "maximum": 3.4028234663852886e+38
       },
       "priority": {
          "type": "integer",
          "default": 0,
-         "minimum": 0
+         "minimum": 0,
+         "maximum": 2147483647
       }
    }
 }

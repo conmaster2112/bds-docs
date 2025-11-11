@@ -407,6 +407,7 @@ export enum ItemComponentTypes {
    Enchantable = "minecraft:enchantable",
    Food = "minecraft:food",
    Inventory = "minecraft:inventory",
+   Potion = "minecraft:potion",
 }
 export enum ItemLockMode {
    inventory = "inventory",
@@ -2356,6 +2357,13 @@ export class ItemInventoryComponent extends ItemComponent {
    public readonly container: Container;
    private constructor();
 }
+//@ts-ignore
+export class ItemPotionComponent extends ItemComponent {
+   public static readonly componentId = "minecraft:potion";
+   public readonly potionDeliveryType: PotionDeliveryType;
+   public readonly potionEffectType: PotionEffectType;
+   private constructor();
+}
 export class ItemReleaseUseAfterEvent {
    public readonly itemStack?: ItemStack;
    public readonly source: Player;
@@ -2631,7 +2639,7 @@ export class Player extends Entity {
    public readonly xpEarnedAtCurrentLevel: number;
    public addExperience(amount: number): number;
    public addLevels(amount: number): number;
-   public clearPropertyOverridesForEntity(targetEntity: Entity): void;
+   public clearPropertyOverridesForEntity(targetEntity: Entity | string): void;
    public getControlScheme(): ControlScheme;
    public getGameMode(): GameMode;
    public getItemCooldown(cooldownCategory: string): number;
@@ -2894,6 +2902,23 @@ export class PlayerSpawnAfterEvent {
 export class PlayerSpawnAfterEventSignal {
    public subscribe(callback: (arg0: PlayerSpawnAfterEvent)=>void): (arg0: PlayerSpawnAfterEvent)=>void;
    public unsubscribe(callback: (arg0: PlayerSpawnAfterEvent)=>void): void;
+   private constructor();
+}
+export class PotionDeliveryType {
+   public readonly id: string;
+   private constructor();
+}
+export class PotionEffectType {
+   public readonly durationTicks?: number;
+   public readonly id: string;
+   private constructor();
+}
+export class Potions {
+   public static getAllDeliveryTypes(): Array<PotionDeliveryType>;
+   public static getAllEffectTypes(): Array<PotionEffectType>;
+   public static getDeliveryType(potionDeliveryId: string): (PotionDeliveryType | undefined);
+   public static getEffectType(potionEffectId: string): (PotionEffectType | undefined);
+   public static resolve(potionEffectType: PotionEffectType | string, potionDeliveryType: PotionDeliveryType | string): ItemStack;
    private constructor();
 }
 //@ts-ignore
@@ -3457,6 +3482,14 @@ export class InvalidItemStackError extends Error {
 }
 //@ts-ignore
 export class InvalidIteratorError extends Error {
+   private constructor();
+}
+//@ts-ignore
+export class InvalidPotionDeliveryTypeError extends Error {
+   private constructor();
+}
+//@ts-ignore
+export class InvalidPotionEffectTypeError extends Error {
    private constructor();
 }
 //@ts-ignore

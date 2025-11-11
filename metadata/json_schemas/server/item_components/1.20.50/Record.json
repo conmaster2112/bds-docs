@@ -7,11 +7,15 @@
    "properties": {
       "comparator_signal": {
          "type": "integer",
-         "default": 1
+         "default": 1,
+         "minimum": -2147483648,
+         "maximum": 2147483647
       },
       "duration": {
          "type": "number",
-         "default": 0
+         "default": 0,
+         "minimum": 1.1754943508222875e-38,
+         "maximum": 3.4028234663852886e+38
       },
       "sound_event": {
          "title": "LevelSoundEvent",
@@ -548,6 +552,8 @@
             "item.wooden_spear.attack_miss",
             "imitate.parched",
             "imitate.camel_husk",
+            "item.spear.use",
+            "item.wooden_spear.use",
             "undefined"
          ]
       }
