@@ -8,7 +8,14 @@
       "forceConsistentCasingInFileNames": true,
       "strict": true,
       "skipLibCheck": true,
-      "noUncheckedIndexedAccess": true
+      "noUncheckedIndexedAccess": true,
+      "types": [
+         "@types/node",
+         "@types/deno",
+      ]
    },
-   "include": ["./modules/**/*", "./addon/**/*"]
+   "include": [
+      "./modules/**/*",
+      "./addon/**/*"
+   ]
 }

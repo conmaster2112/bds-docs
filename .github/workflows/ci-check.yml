@@ -11,11 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # needed for git diff to work properly
+          fetch-depth: 0 # needed for git diff to work properly
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 'latest'
+          node-version: "latest"
 
       - uses: pnpm/action-setup@v2
         with:

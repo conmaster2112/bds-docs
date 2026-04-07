@@ -5,6 +5,7 @@
 This repository generates documentation for different versions of Bedrock. The generated docs are stored in the `./metadata` directory. Additionally we generate types under `./types` folder Before fetching any data, ensure that the data is generated in the specific branch by checking the `exist.json` file in the root directory.
 
 ## Changes made to generate docs
+
 We try to omit build version from each JSON file so we can generate more reliable changelogs.
 
 ## Checking Generated Data
@@ -18,12 +19,13 @@ Example of `exist.json`:
 
 ```json
 {
-   "version": "x.x.x",
-   "build-version": "x.x.x.x"
+  "version": "x.x.x",
+  "build-version": "x.x.x.x"
 }
 ```
 
 ## Versioning
+
 You can target specific versions via the following branches:
 
 - **Latest Stable**: `stable`

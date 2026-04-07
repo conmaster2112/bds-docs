@@ -1187,7 +1187,7 @@ async function finialize(version) {
 	const BASED_VERSION = BRANCH_TO_UPDATE === "preview" ? version : getEngineVersion(version);
 	let failed = 0;
 	if (failed = await Deno.writeTextFile(EXISTS_FILE, TO_JSON_FORMAT({
-		"version": BASED_VERSION,
+		version: BASED_VERSION,
 		"build-version": version
 	})).then((_) => 0, (_) => -1)) return failed;
 	const list = Deno.readDirSync(".").filter(({ name, isSymlink }) => !(name.startsWith(".") || name.startsWith("__") || isSymlink)).map((_) => _.isDirectory ? _.name + "/" : _.name).toArray();
